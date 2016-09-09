@@ -1,0 +1,75 @@
+<template>
+    <require from="../../scss/welcome.css"></require>
+
+    <section>
+        <form role="form" submit.delegate="startchat()" autofill="off">
+            <div class="form-group" style="float:left;width: 49%;">
+                <voya-field
+                        input-name="fName"
+                        label="First Name"
+                        type="text"
+                        required="true">
+                </voya-field>
+            </div>
+            <div class="form-group" style="float:right;width: 49%;">
+                <voya-field
+                        input-name="lName"
+                        label="Last Name"
+                        type="text"
+                        tabindex="1"
+                        required="true">
+                </voya-field>
+            </div>
+            <div style="clear:both"></div>
+            <div class="form-group">
+                <div style="padding-bottom: 10px;">
+                    <voya-field
+                            input-name="email"
+                            label="Email"
+                            type="text"
+                            tabindex="2"
+                            required="true">
+                    </voya-field>
+                </div>
+                <div style="padding-bottom: 15px;">
+                    <voya-field
+                            input-name="sendTranscript"
+                            label="Send me a transcript"
+                            size="x-small"
+                            tabindex="3"
+                            type="checkbox">
+                    </voya-field>
+                </div>
+            </div>
+            <div class="form-group">
+                <voya-field
+                        input-name="helpOptions"
+                        label="What can we help you with?"
+                        type="select"
+                        tabindex="4"
+                        options.bind="helpOptions">
+                </voya-field>
+            </div>
+            <div class="form-group">
+                <voya-field
+                        input-name="question"
+                        label="Enter a detailed question"
+                        type="textarea"
+                        tabindex="5">
+                </voya-field>
+            </div>
+            <div class="form-group" id="u372">
+                <voya-button
+                        type="submit"
+                        id="start_chat"
+                        text="START CHAT"
+                        h-size="large">
+                </voya-button>
+            </div>
+        </form>
+        <hr>
+        <div id="u378">
+            <span>${disclaimerText}</span>
+        </div>
+    </section>
+</template>
