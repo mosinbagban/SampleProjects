@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/voyasso/ws",
+    "target": "http://wplr9tdncx:8080"
+  },
+  {
+    "path": "/myvoya/ws",
+    "target": "http://wplr9tdncx:8080"
+  }
+]

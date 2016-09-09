@@ -1,0 +1,18 @@
+{
+    "preset": "google",
+    "maximumLineLength": null,
+    "validateIndentation": 4,
+    "disallowMixedSpacesAndTabs": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireSpaceAfterKeywords": [
+        "if",
+	    "else",
+        "switch",
+        "try",
+	    "catch"
+	],
+    "requireSpaceAfterComma": true,
+    "disallowSpacesInsideImportedObjectBraces": true,
+}
+
+

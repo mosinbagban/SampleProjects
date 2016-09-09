@@ -1,0 +1,12 @@
+{
+    "login": {
+        "userName": "test@test.com",
+        "passwordLastChangedDate": "N/A"
+    },
+    "security": {
+        "accountRecoveryInfo": {
+            "primaryRecoveryMethod": "email",
+            "email": "test2@test.com"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "preset": "google",
+    "disallowMultipleVarDecl": null,
+    "maximumLineLength": null,
+    "requireCamelCaseOrUpperCaseIdentifiers": null,
+    "validateIndentation": 4
+}

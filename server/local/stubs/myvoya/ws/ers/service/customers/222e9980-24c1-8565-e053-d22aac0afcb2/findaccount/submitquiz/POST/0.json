@@ -1,0 +1,30 @@
+{
+    "dataStatus": "OK",
+    "dataStatusMessage1": "Great, Here's what we found.",
+    "dataStatusMessage2": "To add your account(s) to myVoya, you'll first need to register online. <br/> Once you have registered, log back in to myVoya to finish adding your accounts(s).",
+    "participantFinancialAccounts": {
+        "hasLifeWebId": "false",
+        "hasAllRegisteredAccount": false,
+        "lifeAccounts": [{
+            "registrationLink": {
+                "linkName": "Register",
+                "linkHref": "https://www.intg.voyalifecustomerservice.com/elifeportal/registrationPage.action"
+            },
+            "accounts": [{
+                "accountName": "",
+                "accountId": "261613dd-b155-9db3-e053-d22aac0adc9c;@;222e9986-a516-8565-e053-d22aac0afcb2"
+            }, {
+                "accountName": "",
+                "accountId": "261613dd-c2c6-9db3-e053-d22aac0adc9c;@;222e9986-a516-8565-e053-d22aac0afcb2"
+            }, {
+                "accountName": "",
+                "accountId": "261613dd-bd92-9db3-e053-d22aac0adc9c;@;222e9986-a516-8565-e053-d22aac0afcb2"
+            }, {
+                "accountName": "",
+                "accountId": "261613dd-bf10-9db3-e053-d22aac0adc9c;@;222e9986-a516-8565-e053-d22aac0afcb2"
+            }]
+        }]
+    },
+    "lexisNexisTransactionId": "222e9980-24c1-8_20160112124110_1",
+    "questionView": false
+}

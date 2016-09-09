@@ -1,0 +1,195 @@
+{
+    "input": {
+        "partialUpdate": false,
+        "showDrawer": true,
+        "voyaLifeInsurance": 150000,
+        "finalMedicalExpensesMvc": 10000,
+        "mortgageBalanceMvc": 0,
+        "otherDebtMvc": 0,
+        "collegeFundMvc": 0,
+        "estateTransferCostsMvc": 0,
+        "charitableContributionsMvc": 0,
+        "emergencyFundMvc": 0,
+        "monthlyIncomeNeededMvc": 2222,
+        "yearsMonthlyIncomeMvc": 9,
+        "anticipatedRateOfReturnMvc": 0,
+        "anticipatedInflationRateMvc": 6,
+        "preservePrincipalMvc": false,
+        "currentAssetsMvc": 1000000,
+        "currentLifeInsuranceMvc": 109000
+    },
+    "output": {
+        "result": "success",
+        "cashNeedsAtDeath": "10000",
+        "cashForSurvivorsIncome": "317168",
+        "totalNeededAtDeath": "327168",
+        "currentAssets": "1000000",
+        "currentLifeInsurance": "259000",
+        "totalAssets": "1259000",
+        "additionalInsuranceNeeded": "-931832",
+        "showPreservePrincipal": false,
+        "preservePrincipal": false,
+        "showChart": false,
+        "content": {
+            "HowDoesThisWork_DisclaimerTextNoProduct": "<div id= \" faq-expand-collapse \">\t\t<div class= \" ui-faq-accordion-content-visible \">\t\t<span>\t\t\tTo start, your retirement income goal is set to equal 70% of your current annual pre-tax pay as provided by your employer or input/edited by you. This is    \t\t\twhy we ask you to enter your salary the first time you use myOrangeMoney®. This number is an estimate of the income you may need in retirement to maintain    \t\t\tyour standard of living. This number represents an accepted standard in the financial services industry and should only be viewed as a starting point for    \t\t\tyour retirement planning. Every individual's needs are unique.\t\t</span>\t</div>\t<br />\t\t<div id= \" faq-accordion \\ class= \" ui-accordion ui-widget \">\t\t\t\t<ol id= \" faq-sections-inner \\ class= \" no-ol-numbering \">\t\t\t\t\t\t<li>\t\t\t\t\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\t What is the purpose of myOrangeMoney®? \t\t\t\t</div>\t\t\t\t\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t<span>\t\t\t\t\t\t myOrangeMoney® is designed to give you a simple and actionable view of your retirement income needs and your current progress towards meeting those        \t\t\t\t\tneeds whether in 5 years or 40 years. Our goal is to make sure you know where you stand regarding your readiness to retire and to ensure that you know        \t\t\t\t\thow to improve your outlook.\t\t\t\t\t</span>\t\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t</li>\t\t\t<li>\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\t How may my expenses change in retirement?\t\t\t\t</div>\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t<span>\t\t\t\t\t\tThe reason 100% of your pre-retirement income may not be required to maintain your standard of living in retirement is because your expenses may change        \t\t\t\t\twhen you stop working. Some expense may go down or away, such as taxes and work related expenses, while some may go up, like health care costs and        \t\t\t\t\tmoney you spend on new hobbies or activities. Some examples of expenses that typically go down:\t\t\t\t\t\t<ul class= \" bulletList \">\t\t\t\t\t\t\t<li class= \" first \">Social Security and Medicare tax (FICA). This currently accounts for 7.65% of annual pay for most people.</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Annual Savings for Retirement are no longer needed. Depending on your savings rate and pay, this could equate to 14% of annual pay.</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Tax efficiencies associated with drawing a lesser income overall (~2%).</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Living expenses and spending habits typically drop over the course of a 30 year retirement equating to a 5-15% reduction in annual spending. *</li>\t\t\t\t\t\t</ul>\t\t\t\t\t\t*Research shows that individuals' consumption gradually drops over the course of a 30 year retirement, even though health care costs typically        \t\t\t\t\t increase as a percent of overall consumption.\t\t\t\t\t</span>\t\t\t\t</div>\t\t\t</li>\t\t\t<li>\t\t\t\t\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\t Are retiree health care costs included in my goal?\t\t\t\t</div>\t\t\t\t\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t\t\t\t\t\t<span> The default 70% replacement income assumes coverage of all retiree expenses including retiree health care costs.</span>\t\t\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t</li>\t\t\t\t\t\t<li>\t\t\t\t\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\t Why do you need my date of birth?\t\t\t\t</div>\t\t\t\t\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t\t\t\t\t\t<span>Your date of birth is needed to calculate your future retirement income estimate, which is based on the estimated growth of your assets between now and        \t\t\t\t\tthe time you intend to retire.</span>\t\t\t\t</div>\t\t\t\t\t\t\t</li>\t\t\t<li>\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\t How do you calculate the progress towards my goal?\t\t\t\t</div>\t\t\t\t\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t\t\t\t\t\t<span>\t\t\t\t\t\t<ul class= \" bulletList \">\t\t\t\t\t\t\t<li class= \" first \">Your retirement income may be made up of several components that we have estimated on your behalf. Your progress is graphically represented in                \t\t\t\t\t\ta visual dollar bill progress display. These estimates are hypothetical and for illustrative purposes only and do not represent current or                \t\t\t\t\t\tfuture performance of any specific investment. All investments carry a degree of risk and past performance is not a guarantee of future                \t\t\t\t\t\tresults. Generally speaking, the greater the return, the greater the risk.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>The illustration presented identifies your monthly retirement income need (\"goal\") as a percent of your current pre-tax pay. Your                <strong><em>estimated monthly retirement income may come from multiple sources:</em></strong> your future retirement account balance (including                \t\t\t\t\t\tongoing contributions by you and/or your employer), pension benefits, Social Security retirement benefits, and other retirement income you                \t\t\t\t\t\tidentify. A shortfall is presented if your monthly goal amount is estimated to exceed your estimated monthly income. A surplus is presented if                \t\t\t\t\t\tyour monthly goal amount is estimated to be less than your estimated monthly income. These estimates follow generally accepted financial               \t \t\t\t\t\tcalculations, as well as requirements set forth by the Financial Industry Regulatory Authority (FINRA).\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>The <strong><em>investment rate of return</em></strong> is assumed to be constant during the period in which your assets accumulate. Monte                \t\t\t\t\t\tCarlo probability analysis, which considers the volatility of investment returns over time, is not used in the analysis.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Your <strong><em>assumed rate of return</em></strong> for the purposes of this tool is defaulted to 6%. You may adjust the Investment Style                \t\t\t\t\t\tslider based on your personal selected investments, however it is essential that you accurately model this return in order for the estimate we                \t\t\t\t\t\tprovide to be valid. Please note that generally, the greater the return, the greater the risk associated with achieving that return.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><strong><em>Contributions per paycheck</em></strong>               \t\t\t\t\t are assumed to be made at the beginning of each pay period and increase annually at a rate equal to the stated salary increase rate.                \t\t\t\t\t Contributions are assumed to grow by the stated investment rate of return until your stated retirement age is reached. Contribution amounts are                \t\t\t\t\t constrained each year by the lesser of Plan or IRS limits. It is assumed that no additional contributions are made after the stated retirement                \t\t\t\t\t age is reached.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><strong><em>Monthly Employer contributions</em></strong>                \t\t\t\t\t    (if applicable) can be accommodated in this tool by adding those contributions to your total monthly savings amount. Employer contributions are                \t\t\t\t\t    assumed to grow by the stated investment rate of return until your stated retirement age is reached.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Your <strong><em>current account balance in your retirement plan(s) and current balances in other retirement assets you identify</em></strong>                \t\t\t\t\t    (e.g., an IRA), are assumed to grow by the stated investment rate of return selected on the slider until your stated retirement age is reached.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><strong><em>Social Security benefit estimates</em></strong>                \t\t\t\t\t\tare based on the Social Security Administration's Primary Insurance Amount table which defines Social Security retirement benefits at the               \t\t\t\t\t\tnormal retirement age. In order to provide an estimate, your earnings history is approximated using your current age, retirement age, annual                \t\t\t\t\t\tsalary, and annual salary increase. Under most circumstances, Social Security retirement benefits cannot be collected prior to age 62. For                \t\t\t\t\t\tillustrative purposes, if your stated retirement age is less than age 62, benefit estimates that would be available starting at age 62 are                \t\t\t\t\t\tdisplayed. Benefit estimates have been adjusted for early or delayed retirement. Due to the complexity of calculating future benefits, these                \t\t\t\t\t\tare merely estimates that provide a general range of benefits. More precise benefit estimates are available from the Social Security                \t\t\t\t\t\tAdministration.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>If you provide a <strong>monthly pension benefit estimate</strong> for a specific retirement age, and subsequently provide a new retirement                \t\t\t\t\t\tage, you should update your benefit. Also note that monthly pension benefit estimates must be entered in today's dollars.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><strong><em>Retirement income estimates</em></strong>\t\t\t\t\t\t                for your current account balance, future contributions, employer contributions (if applicable), and other assets set aside for retirement are\t\t\t\t\t\t                for illustrative purposes only and are not guaranteed. Income estimates assume you make a lump sum purchase of a single life immediate annuity\t\t\t\t\t\t                at retirement which would pay you a level income amount each month as long as you live. Using this annuity assumption allows us to translate\t\t\t\t\t\t                your projected retirement portfolio into terms that are similar to other retirement income sources like Social Security or any pension\t\t\t\t\t\t                benefits. The estimated income amount shown is the income you would receive at retirement in terms of today's dollars. Note that inflation will\t\t\t\t\t\t                erode your spending power over time. The projected amount of the annuity income payment is based on the combination of the Society of\t\t\t\t\t\t                Actuaries' Annuity 2000 Basic Mortality Table and recent Immediate Annuity interest rates from the Pension Benefit Guaranty Corporation (PBGC)\t\t\t\t\t\t                (<a href=\"http://www.pbgc.gov/prac/interest/ida.html\" target=\"_blank\">http://www.pbgc.gov/prac/interest/ida.html</a><em></em>), a federal\t\t\t\t\t\t                agency created by the Employee Retirement Income Security Act (ERISA). Please keep in mind that this approach to generating your income\t\t\t\t\t\t                estimate does not constitute a recommendation to purchase an annuity at retirement. Each individual's retirement needs are different so an\t\t\t\t\t\t                annuity purchase may or may not make sense for you.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>These estimates illustrate retirement needs <strong><em>for a single person</em></strong> and do not take into account spousal or beneficiary                \t\t\t\t\t\tinformation.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>Stated retirement age is capped at age 80. If you plan to work after this age, enter income as \"outside assets\" to be reflected in your future                \t\t\t\t\t\tincome estimate.\t\t\t\t\t\t\t</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>A <strong><em>3.00% annual inflation rate</em></strong> is assumed.</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li><strong><em>Neither Federal nor State income taxes</em></strong> have been factored into the illustration.</li>\t\t\t\t\t\t\t\t\t\t\t\t\t\t<li>All calculations adhere to <strong><em>IRS code</em></strong>.</li>\t\t\t\t\t\t</ul>\t\t\t\t\t\t<em>\t\t\t\t\t            No representations, warranties or guarantees are made as to the accuracy of any projections or calculations. Neither Voya nor its affiliated\t\t\t\t\t            companies shall be liable for any damages or costs of any type arising out of or in any way connected with your use of this calculator. This\t\t\t\t\t            information does not serve, either directly or indirectly, as legal, financial or tax advice and you should always consult a qualified professional\t\t\t\t\t            legal, financial and/or tax advisor when making decisions related to your individual tax situation.\t\t\t\t\t       </em>\t\t\t\t\t</span>\t\t\t\t</div>\t\t\t</li>\t\t\t<li>\t\t\t\t\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\tHow do you know what my Assumed Rate of Return/Investment Style is?\t\t\t\t</div>\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t<span>\t\t\t\t\t\tThe rate of return (the money your investments earn) for the purposes of this tool is set to 6% (a 6% rate of return is a standard industry default for\t\t\t\t\t        a moderately conservative investor. When coupled with a 3% inflation rate, this equates to a 3% real rate of return). You may adjust this rate based on\t\t\t\t\t        your style of investing and/or if you feel your own investments' rate of return will be higher or lower than the 6%.\t\t\t\t\t        <em>\t\t\t\t\t            Here's a tip: look for an average long-term rate of 5 or more years, if possible, since retirement investing is generally done over many years.\t\t\t\t\t        </em>\t\t\t\t\t        If you do adjust the Assumed Rate of Return/Investment Style slider based on your own expectations of a return, it is essential that you make an\t\t\t\t\t        accurate selection in order for the estimate we provide to be valid. Please note that generally, the greater the return, the greater the risk\t\t\t\t\t        associated with achieving that return.\t\t\t\t\t</span>\t\t\t\t</div>\t\t\t</li>\t\t\t\t\t\t<li>\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\tHow do I include my spouse's/partner's income in the goal?\t\t\t\t</div>\t\t\t\t\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t<span>myOrangeMoney® does not currently have specific spouse/partner features.</span>\t\t\t\t</div>\t\t\t\t\t\t\t</li>\t\t\t\t\t\t<li>\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\tCan I use this tool if I do not have a current income? \t\t\t\t</div>\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t<span>No. This tool is designed to calculate your retirement income goal based on a percent of current income. Without a current income, it will be unable to        \t\t\t\t\tcalculate a goal.\t\t\t\t\t</span>\t\t\t\t</div>\t\t\t\t\t\t\t</li>\t\t\t\t\t\t<li>\t\t\t\t\t\t\t\t<div class= \" faq-accordion-header ui-accordion-header\t\t\t\t\tfaq-header \">\t\t\t\t\t\t\t\t\t\t<span class= \" faq-header-icon \">+</span>\t\t\t\t\t Can I use this tool if I am in retirement?\t\t\t\t</div>\t\t\t\t\t\t\t\t<div class= \" ui-faq-accordion-content \">\t\t\t\t\t\t\t\t\t\t<span>\t\t\t\t\t\tNo. This tool is designed to calculate your retirement income goal based on a percent of current income. Without a current income, it will be unable to        \t\t\t\t\tcalculate a goal.\t\t\t\t\t</span>\t\t\t\t</div>\t\t\t</li>\t\t\t\t\t</ol>\t</div></div>",
+            "HowDoesThisWork_DisclaimerTextProtection": "<div id=\"faq-expand-collapse\">\t<div class=\"ui-faq-accordion-content-visible\">\t\t\t\t<span>\t\t\tYour <b>protection gap</b> is determined by estimating your <b>total life insurance need</b> \t\t\tand comparing it to your <b>existing life insurance</b> and any <b>liquid assets</b> that can be used to pay \t\t\texpenses at the time of your death.\t\t\t<br /><br />\t\t\t\t\t\t<i>\t\tProtection gap = total life insurance need – (existing life insurance + available liquid assets)</i>\t\t\t<br /><br />\t\t\t<b>How much life insurance is needed?</b>\t\t\t<br />\t\t\tYour total life insurance need is made up of the cash needed at\t\t\tdeath to cover expenses, plus the cash needed to provide ongoing\t\t\tincome for survivors. The cash needed at death should\t\t\tinclude burial and final expenses, medical expenses, outstanding\t\t\tmortgage balances, other loans or debts, funds for education,\t\t\ttransfer costs, charitable contributions \t\tand an emergency fund for survivors.\t\t\t<br /><br />\t\t\t<i>\t\tTotal life insurance needed = cash needed at death + income for survivors</i>\t\t\t\t\t\t<br />\t\t\t<br />\t\t\t\t\t\t<b>How is income for survivors determined?</b>\t\t\t<br />\t\t\tThe amount of life insurance needed to\t\t\tprovide ongoing income for survivors is calculated as the\t\t\tpresent value of a future stream of income to be paid for\t\t\tthe specified number of years. The capital\t\t\tneeded to generate this income is assumed to be invested\t\t\tat the time of death from the life insurance proceeds, and\t\t\twill earn the expected investment return over the duration\t\t\tof the income stream. The estimated income\t\t\tamount is increased each year by the inflation rate on\t\t\tincome entered.\t\t\t<br /><br />\t\t\t<i>\t\tIncome for survivors = present value of a future stream of income to be paid for a specified number of years</i>\t\t\t\t\t\t<br />\t\t\t<br />\t\t\t\t\t\tFor more information on Life Insurance please see: <a href=\"http://www.voya.com/articles/do-i-need-life-insurance\">Do I Need Life Insurance?</a>\t\t</span>\t</div></div>",
+            "contactInfo": "Want to talk to an advisor? Call 844-576-VOYA"
+        }
+    },
+    "dataStatus": "OK",
+    "cmscontent": {
+        "leadIn": {
+            "questionView": {
+                "header": "Grow. Protect. Enjoy.",
+                "paragraph": "Protecting your financial future is just as important as building it. The protection estimator will show you the amount of <strong>life insurance</strong> you may need to fully protect your family. Just answer four simple questions:"
+            },
+            "answerView": {
+                "header": "",
+                "paragraph": "Below is the estimated amount of life insurance you may need to protect your family to and through retirement."
+            }
+        },
+        "questions": [{
+            "id": "1",
+            "questionText": "What expenses would need to be paid in the event of your death?",
+            "inputs": [{
+                "name": "finalMedicalExpensesMvc",
+                "labelText": "Expenses",
+                "tooltipText": "Could include expenses such as mortgage(s), outstanding debts, and future college or emergency funds.",
+                "drawerLabelText": "Expenses to Cover at Death",
+                "answerInputType": "textbox",
+                "answerDataType": "currency",
+                "minValue": "1",
+                "maxValue": "100000000",
+                "defaultValue": "0",
+                "answerOptions": [{
+                    "label": "label-text",
+                    "value": "value"
+                }],
+                "required": true,
+                "errorCode": "123",
+                "errorText": "Value must be $1 to $100,000,000."
+            }],
+            "startDate": "",
+            "endDate": "",
+            "helpText": {
+                "headline": "Why is this important?",
+                "content": "Paying off your mortgage, covering debts and leaving a little extra for future college or emergency funds can make life easier for those you love."
+            }
+        }, {
+            "id": "2",
+            "questionText": "How much monthly income do you want to provide for your family? For how many years?",
+            "inputs": [{
+                "name": "monthlyIncomeNeededMvc",
+                "labelText": "Monthly Income",
+                "tooltipText": "Ongoing income to ease financial worries and help your family avoid financial devastation with the loss of your income.",
+                "drawerLabelText": "Monthly Income for Family",
+                "answerInputType": "textbox",
+                "answerDataType": "currency",
+                "minValue": "0",
+                "maxValue": "100000000",
+                "defaultValue": "0",
+                "answerOptions": [{
+                    "label": "label-text",
+                    "value": "value"
+                }],
+                "required": true,
+                "errorCode": "223",
+                "errorText": "Value must be $0 to $100,000,000"
+            }, {
+                "name": "yearsMonthlyIncomeMvc",
+                "labelText": "Years",
+                "tooltipText": "Duration of the ongoing income needed for your family.",
+                "drawerLabelText": "Number of Years",
+                "answerInputType": "textbox",
+                "answerDataType": "numeric",
+                "minValue": "0",
+                "maxValue": "100",
+                "defaultValue": "0",
+                "answerOptions": [{
+                    "label": "label-text",
+                    "value": "value"
+                }],
+                "required": true,
+                "errorCode": "224",
+                "errorText": "Value must be 0 to 100"
+            }],
+            "startDate": "",
+            "endDate": "",
+            "helpText": {
+                "headline": "Why is this important?",
+                "content": "Providing ongoing income can help prevent your family from financial devastation with the loss of your income, and can  ease financial worries during a very difficult time."
+            }
+        }, {
+            "id": "3",
+            "questionText": "How much life insurance do you currently have?",
+            "inputs": [{
+                "name": "voyaLifeInsurance",
+                "labelText": "Voya Life Insurance",
+                "tooltipText": "The total amount of life insurance you have with Voya.",
+                "drawerLabelText": "Voya Life Insurance",
+                "answerInputType": "textbox",
+                "answerDataType": "currency",
+                "minValue": "0",
+                "maxValue": "100000000",
+                "defaultValue": "0",
+                "answerOptions": [{
+                    "label": "label-text",
+                    "value": "value"
+                }],
+                "required": true,
+                "errorCode": "323",
+                "errorText": "Value must be $0 to $100,000,000."
+            }, {
+                "name": "currentLifeInsuranceMvc",
+                "labelText": "Other Life Insurance",
+                "tooltipText": "The total amount of life insurance you have through your employer, plus any individual coverage you’ve purchased.",
+                "drawerLabelText": "Current Life Insurance",
+                "answerInputType": "textbox",
+                "answerDataType": "currency",
+                "minValue": "0",
+                "maxValue": "100000000",
+                "defaultValue": "0",
+                "answerOptions": [{
+                    "label": "label-text",
+                    "value": "value"
+                }],
+                "required": true,
+                "errorCode": "323",
+                "errorText": "Value must be $0 to $100,000,000."
+            }],
+            "startDate": "",
+            "endDate": "",
+            "helpText": {
+                "headline": "What should you include?",
+                "content": "Include life insurance you have through your employer and any individual coverage you've purchased."
+            }
+        }, {
+            "id": "4",
+            "questionText": "What liquid assets would be available to your family in the event of your death?",
+            "inputs": [{
+                "name": "currentAssetsMvc",
+                "labelText": "Liquid Assets",
+                "tooltipText": "Readily available assets that can be used to pay expenses at death such as short term investments, savings, stocks, bonds or money market funds.",
+                "drawerLabelText": "Liquid Assets",
+                "answerInputType": "textbox",
+                "answerDataType": "currency",
+                "minValue": "0",
+                "maxValue": "100000000",
+                "defaultValue": "0",
+                "answerOptions": [{
+                    "label": "label-text",
+                    "value": "value"
+                }],
+                "required": true,
+                "errorCode": "323",
+                "errorText": "Value must be $0 to $100,000,000"
+            }],
+            "startDate": "",
+            "endDate": "",
+            "helpText": {
+                "headline": "Why is this important?",
+                "content": "Readily available cash or liquid assets can be used to pay expenses at death. This could include short term investments such as savings, stocks, bonds, or money market funds."
+            }
+        }]
+    }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/voyasso/ws",
+    "target": "https://my3.unit.voya.com"
+  },
+  {
+    "path": "/myvoya/ws",
+    "target": "https://my3.unit.voya.com"
+  }
+]

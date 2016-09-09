@@ -1,0 +1,12 @@
+{
+    "login": {
+        "userName": "Unauthenticated",
+        "passwordLastChangedDate": "N/A"
+    },
+    "security": {
+        "accountRecoveryInfo": {
+            "primaryRecoveryMethod": "email",
+            "email": "NOT_FOUND"
+        }
+    }
+}

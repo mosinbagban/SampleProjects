@@ -1,0 +1,14 @@
+{
+     "pageData": {
+          "pageId": "retrieveUserName",
+          "services": {
+               "load": {
+                    "method": "POST",
+                    "url": "ws/ers/public/retrieveUserName/load"
+               }
+          },
+          "errors": [],
+          "username": "test001@gmail.com",
+          "loginLink": "https://my3.intg.voya.com/voyasso/index.html"
+     }
+}

@@ -1,0 +1,51 @@
+
+//temp fix for compass-mixins: https://github.com/Igosuki/compass-mixins/issues/34
+@function compact($vars...) {
+  $first: nth($vars, 1);
+  $sep: comma;
+  $list: ();
+  @if length($vars) == 1 and type_of($first) == 'list' {
+    $vars: $first;
+    $sep: list-separator($vars);
+  }
+  @each $var in $vars {
+    @if $var {
+      $list: append($list, $var, $sep);
+    }
+  }
+  @return $list;
+}
+
+@mixin hitBreakpoint($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == "medium" {
+    @media (min-width: 768px)
+    and (max-width: 1100px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == "large" {
+    @media (min-width: 1101px) {
+      @content;
+    }
+  }
+}
+
+@mixin border(){
+  border: 2px solid #D6D6D6;
+  background-color: #FFFFFF;
+}
+
+$h1-dropdown-font-size : 43px;
+$h1-dropdown-font-size-small : 23px;
+$blackColor: #000;
+$smokeColor: #6e6e6e;
+$greyColor: #333333;
+$blueColor: #145a7b;
+$orangeColor: #d94c0d;
+$lightOrange: #FB8000;
+$darkBlue: #145A7B;

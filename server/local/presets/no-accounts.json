@@ -1,0 +1,16 @@
+{
+  "/myvoya/accounts/GET": "0.json",
+  "/myvoya/accounts/customer/GET": "sampleData.json",
+  "/myvoya/ping/logout/GET": "http_204.json",
+  "/myvoya/ping/ping/GET": "http_204.json",
+  "/myvoya/ws/ers/data/customers/222e9980-24c1-8565-e053-d22aac0afcb2/GET": "0.json",
+  "/myvoya/ws/ers/service/customers/222e9980-24c1-8565-e053-d22aac0afcb2/engagerelate/35/GET": "0.json",
+  "/myvoya/ws/ers/service/customers/222e9980-24c1-8565-e053-d22aac0afcb2/orangemoney/GET": "0.json",
+  "/myvoya/ws/ers/service/customers/222e9980-24c1-8565-e053-d22aac0afcb2/protection/GET": "0.json",
+  "/myvoya/ws/ers/service/customers/222e9980-24c1-8565-e053-d22aac0afcb2/tellusmore/GET": "0.json",
+  "/myvoya/ws/ers/service/customers/222e9980-24c1-8565-e053-d22aac0afcb2/welcomemessage/GET": "0.json",
+  "/myvoya/ws/ers/service/customers/222e9980-24c1-8565-e053-d22aac0afcb2/youmayconsider/retirement/POST": "0.json",
+  "/voyasso/ws/ers/auth/changePassword/execute/POST": "default.json",
+  "/voyasso/ws/ers/auth/changePasswordSubmit/execute/POST": "success.json",
+  "/voyasso/ws/ers/auth/retrieveUserName/execute/POST": "0.json"
+}
