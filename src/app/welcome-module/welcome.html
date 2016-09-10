@@ -8,7 +8,8 @@
                         input-name="fName"
                         label="First Name"
                         type="text"
-                        required="true">
+                        required="true"
+                        value.two-way="firstName">
                 </voya-field>
             </div>
             <div class="form-group" style="float:right;width: 49%;">
@@ -17,7 +18,8 @@
                         label="Last Name"
                         type="text"
                         tabindex="1"
-                        required="true">
+                        required="true"
+                        value.two-way="lastName">
                 </voya-field>
             </div>
             <div style="clear:both"></div>
@@ -28,7 +30,8 @@
                             label="Email"
                             type="text"
                             tabindex="2"
-                            required="true">
+                            required="true"
+                            value.two-way="email">
                     </voya-field>
                 </div>
                 <div style="padding-bottom: 15px;">
@@ -37,7 +40,8 @@
                             label="Send me a transcript"
                             size="x-small"
                             tabindex="3"
-                            type="checkbox">
+                            type="checkbox"
+                            checked.two-way="sendTranscript">
                     </voya-field>
                 </div>
             </div>
@@ -47,7 +51,8 @@
                         label="What can we help you with?"
                         type="select"
                         tabindex="4"
-                        options.bind="helpOptions">
+                        options.bind="helpOptions"
+                        value.two-way="helpMessage">
                 </voya-field>
             </div>
             <div class="form-group">
@@ -55,7 +60,8 @@
                         input-name="question"
                         label="Enter a detailed question"
                         type="textarea"
-                        tabindex="5">
+                        tabindex="5"
+                        value.two-way="question">
                 </voya-field>
             </div>
             <div class="form-group" id="u372">

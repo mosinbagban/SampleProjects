@@ -1,43 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Chat Application | Voya Financial</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
+    <title>Test Chat</title>
 
- <link rel="stylesheet" href="/src/app.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-  <meta name="MobileOptimized" content="320">
-  <meta name="HandheldFriendly" content="true">
+    <style type="text/css">
+        td {
+            padding:6px;
+            border:1px solid #CCC;
+        }
+    </style>
 </head>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#launch_chat').click(function(){   //bind handlers
+            var $dialog = $('<div></div>')
+                    .html('<iframe style="border: 0px; " src="chat/index.html" width="100%" height="100%"></iframe>')
+                    .dialog({
+                        autoOpen: false,
+                        modal: true,
+                        height: 700,
+                        width: 450,
+                        title: "Voya Chat"
+                    });
+
+            $dialog.dialog('open');
+
+            return false;
+        });
+    });
+</script>
+
 <body>
 
-<div aurelia-app="src/main"><!--app container-->
-  <voya-indicator
-          fixed
-          active
-          type="spinner">
-  </voya-indicator>
-</div>
+<p>
+    <a href="#" id="launch_chat"">Launch Chat App</a><br/>
+</p>
 
-<script src="/chat/static/public/js/vendor/polyfills.js"></script>
-
-<noscript>This application requires that javascript be enabled.</noscript>
-
-<script src="jspm_packages/system.js"></script>
-<script src="config.js"></script>
-<!--
-<script src='static/myvoya/js/bundles-config.js'></script>
-<script src='static/myvoya/js/bundles/jspm-deps-bundle.js'></script>
--->
-
-
-<script>
-  System.import('aurelia-bootstrapper');
-</script>
+<div id="targetDiv" style="display: none"></div>
 </body>
 </html>
