@@ -35,6 +35,9 @@ export function configure(aurelia) {
         })
         .plugin('aurelia-animator-css')
         .plugin('aurelia-cookie');
+    
+    
+    aurelia.container.registerInstance('pwebContext', window.pwebContext);
 
     aurelia.start().then(() => aurelia.setRoot());
 }

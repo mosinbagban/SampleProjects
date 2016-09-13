@@ -32,6 +32,12 @@ export class App {
       { route: 'chat', name: 'chat', moduleId: './app/chat-module/chat'}
     ]);
 
+      this.router.navigateWithParams = (routeName, params) => {
+          let routerParams = this.router.routes.find(x => x.name === routeName);
+          routerParams.data = params;
+          this.router.navigate(routeName);
+      }
+
 
   }
 }
