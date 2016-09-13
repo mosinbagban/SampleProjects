@@ -1,4 +1,4 @@
-# myVoya UI
+# Sample App
 
 ##Getting Started
 
@@ -18,18 +18,9 @@
    - `grunt serve:dist` (starts the local express webserver and point it at the /dist folder.
 
  * When the app is running, point your browser to...
-   - http://localhost:9200/services to view and change the active stub data
-   - http://localhost:9200/test-accounts.html to select various test accounts and to reset data for these accounts
+   - http://localhost:9200/index.html to view 
 
  * During Development DEBUG mode is on by default.  After a build, DEBUG mode can be turned on by adding DEBUG=1 to the query string in the URL.
-
-
-##Dev Notes
-* naming convention for branches / pull requests
-	* For Story: ST-{{STORY ID Here}} - {{Your Pull Request Comment}}
-	* For Task: TS-<{{TASK ID Here}} - {{Your Pull Request Comment}}
-	* For Defect: D-{{Defect ID Here}} - {{Your Pull Request Comment}}
-
 
 * 1/23/15 - checked in voya-builder and voya-stub-server into voya_node_modules folder due to issues devs and Jenkins were having connecting to github enterprise / github.com respectively using npm.  Once this project is moved to github enterprise this should be resolved and they can be removed from the repo
 
