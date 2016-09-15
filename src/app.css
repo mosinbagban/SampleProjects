@@ -2219,43 +2219,43 @@ strong {
 /* ProximaNova / Proxima Nova */
 @font-face {
   font-family: 'Proxima Nova Light';
-  src: url("/chat/static/public/fonts/proxima/proxima_nova_light-webfont.eot");
-  src: url("/chat/static/public/fonts/proxima/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("/chat/static/public/fonts/proxima/proxima_nova_light-webfont.woff") format("woff"), url("/chat/static/public/fonts/proxima/proxima_nova_light-webfont.ttf") format("truetype"), url("/chat/static/public/fonts/proxima/proxima_nova_light-webfont.svg#proxima_novalight") format("svg");
+  src: url("/static/public/fonts/proxima/proxima_nova_light-webfont.eot");
+  src: url("/static/public/fonts/proxima/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), url("/static/public/fonts/proxima/proxima_nova_light-webfont.woff") format("woff"), url("/static/public/fonts/proxima/proxima_nova_light-webfont.ttf") format("truetype"), url("/static/public/fonts/proxima/proxima_nova_light-webfont.svg#proxima_novalight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Proxima Nova Regular';
-  src: url("/chat/static/public/fonts/proxima/proxima_nova_reg-webfont.eot");
-  src: url("/chat/static/public/fonts/proxima/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("/chat/static/public/fonts/proxima/proxima_nova_reg-webfont.woff") format("woff"), url("/chat/static/public/fonts/proxima/proxima_nova_reg-webfont.ttf") format("truetype"), url("/chat/static/public/fonts/proxima/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg");
+  src: url("/static/public/fonts/proxima/proxima_nova_reg-webfont.eot");
+  src: url("/static/public/fonts/proxima/proxima_nova_reg-webfont.eot?#iefix") format("embedded-opentype"), url("/static/public/fonts/proxima/proxima_nova_reg-webfont.woff") format("woff"), url("/static/public/fonts/proxima/proxima_nova_reg-webfont.ttf") format("truetype"), url("/static/public/fonts/proxima/proxima_nova_reg-webfont.svg#proxima_nova_rgregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Proxima Nova Semibold';
-  src: url("/chat/static/public/fonts/proxima/proximanova-sbold-webfont.eot");
-  src: url("/chat/static/public/fonts/proxima/proximanova-sbold-webfont.eot?#iefix") format("embedded-opentype"), url("/chat/static/public/fonts/proxima/proximanova-sbold-webfont.woff") format("woff"), url("/chat/static/public/fonts/proxima/proximanova-sbold-webfont.ttf") format("truetype"), url("/chat/static/public/fonts/proxima/proximanova-sbold-webfont.svg#proxima_nova_ltsemibold") format("svg");
+  src: url("/static/public/fonts/proxima/proximanova-sbold-webfont.eot");
+  src: url("/static/public/fonts/proxima/proximanova-sbold-webfont.eot?#iefix") format("embedded-opentype"), url("/static/public/fonts/proxima/proximanova-sbold-webfont.woff") format("woff"), url("/static/public/fonts/proxima/proximanova-sbold-webfont.ttf") format("truetype"), url("/static/public/fonts/proxima/proximanova-sbold-webfont.svg#proxima_nova_ltsemibold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Proxima Nova Bold';
-  src: url("/chat/static/public/fonts/proxima/proxima_nova_bold-webfont.eot");
-  src: url("/chat/static/public/fonts/proxima/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/chat/static/public/fonts/proxima/proxima_nova_bold-webfont.woff") format("woff"), url("/chat/static/public/fonts/proxima/proxima_nova_bold-webfont.ttf") format("truetype"), url("/chat/static/public/fonts/proxima/proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg");
+  src: url("/static/public/fonts/proxima/proxima_nova_bold-webfont.eot");
+  src: url("/static/public/fonts/proxima/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/static/public/fonts/proxima/proxima_nova_bold-webfont.woff") format("woff"), url("/static/public/fonts/proxima/proxima_nova_bold-webfont.ttf") format("truetype"), url("/static/public/fonts/proxima/proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Proxima Condensed';
-  src: url("/chat/static/public/fonts/proxima/proximanovacond-thin-webfont.eot");
-  src: url("/chat/static/public/fonts/proxima/proximanovacond-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/chat/static/public/fonts/proxima/proximanovacond-thin-webfont.woff") format("woff"), url("/chat/static/public/fonts/proxima/proximanovacond-thin-webfont.ttf") format("truetype"), url("/chat/static/public/fonts/proxima/proximanovacond-thin-webfont.svg#proxima_nova_condensedthin") format("svg");
+  src: url("/static/public/fonts/proxima/proximanovacond-thin-webfont.eot");
+  src: url("/static/public/fonts/proxima/proximanovacond-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/static/public/fonts/proxima/proximanovacond-thin-webfont.woff") format("woff"), url("/static/public/fonts/proxima/proximanovacond-thin-webfont.ttf") format("truetype"), url("/static/public/fonts/proxima/proximanovacond-thin-webfont.svg#proxima_nova_condensedthin") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Proxima Thin';
-  src: url("/chat/static/public/fonts/proxima/proximanova-thin-webfont.eot");
-  src: url("/chat/static/public/fonts/proxima/proximanova-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/chat/static/public/fonts/proxima/proximanova-thin-webfont.woff") format("woff"), url("/chat/static/public/fonts/proxima/proximanova-thin-webfont.ttf") format("truetype"), url("/chat/static/public/fonts/proxima/proximanova-thin-webfont.svg#proxima_novathin") format("svg");
+  src: url("/static/public/fonts/proxima/proximanova-thin-webfont.eot");
+  src: url("/static/public/fonts/proxima/proximanova-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/static/public/fonts/proxima/proximanova-thin-webfont.woff") format("woff"), url("/static/public/fonts/proxima/proximanova-thin-webfont.ttf") format("truetype"), url("/static/public/fonts/proxima/proximanova-thin-webfont.svg#proxima_novathin") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2267,8 +2267,8 @@ strong {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/chat/static/public/fonts/font-awesome/fontawesome-webfont.eot?v=4.4.0");
-  src: url("/chat/static/public/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/chat/static/public/fonts/font-awesome/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("/chat/static/public/fonts/font-awesome/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("/chat/static/public/fonts/font-awesome/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("/chat/static/public/fonts/font-awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("/static/public/fonts/font-awesome/fontawesome-webfont.eot?v=4.4.0");
+  src: url("/static/public/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/static/public/fonts/font-awesome/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("/static/public/fonts/font-awesome/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("/static/public/fonts/font-awesome/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("/static/public/fonts/font-awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 

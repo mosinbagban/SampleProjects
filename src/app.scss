@@ -3,9 +3,9 @@
 //@import 'jspm:voya-base-styles/scss/voya-base';
 @import "../jspm_packages/voya-github/Voya/deep-ui-voya-base-styles@2.4.2/scss/voya-base";
 
-$ProximaPath: "/chat/static/public/fonts/proxima";
+$ProximaPath: "/static/public/fonts/proxima";
 @include voya-fonts-proxima($ProximaPath);
-$fa-font-path: '/chat/static/public/fonts/font-awesome';
+$fa-font-path: '/static/public/fonts/font-awesome';
 @import '../jspm_packages/npm/font-awesome@4.6.3/scss/font-awesome';
 
 //currently can only use shorthand jspm: syntax for first-level dependencies

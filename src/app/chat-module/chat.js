@@ -4,19 +4,20 @@
 
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
+import AppConfig from '../../config/chat-config';
 //import {Welcome} from '../welcome-module/welcome';
 
 @inject(Router, 'pwebContext')
 export class Chat {
 
-    constructor(router, pwebContext) {
+    constructor(router, pwebContext, chatEndPoint) {
         this.router = router;
         this.pwebContext = pwebContext;
-        //this.welcomeModel = welcomeModel;
 
         this.heading = 'Welcome to the Chat App!';
         this.info = 'Please configure the chat API URL in chat-config.js file';
         this.data = '';
+
     };
 
     activate(welcomeModel, params){
@@ -42,7 +43,7 @@ export class Chat {
         var widgetBus = window._genesys.cxwidget.bus;
 
         window._genesys.cxwidget.bus.command("cx.plugin.WebChatService.configure", {
-            dataURL: this.genesysChatServiceAPI
+            dataURL: window.chatEndPoint.genesysChatServiceAPI
         }).done(function(e) {
             // success scenario
         }).fail(function(e) {

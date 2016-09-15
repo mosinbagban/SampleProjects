@@ -40,8 +40,8 @@ gulp.task('build:dist', ['clean:dist'], function(){
 
 
 gulp.task('copy:dist', function () {
-    gulp.src('chat/static/**/*.*')
-        .pipe(gulp.dest('./dist/chat/static'));
+    gulp.src('static/**/*.*')
+        .pipe(gulp.dest('./dist/static'));
     return gulp.src([
         './jspm_packages/system-csp-production.js',
         './jspm_packages/system-csp-production.js.map',
@@ -49,7 +49,7 @@ gulp.task('copy:dist', function () {
         './jspm_packages/system-polyfills.js.map',
         './config.js'
     ])
-    .pipe(gulp.dest('./dist/chat/static/public/js'));
+    .pipe(gulp.dest('./dist/static/public/js'));
 });
 
 gulp.task('index:dev', function () {
@@ -64,7 +64,7 @@ gulp.task('index:dev', function () {
 
 gulp.task('index:dist', function () {
     gulp.src([
-        './chat/index.html'
+        './index.html'
         ])
         .pipe(preprocess({
             context: {
@@ -72,7 +72,7 @@ gulp.task('index:dist', function () {
             }
         }))
         //.pipe(gulp.dest('./dist/myvoya'));
-        .pipe(gulp.dest('./dist/chat/'));
+        .pipe(gulp.dest('./dist/'));
     // gulp.src([
     //     './chat/public/logout.html',
     //     './chat/public/error.html'
@@ -109,8 +109,8 @@ gulp.task('js:dev', [], function () {
             lib: bundles.lib
         },
         base: '',
-        bundleDest: 'chat/static/public/js/bundles/',
-        configDest: 'chat/static/public/js/bundles-config.js',
+        bundleDest: 'static/public/js/bundles/',
+        configDest: 'static/public/js/bundles-config.js',
         watch: true,
         logStyle: 'generic'
     }, jspm);
@@ -124,8 +124,8 @@ gulp.task('js:dist', [], function () {
         },
         autoBundles: ['src/app/pages'],
         base: 'dist/',
-        bundleDest: 'chat/static/public/js/bundles/',
-        configDest: 'chat/static/public/js/bundles-config.js',
+        bundleDest: 'static/public/js/bundles/',
+        configDest: 'static/public/js/bundles-config.js',
         logStyle: (os.platform() === 'win32') ? 'generic' : null
     }, jspm);
 });
@@ -133,14 +133,14 @@ gulp.task('js:dist', [], function () {
 
 gulp.task('polyfills', function(){
     return gulp.src([
-        './chat/static/public/js/vendor/dom4.js',
-        './chat/static/public/js/vendor/mutation-observer.js',
-        './chat/static/public/js/vendor/custom-elements.js',
-        './chat/static/public/js/vendor/es5-shim.min.js',
-        './chat/static/public/js/vendor/es5-sham.min.js',
-        './chat/static/public/js/vendor/babel-polyfill.js'
+        './static/public/js/vendor/dom4.js',
+        './static/public/js/vendor/mutation-observer.js',
+        './static/public/js/vendor/custom-elements.js',
+        './static/public/js/vendor/es5-shim.min.js',
+        './static/public/js/vendor/es5-sham.min.js',
+        './static/public/js/vendor/babel-polyfill.js'
     ]).pipe(concat('polyfills.js'))
-      .pipe(gulp.dest('./chat/static/public/js/vendor/'))
+      .pipe(gulp.dest('./static/public/js/vendor/'))
 })
 
 
@@ -152,6 +152,6 @@ gulp.task('polyfills', function(){
 // });
 
 gulp.task('html-bustcache:dist', function () {
-    return gulp.src('./dist/chat/static/public/**')
+    return gulp.src('./dist/static/public/**')
         .pipe(md5(10, './dist/**/*.html'));
 });

@@ -19,7 +19,6 @@ export class Welcome {
 
         this.helpOptions = [];
         this.disclaimerText = '';
-        this.genesysChatServiceAPI = '';
 
         this.busy = false;
 
@@ -37,8 +36,6 @@ export class Welcome {
 
     created(owningView, view) {
         this.disclaimerText = this.appConfig.disclaimerText;
-
-        this.genesysChatServiceAPI = this.appConfig.genesysChatServiceAPI;
 
         this.appConfig.helpOptions.forEach(function(option){
             this.helpOptions.push({value:option.value, label:option.label})
