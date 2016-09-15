@@ -3,15 +3,15 @@
  */
 
 import {inject, BindingEngine} from 'aurelia-framework';
-//import {Router} from 'aurelia-router';
+import {Router} from 'aurelia-router';
 //import AppRouterConfig from './router-config';
 
-@inject(BindingEngine)
+@inject(Router, BindingEngine)
 export class App {
 
-  constructor(bindingEngine){
+  constructor(router, bindingEngine){
     this.bindingEngine = bindingEngine;
-    //this.appRouterConfig = appRouterConfig;
+    this.router = router;
   };
 
   activate() {
@@ -19,10 +19,10 @@ export class App {
   };
 
   configureRouter(config, router) {
-    //debugger;
-    this.router = router;
 
     config.title = 'Chat Application';
+
+    //config.options.pushState = true;
 
     // Here, we describe the routes we want along with information about them
     // such as which they are accessible at, which module they use, and whether
@@ -32,12 +32,16 @@ export class App {
       { route: 'chat', name: 'chat', moduleId: './app/chat-module/chat'}
     ]);
 
-      this.router.navigateWithParams = (routeName, params) => {
-          let routerParams = this.router.routes.find(x => x.name === routeName);
-          routerParams.data = params;
-          this.router.navigate(routeName);
-      }
-
-
+    this.router = router;
   }
+
+  // Generic routing
+  navigateToPage(page, params) {
+
+    let routerParams = this.router.routes.find(x => x.name === page);
+    routerParams.data = params;
+
+    this.router.navigate(page);
+  }
+
 }

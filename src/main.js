@@ -7,6 +7,7 @@ import 'voya-notification';
 import 'voya-indicator';
 import 'voya-header';
 import 'voya-button';
+import 'voya-validation';
 
 import {LogManager} from 'aurelia-framework';
 import {ConsoleAppender} from 'aurelia-logging-console';

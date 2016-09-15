@@ -4,14 +4,15 @@
     <!--<compose view-model.bind="childViewModel" model.bind="data"></compose>-->
 
     <section>
-        <form role="form" submit.delegate="startchat()" autofill="off">
+        <form submit.delegate="startchat()" autofill="off">
             <div class="form-group" style="float:left;width: 49%;">
                 <voya-field
                         input-name="fName"
                         label="First Name"
                         type="text"
-                        required="true"
-                        value.two-way="firstName">
+                        required=true
+                        error.bind="validationErrors.firstName.message"
+                        value.two-way="data.firstName">
                 </voya-field>
             </div>
             <div class="form-group" style="float:right;width: 49%;">
@@ -20,8 +21,9 @@
                         label="Last Name"
                         type="text"
                         tabindex="1"
-                        required="true"
-                        value.two-way="lastName">
+                        error.bind="validationErrors.lastName.message"
+                        required=true
+                        value.two-way="data.lastName">
                 </voya-field>
             </div>
             <div style="clear:both"></div>
@@ -32,8 +34,8 @@
                             label="Email"
                             type="text"
                             tabindex="2"
-                            required="true"
-                            value.two-way="email">
+                            error.bind="validationErrors.email.message"
+                            value.two-way="data.email">
                     </voya-field>
                 </div>
                 <div style="padding-bottom: 15px;">
@@ -43,7 +45,7 @@
                             size="x-small"
                             tabindex="3"
                             type="checkbox"
-                            checked.two-way="sendTranscript">
+                            checked.two-way="data.sendTranscript">
                     </voya-field>
                 </div>
             </div>
@@ -54,7 +56,7 @@
                         type="select"
                         tabindex="4"
                         options.bind="helpOptions"
-                        value.two-way="helpMessage">
+                        value.two-way="data.helpMessage">
                 </voya-field>
             </div>
             <div class="form-group">
@@ -63,7 +65,7 @@
                         label="Enter a detailed question"
                         type="textarea"
                         tabindex="5"
-                        value.two-way="question">
+                        value.two-way="data.question">
                 </voya-field>
             </div>
             <div class="form-group" id="u372">
@@ -71,6 +73,7 @@
                         type="submit"
                         id="start_chat"
                         text="START CHAT"
+                        busy.bind = "busy"
                         h-size="large">
                 </voya-button>
             </div>

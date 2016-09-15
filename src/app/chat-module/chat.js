@@ -23,8 +23,13 @@ export class Chat {
         this.data = params.data;
     }
 
-    created(owningView, view) {
+    get getClass() {
+        //do your magic here
+        return 'disabledStyle';
+    }
 
+    created(owningView, view) {
+        
         let firstName = this.data.firstName;
         let lastName = this.data.lastName;
         let email = this.data.email;
@@ -72,16 +77,7 @@ export class Chat {
             console.log('************** User Context Is **************'  +  pwebContext);
 
             window._genesys.cxwidget.bus.command("cx.plugin.WebChatService.startChat", {
-                userData: { 
-                            "ClientID": pwebContext.ClientID,
-                            "sendTranscript": sendTranscript, 
-                            "vruApp": pwebContext.vruApp, 
-                            "AuthenticationLevel": pwebContext.AuthenticationLevel, 
-                            "DNIS": pwebContext.CUST_ID, 
-                            "CUST_ID": pwebContext.CUST_ID,
-                            "SSN": pwebContext.SSN
-                          },
-
+                userData: pwebContext,
                 nickname: firstName,
                 firstname: firstName,
                 lastname: lastName,

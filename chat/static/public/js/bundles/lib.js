@@ -66848,7 +66848,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 			el.querySelector('.voya-mobile-main-nav-menu').appendChild(item);
 		}
 		function updateClass(cssClass, el) {
-			['active', 'inactive'].forEach(function (style) {
+			['active-next', 'inactive-next', 'active-prev', 'inactive-prev'].forEach(function (style) {
 				el.classList.remove(style);
 			});
 			el.classList.add(cssClass);
@@ -66878,7 +66878,7 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	function mobileMenuItemTemplate() {
 
 		function render(data) {
-			return "<a href=\"" + data.href + "\" class=\"mobile-nav-item " + (data.parentItem ? "mobile-nav-parent-item" : '') + "\">" + data.text + "</a>";
+			return "<a href=\"" + data.href + "\" class=\"mobile-nav-item " + (data.items ? "mobile-nav-parent-item" : '') + "\"><span class=\"" + (data.items ? "hasArrow" : '') + "\">" + data.text + "</span><i class=\"fa fa-chevron-right " + (data.items ? "show" : 'hide') + "\"></i></a>";
 		}
 		return {
 			render: render
@@ -67003,7 +67003,7 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	function backButtonTemplate() {
 
 		function render() {
-			return "<a class=\"mobile-back-button\">Back</a>";
+			return "<a class=\"mobile-back-button\"><i class=\"backArrow fa fa-chevron-left\"></i>Back</a>";
 		}
 		return {
 			render: render
@@ -67314,8 +67314,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 						this.nextMenu = document.createElement('mobile-nav-menu');
 						this.nextMenu.data = this.getMenuMap(e.menuId);
 						this.injectMenuItem(this.nextMenu, this);
-						this.animateMenu();
-						this.setCurrentMenu();
+						var type = e.type === "menuitemclick" ? "next" : "prev";
+						this.nextMenu.updateClass(type);
+						setTimeout((function () {
+							this.animateMenu(type);
+							this.setCurrentMenu();
+						}).bind(this), 0);
 					}
 				}, {
 					key: 'getMenuMap',
@@ -67329,9 +67333,9 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 					}
 				}, {
 					key: 'animateMenu',
-					value: function animateMenu() {
-						this.currentMenu.updateClass('inactive');
-						this.nextMenu.updateClass('active');
+					value: function animateMenu(type) {
+						this.currentMenu.updateClass('inactive-' + type);
+						this.nextMenu.updateClass('active-' + type);
 						return;
 					}
 				}, {
@@ -67445,7 +67449,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 							this.fetchData();
 							return;
 						}
-						if (!this.data) return;
+						if (this.data == null) return;
 						this.render();
 					}
 				}, {
@@ -67466,8 +67470,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 				}, {
 					key: 'render',
 					value: function render() {
-						this.innerHTML = this.template.render(this);
-						this.buildHeaderNav();
+						if (this.data == null) return;
+						this.innerHTML = this.template.render(this);this.buildHeaderNav();
 						this.buildMainNav();
 						this.setMobileMenuListener();
 						this.style.zIndex = this.baseZIndex;
@@ -67763,7 +67767,7 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 					key: 'processData',
 					value: function processData() {
 						//if mobileNav items is not set, use the items from mainNav
-						if (typeof this.data.childConfigs.mobileNav.items === 'undefined') {
+						if (this.data.childConfigs.mobileNav != null && typeof this.data.childConfigs.mobileNav.items === 'undefined') {
 							this.data.childConfigs.mobileNav.items = this.data.childConfigs.mainNav.items;
 						}
 
