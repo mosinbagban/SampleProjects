@@ -45000,6 +45000,70 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/auto
 System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/affix-superscript.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/reveal-input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/auto-width.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/normalize-date-entry.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, inputTextTemplate, voyaFieldTemplate, addPlaceholderLabelBehavior, updatePlaceholderOrLabel, addContextualHelpBehavior, addAffixSuperscript, makeNumericStringIfNotEmpty, makeAlphaNumeric, updateInputValue, updateElValue, maskInput, revealInputMask, autoWidth, normalizeDateEntry, delegate, property, ui, Text;
 
+    function replaceDOMEventStrategy(el) {
+        if (el.type === 'dollars' || el.type === 'percent' || el.type === 'number' ||
+        //
+        el.type === 'date' || el.type === 'phone' || el.type === 'zip') {
+
+            //autonumeric squashes input and change events
+            el.input.addEventListener('keyup', function (e) {
+                console.log('handle keyup');
+                e.stopPropagation();
+                el.value = internalValue(el, el.input.value);
+                //hijackDOMEvent(el, e);
+                voyaComponentUtils.dispatchEvent(el, 'input');
+            }, true);
+
+            el.input.addEventListener('focusout', function (e) {
+                console.log('handle keyup');
+                el.value = internalValue(el, el.input.value);
+                //hijackDOMEvent(el, e);
+                voyaComponentUtils.dispatchEvent(el, 'change');
+            }, true);
+        }
+
+        el.input.addEventListener('input', function (e) {
+            console.log('handle input');
+            e.stopPropagation();
+            el.value = internalValue(el, el.input.value);
+            //hijackDOMEvent(el, e);
+            voyaComponentUtils.dispatchEvent(el, 'input');
+        }, true);
+
+        el.input.addEventListener('change', function (e) {
+            console.log('handle change');
+            e.stopPropagation();
+            updateElValue(el, internalValue(el, el.input.value));
+            //hijackDOMEvent(el, e);
+            voyaComponentUtils.dispatchEvent(el, 'change');
+        }, true);
+
+        //Due to masking lib, we can't use event delegation because the
+        //event is not bubbling to the component element
+        //delegate(el).on('paste', 'input', function(e){
+        el.input.addEventListener('paste', function (e) {
+            e.stopPropagation();
+            setTimeout(function () {
+                el.value = internalValue(el, el.input.value);
+                voyaComponentUtils.dispatchEvent(el, 'change');
+            }, 0);
+        });
+    }
+
+    function maybeUpdateInputValue(el, newValue) {
+        //special handling for decimal values
+        if (el.precision > 0) {
+            var inputValue = el.input.value;
+            var inputValueFloat = parseFloat(el.input.value);
+            var newValueFloat = parseFloat(newValue);
+            if (inputValueFloat !== newValueFloat && inputValue !== newValue) {
+                updateInputValue(el, newValue);
+            }
+        } else {
+            updateInputValue(el, newValue);
+        }
+    }
+
     function addMasking(el) {
         var inputEl = el.querySelector('input');
 
@@ -45184,45 +45248,10 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
                     value: function render() {
                         this.innerHTML = voyaFieldTemplate(this, inputTextTemplate);
 
-                        // delegate(this).on('input', 'input', function (e) {
-                        //     el.value = internalValue(el, el.input.value)
-                        //     voyaComponentUtils.dispatchEvent(el, 'input');
-                        // });
-
-                        // delegate(this).on('change', 'input', function (e) {
-                        //     el.value = internalValue(el, el.input.value)
-                        //     voyaComponentUtils.dispatchEvent(el, 'change');
-                        // });
-                        //why jQuery, why do native listeners not work with your events, why?
-                        var $this = $(this);
-
                         addRevealMasking(this);
+                        console.log('adding internal listeners');
                         if (!this.revealInputMask) {
-                            var inputEvent = undefined;
-                            if (this.type === 'dollars' || this.type === 'percent' || this.type === 'number') {
-                                inputEvent += 'input, keyup'; //autoNumeric suppresses input event
-                            } else {
-                                    inputEvent = 'input';
-                                }
-                            $this.on(inputEvent, 'input', (function (e) {
-                                this.value = internalValue(this, this.input.value);
-                                voyaComponentUtils.dispatchEvent(this, 'input');
-                            }).bind(this));
-
-                            $this.on('change', 'input', (function (e) {
-                                this.value = internalValue(this, this.input.value);
-                                voyaComponentUtils.dispatchEvent(this, 'change');
-                            }).bind(this));
-
-                            //Due to masking lib, we can't use event delegation because the
-                            //event is not bubbling to the component element
-                            //delegate(el).on('paste', 'input', function(e){
-                            this.querySelector('input').addEventListener('paste', function (e) {
-                                setTimeout(function () {
-                                    this.value = internalValue(this, this.input.value);
-                                    voyaComponentUtils.dispatchEvent(this, 'change');
-                                }, 0);
-                            });
+                            replaceDOMEventStrategy(this);
                         }
 
                         addMasking(this);
@@ -45241,9 +45270,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
                         }
 
                         if (prop === 'value') {
-                            if (this.input.value !== newValue) {
-                                updateInputValue(this, newValue);
-                            }
+                            maybeUpdateInputValue(this, newValue);
                         } else if (prop === 'label') {
                             updatePlaceholderOrLabel(this);
                         } else {
@@ -45253,7 +45280,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
                     }
                 }, {
                     key: 'value',
-                    decorators: [property],
+                    decorators: [property({ type: 'string' })],
                     initializer: null,
                     enumerable: true
                 }, {
@@ -45270,7 +45297,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
                     enumerable: true
                 }, {
                     key: 'precision',
-                    decorators: [property],
+                    decorators: [property({ type: 'integer' })],
                     initializer: function initializer() {
                         return 0;
                     },
@@ -45825,7 +45852,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-rad
     }
 
     function addEventListeners(el, type) {
-        delegate(el).on('change', 'input[type=radio]', function () {
+        delegate(el).on('change', 'input[type=radio]', function (e) {
+            e.stopPropagation();
             updateRadioValues(el);
         });
     }
@@ -63522,6 +63550,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js',
     function updateInputValue(el, value) {
         var type = el.type;
         var inputEl = el.querySelector('input');
+        if (el.padDecimals) {
+            value = el.padDecimals ? Number(value).toFixed(el.precision) : value;
+        }
 
         //TODO: in IE11, seeing behavior where attributeChanged callback is getting fired
         //before the element renderes.  Need to be somewhat defensive to account for this
@@ -64397,7 +64428,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                     value: function delegateEvents() {
                         delegate(this).on('click', '.voya-field__help-icon', (function (e) {
                             e.stopPropagation();
-                            voyaComponentUtils.dispatchEvent(this, 'help');
+                            voyaComponentUtils.dispatchEvent(this, 'voya-field:help');
                         }).bind(this));
 
                         delegate(this).on('keyup', '.voya-field__help-icon', (function (e) {
@@ -64408,7 +64439,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                                     this.toggleTooltip();
                                 }
                                 e.stopPropagation();
-                                voyaComponentUtils.dispatchEvent(this, 'help');
+                                voyaComponentUtils.dispatchEvent(this, 'voya-field:help');
                             }
                         }).bind(this));
                     }
@@ -65504,6 +65535,53 @@ System.register('voya-github:Voya/deep-ui-voya-main-nav@develop/utilities/voya-m
 	};
 });
 
+System.registerDynamic("npm:core-js@1.2.7/library/modules/js.array.statics.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this,
+      GLOBAL = this;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      $ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      $Array = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Array || Array,
+      statics = {};
+  var setStatics = function(keys, length) {
+    $.each.call(keys.split(','), function(key) {
+      if (length == undefined && key in $Array)
+        statics[key] = $Array[key];
+      else if (key in [])
+        statics[key] = $ctx(Function.call, [][key], length);
+    });
+  };
+  setStatics('pop,reverse,shift,keys,values,entries', 1);
+  setStatics('indexOf,every,some,forEach,map,filter,find,findIndex,includes', 3);
+  setStatics('join,slice,concat,push,splice,unshift,sort,lastIndexOf,' + 'reduce,reduceRight,copyWithin,fill');
+  $export($export.S, 'Array', statics);
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/array/slice.js", ["npm:core-js@1.2.7/library/modules/js.array.statics.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this,
+      GLOBAL = this;
+  $__require('npm:core-js@1.2.7/library/modules/js.array.statics.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Array.slice;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/array/slice.js", ["npm:core-js@1.2.7/library/fn/array/slice.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this,
+      GLOBAL = this;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/array/slice.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
 System.register('voya-github:Voya/deep-ui-voya-main-nav@develop/utilities/arrayPolyfill.js', [], function (_export) {
 	'use strict';
 
@@ -66553,15 +66631,18 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 
 	function voyaMobileNavTemplate(el) {
 		function render(el) {
-			return '<div class="voya-mobile-nav__backdrop"></div>\n\t\t\t<nav class="voya-mobile-nav__container">\n\t\t\t\t<a class="voya-mobile-menu-button fa fa-bars fa-2x"></a>\n\t\t\t\t<div class="mobile-nav-header-wrapper"></div>\n\t\t\t\t<div class="mobile-nav-main-wrapper"></div>\n\n\t\t\t</nav>';
+			return '<div class="voya-mobile-nav__backdrop"></div>\n\t\t\t\t<a class="voya-mobile-menu-button fa fa-bars fa-2x"></a>\n\t\t\t\t<div class="mobile-nav-header-wrapper"></div>\n\t\t\t\t<div class="mobile-nav-main-wrapper"></div>';
 		}
 		function injectMobileHeaderNav(el) {
 			el.querySelector('.mobile-nav-header-wrapper').appendChild(el.headerNav);
 		}
 		function injectMobileMainNav(el) {
+			el.querySelector('.mobile-nav-main-wrapper').style.top = el.headerNav.clientHeight + "px";
 			el.querySelector('.mobile-nav-main-wrapper').appendChild(el.mainNav);
 		}
 		function openCloseMenu(removeClass, addClass, el) {
+			var method = addClass === 'voya-mobile-nav--active' ? 'add' : 'remove';
+			document.querySelector(el.dockTag).classList[method]('page-dock-mobile-nav-active');
 			el.classList.remove(removeClass);
 			el.classList.add(addClass);
 		}
@@ -66586,7 +66667,7 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 
 	function headerMenuTemplate() {
 		function render(data) {
-			return "<a href=\"" + data.href + "\" class=\"mobile-nav-header-menu-item " + data["class"] + "\">" + data.text + "</a>";
+			return "<a href=\"" + data.href + "\" class=\"mobile-nav-header-menu-item " + data["class"] + "\"><div>" + data.text + "</div></a>";
 		}
 		function updateViewStyle(type, el) {
 			el.style[type] = el.width + "%";
@@ -66870,15 +66951,15 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	};
 });
 
-System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item-template.js", [], function (_export) {
-	"use strict";
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item-template.js', [], function (_export) {
+	'use strict';
 
-	_export("mobileMenuItemTemplate", mobileMenuItemTemplate);
+	_export('mobileMenuItemTemplate', mobileMenuItemTemplate);
 
 	function mobileMenuItemTemplate() {
 
 		function render(data) {
-			return "<a href=\"" + data.href + "\" class=\"mobile-nav-item " + (data.items ? "mobile-nav-parent-item" : '') + "\"><span class=\"" + (data.items ? "hasArrow" : '') + "\">" + data.text + "</span><i class=\"fa fa-chevron-right " + (data.items ? "show" : 'hide') + "\"></i></a>";
+			return '<a href="' + data.href + '" class="mobile-nav-item ' + (data.items ? "mobile-nav-parent-item" : '') + ' ' + (data['class'] ? data['class'] : '') + '"><span class="' + (data.items ? "hasArrow" : '') + '">' + data.text + '</span><i class="fa fa-chevron-right ' + (data.items ? "show" : 'hide') + '"></i></a>';
 		}
 		return {
 			render: render
@@ -66934,6 +67015,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 					_defineDecoratedPropertyDescriptor(this, 'data', _instanceInitializers);
 
 					_defineDecoratedPropertyDescriptor(this, 'event', _instanceInitializers);
+
+					_defineDecoratedPropertyDescriptor(this, 'cssClass', _instanceInitializers);
 				}
 
 				_createDecoratedClass(MobileMenuItem, [{
@@ -66953,6 +67036,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 					key: 'createMenuItem',
 					value: function createMenuItem() {
 						if (!this.data) return;
+						this.cssClass = this.data['class'] ? this.data['class'] : "";
+						this.className = this.cssClass;
 						this.innerHTML = this.template.render(this.data);
 						this.setEventListener();
 					}
@@ -66981,6 +67066,11 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 				}, {
 					key: 'event',
 					decorators: [nullable, property],
+					initializer: null,
+					enumerable: true
+				}, {
+					key: 'cssClass',
+					decorators: [property],
 					initializer: null,
 					enumerable: true
 				}], null, _instanceInitializers);
@@ -67437,6 +67527,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 					_defineDecoratedPropertyDescriptor(this, 'fetchPayload', _instanceInitializers);
 
 					_defineDecoratedPropertyDescriptor(this, 'isExpanded', _instanceInitializers);
+
+					_defineDecoratedPropertyDescriptor(this, 'dockTag', _instanceInitializers);
 				}
 
 				_createDecoratedClass(VoyaMobileNav, [{
@@ -67471,7 +67563,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 					key: 'render',
 					value: function render() {
 						if (this.data == null) return;
-						this.innerHTML = this.template.render(this);this.buildHeaderNav();
+						this.innerHTML = this.template.render(this);
+						this.buildHeaderNav();
 						this.buildMainNav();
 						this.setMobileMenuListener();
 						this.style.zIndex = this.baseZIndex;
@@ -67550,6 +67643,11 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 					decorators: [property],
 					initializer: null,
 					enumerable: true
+				}, {
+					key: 'dockTag',
+					decorators: [property],
+					initializer: null,
+					enumerable: true
 				}], null, _instanceInitializers);
 
 				return VoyaMobileNav;
@@ -67578,9 +67676,15 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2.js", ["vo
 System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-header@develop/voya-header-template.js', 'npm:dom-delegate@2.0.3.js', 'npm:debounce@1.0.0.js', 'voya-github:Voya/deep-ui-voya-top-nav@develop.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Object$keys, NativeHTMLElement, property, voyaHeaderTemplate, delegate, debounce, TAG_NAME, MOBILE_BREAKPOINT, VoyaHeader;
 
+	function deepClone(obj) {
+		return JSON.parse(JSON.stringify(obj));
+	}
+
+	//import 'voya-search/voya-search-typeahead/voya-search-typeahead.js';
+	//import 'voya-search/voya-search-typeahead/voya-search-typeahead-mobile/voya-search-typeahead-mobile.js';
+
 	function checkSizing(el) {
 		if ($(window).width() > MOBILE_BREAKPOINT) {
-			console.log('here');
 			el._mobileNavEl.classList.add('hide');
 			el._mobileNavEl.classList.remove('show');
 		} else {
@@ -67667,9 +67771,6 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 		execute: function () {
 			'use strict';
 
-			//import 'voya-search/voya-search-typeahead/voya-search-typeahead.js';
-			//import 'voya-search/voya-search-typeahead/voya-search-typeahead-mobile/voya-search-typeahead-mobile.js';
-
 			TAG_NAME = 'voya-header';
 			MOBILE_BREAKPOINT = 768;
 
@@ -67684,6 +67785,8 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 					_get(Object.getPrototypeOf(VoyaHeader.prototype), 'constructor', this).apply(this, arguments);
 
 					_defineDecoratedPropertyDescriptor(this, 'data', _instanceInitializers);
+
+					_defineDecoratedPropertyDescriptor(this, 'dockTag', _instanceInitializers);
 				}
 
 				_createDecoratedClass(VoyaHeader, [{
@@ -67715,15 +67818,14 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 						var mainNavEl = document.createElement('voya-main-nav');
 
 						this._mobileNavEl = document.createElement('voya-mobile-nav');
-						this._mobileNavEl.setAttribute('shift-when-open-selector', '.js-voya-mobile-nav--shift-when-open');
-
+						this._mobileNavEl.dockTag = this.dockTag;
 						this.insertBefore(topNavEl, this.firstChild);
 						this.querySelector('.voya-header__main-nav-wrapper').appendChild(mainNavEl);
 
 						document.body.appendChild(this._mobileNavEl);
 
 						if (topNavEl) {
-							topNavEl.links = this.data.childConfigs.topNav.links;
+							topNavEl.links = deepClone(this.data.childConfigs.topNav.links);
 						}
 
 						if (mainNavEl && window.voya && window.voya.baseUrls && window.voya.baseUrls.voya && typeof this.data.childConfigs.mainNav.apiUrl === 'undefined') {
@@ -67734,7 +67836,7 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 							}
 
 						if (this._mobileNavEl) {
-							this._mobileNavEl.data = this.data.childConfigs.mobileNav;
+							this._mobileNavEl.data = deepClone(this.data.childConfigs.mobileNav);
 						}
 
 						if (!document.querySelector('#voya-header-spacing-element')) {
@@ -67768,7 +67870,7 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 					value: function processData() {
 						//if mobileNav items is not set, use the items from mainNav
 						if (this.data.childConfigs.mobileNav != null && typeof this.data.childConfigs.mobileNav.items === 'undefined') {
-							this.data.childConfigs.mobileNav.items = this.data.childConfigs.mainNav.items;
+							this.data.childConfigs.mobileNav.items = deepClone(this.data.childConfigs.mainNav.items);
 						}
 
 						this.data.logoImageAttributes = this.data.logoImageAttributes || {};
@@ -67812,6 +67914,11 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 					initializer: function initializer() {
 						return {};
 					},
+					enumerable: true
+				}, {
+					key: 'dockTag',
+					decorators: [property],
+					initializer: null,
 					enumerable: true
 				}], null, _instanceInitializers);
 
@@ -76393,64 +76500,23 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-cell/voya-cell.
     };
 });
 
-System.registerDynamic("npm:core-js@1.2.7/library/modules/js.array.statics.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this,
-      GLOBAL = this;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
-      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
-      $ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
-      $Array = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Array || Array,
-      statics = {};
-  var setStatics = function(keys, length) {
-    $.each.call(keys.split(','), function(key) {
-      if (length == undefined && key in $Array)
-        statics[key] = $Array[key];
-      else if (key in [])
-        statics[key] = $ctx(Function.call, [][key], length);
-    });
-  };
-  setStatics('pop,reverse,shift,keys,values,entries', 1);
-  setStatics('indexOf,every,some,forEach,map,filter,find,findIndex,includes', 3);
-  setStatics('join,slice,concat,push,splice,unshift,sort,lastIndexOf,' + 'reduce,reduceRight,copyWithin,fill');
-  $export($export.S, 'Array', statics);
-  return module.exports;
-});
+System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table-template.js', [], function (_export) {
+	'use strict';
 
-System.registerDynamic("npm:core-js@1.2.7/library/fn/array/slice.js", ["npm:core-js@1.2.7/library/modules/js.array.statics.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this,
-      GLOBAL = this;
-  $__require('npm:core-js@1.2.7/library/modules/js.array.statics.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Array.slice;
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/array/slice.js", ["npm:core-js@1.2.7/library/fn/array/slice.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this,
-      GLOBAL = this;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/array/slice.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
-System.register("voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table-template.js", [], function (_export) {
-	"use strict";
-
-	_export("VoyaTableTemplate", VoyaTableTemplate);
+	_export('VoyaTableTemplate', VoyaTableTemplate);
 
 	function VoyaTableTemplate() {
-		function render(data) {
-			return buildWrapper(data);
+		function render(el) {
+			return createTableWrapper(buildWrapper(el));;
 		}
-		function buildWrapper(data) {
-			return "<div class=\"deep-ui-voya-table\">\n\t\t\t\t\t<div class=\"voya-table-column-wrapper\">\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"voya-table-rows-wrapper\">\n\t\t\t\t\t</div>\n\t\t\t\t</div>";
+		function createTableWrapper(tableContent) {
+			var tempDiv = document.createElement('div');
+			tempDiv.className = 'deep-ui-voya-table';
+			tempDiv.innerHTML = tableContent;
+			return tempDiv;
+		}
+		function buildWrapper(el) {
+			return '<div class="voya-table-column-wrapper">\n\t\t\t\t</div>\n\t\t\t\t<div class="voya-table-rows-wrapper">\n\t\t\t\t</div>';
 		}
 		function addColumns(el) {
 			el.columns.forEach(function (col) {
@@ -76465,7 +76531,6 @@ System.register("voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
 		function updateTemplateView(el) {
 			el.querySelector(".voya-table-rows-wrapper").style.maxHeight = el.scrollHeight + "px";
 		}
-
 		return {
 			render: render,
 			addColumns: addColumns,
@@ -76598,6 +76663,7 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
             });
         }
         function loadData(cmp) {
+            console.debug("cmp: ", cmp);
             return callService().then(function (response) {
                 return cmp.bindingProperty.indexOf(".") != -1 ? parseData(cmp.bindingProperty, response, 0) : response[cmp.bindingProperty];
             });
@@ -76649,8 +76715,8 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/slice.js', 'voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table-template.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table-services.js'], function (_export) {
-	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Array$slice, VoyaTableTemplate, NativeHTMLElement, property, nullable, VoyaTableServices, VoyaTable;
+System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table-template.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-table-services.js'], function (_export) {
+	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Array$from, VoyaTableTemplate, NativeHTMLElement, property, nullable, VoyaTableServices, VoyaTable;
 
 	return {
 		setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -76663,8 +76729,8 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_npmBabelRuntime5838CoreJsArraySliceJs) {
-			_Array$slice = _npmBabelRuntime5838CoreJsArraySliceJs['default'];
+		}, function (_npmBabelRuntime5838CoreJsArrayFromJs) {
+			_Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
 		}, function (_voyaGithubVoyaDeepUiVoyaTableMasterVoyaTableVoyaTableTemplateJs) {
 			VoyaTableTemplate = _voyaGithubVoyaDeepUiVoyaTableMasterVoyaTableVoyaTableTemplateJs.VoyaTableTemplate;
 		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
@@ -76727,7 +76793,7 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
 						this.tableWidth = 100;
 						this.template = VoyaTableTemplate();
 						this.services = VoyaTableServices();
-						this.columns = _Array$slice(this.querySelectorAll("voya-column"));
+						this.columns = _Array$from(this.querySelectorAll("voya-column"));
 						this.render();
 						this.addEventListener("columnWidth", this.updateWidths.bind(this));
 						if (this.mobileWidth) {
@@ -76739,7 +76805,7 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
 				}, {
 					key: 'render',
 					value: function render() {
-						this.innerHTML = this.template.render(this);
+						this.appendChild(this.template.render(this));
 						this.template.updateTemplateView(this);
 					}
 				}, {

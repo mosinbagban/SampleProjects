@@ -1,0 +1,18 @@
+# =========================
+# Eclipse files
+# =========================
+
+.classpath
+.project
+.settings/
+
+# Mac crap
+.DS_Store
+<<<<<<< HEAD
+/bin/
+
+# jspm and node pkg
+jspm_packages
+node_modules
+dist
+
