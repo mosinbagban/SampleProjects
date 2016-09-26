@@ -3,5 +3,5 @@
  */
 
 window.chatEndPoint = {
-    genesysChatServiceAPI: 'http://djaxlvbl9087:9080/genesys/2/chat/myservice'
+    genesysChatServiceAPI: 'http://djaxlvbl9087:9080/genesys/2/chat/service'
 };
