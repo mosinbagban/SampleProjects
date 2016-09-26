@@ -6964,3 +6964,6 @@ div.au-stagger {
 
 .fa-spinner:before {
   content: ""; }
+
+#chat-widget-encapsulator {
+  display: none; }

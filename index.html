@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head>
+<link>
   <title>Chat Application | Voya Financial</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
@@ -16,9 +16,37 @@
       <link rel="stylesheet" href="/src/app.css">
   <!-- @endif -->
 
+  <link rel="stylesheet" href="/static/public/css/widgets.min.css">
+
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <meta name="MobileOptimized" content="320">
   <meta name="HandheldFriendly" content="true">
+
+    <script id="genesys-cx-widget" type="text/javascript" src="/static/public/js/vendor/widgets.min.js"></script>
+
+
+    <script>
+        if(!window._genesys)window._genesys = {};
+        if(!window._gt)window._gt = [];
+
+        window._genesys.cxwidget = {
+            main: {
+                debug: true,
+                theme: "light",
+                lang: "en",
+                customStylesheetID: "genesys_cx_widget_custom",
+                plugins: [
+                    "cx-webchat",
+                    "cx-webchat-service"
+                ]
+            },
+            onReady: function(bus){ window._genesys.cxwidget.bus = bus;},
+            webchat: {
+                dataURL: "http://djaxlvbl9087:9080/genesys/2/chat/service",
+                ajaxTimeout:  10000
+            }
+        };
+    </script>
 </head>
 <body>
 
@@ -31,8 +59,8 @@
 </div>
 
 <script src="/static/public/js/vendor/polyfills.js"></script>
-<script src="/static/public/js/vendor/widgets.min.js"></script>
 <script src="/static/config/endpoint.js"></script>
+
 
 
 <script>
@@ -44,8 +72,8 @@
     CUST_ID: 'cust-id-test',
     SSN: 'ssn-test'
   };
-</script>
 
+</script>
 
 <noscript>This application requires that javascript be enabled.</noscript>
 
@@ -71,5 +99,6 @@
 <script>
   System.import('aurelia-bootstrapper');
 </script>
+
 </body>
 </html>

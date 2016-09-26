@@ -1,5 +1,6 @@
 <template>
     <require from="../../scss/chat.css"></require>
+    <require from='../chat-widget/chat-widget'></require>
 
     <section class.bind="getClass">
         <h2>${heading}</h2>
@@ -7,6 +8,8 @@
         <div class="well">
             <h4>${info}</h4>
         </div>
+
+        <chat-widget></chat-widget>
 
     </section>
 </template>
