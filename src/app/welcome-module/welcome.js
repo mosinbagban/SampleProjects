@@ -39,7 +39,9 @@ export class Welcome {
     created(owningView, view) {
         this.disclaimerText = this.appConfig.disclaimerText;
 
-        this.appConfig.helpOptions.forEach(function(option){
+        var options = pwebContext.AuthenticationLevel == 2 ? this.appConfig.helpOptions : this.appConfig.helpOptionsPre;
+
+        options.forEach(function(option){
             this.helpOptions.push({value:option.value, label:option.label})
         }.bind(this));
     }
@@ -110,7 +112,7 @@ export class Welcome {
         });
 
         bus.subscribe("cx.plugin.WebChat.closed", function(){
-            alert('chat is closed');
+            //alert('chat is closed');
             //window.open('','_parent','');
             window.close();
         });

@@ -1,0 +1,17 @@
+.cx-widget {
+	font-family: "Proxima Nova Regular", Arial, sans-serif, Roboto;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.ark.cx-common-container.cx-webchat {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cx-img-map.preset-blue, .preset-blue .cx-img-map {
+	background-image: url("../images/voya_chat_image.png");
+	background-color: #FB8000;
+}

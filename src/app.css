@@ -4775,6 +4775,8 @@ voya-header.voya-mobile-nav-active {
 @media screen and (max-width: 768px) {
   voya-header {
     height: 50px; }
+    voya-header voya-main-nav {
+      display: none !important; }
   .voya-header-outer-container {
     height: 50px !important; }
   #voya-header-spacing-element {
@@ -4792,8 +4794,6 @@ voya-header.voya-mobile-nav-active {
     display: none; }
   voya-header voya-top-nav {
     display: none; }
-  voya-main-nav {
-    display: none !important; }
   .voya-header__search {
     display: none; }
   .voya-header-brand {

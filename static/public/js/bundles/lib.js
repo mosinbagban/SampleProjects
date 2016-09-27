@@ -42965,7 +42965,7 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/utilities/rest-asse
     var _Object$keys;
 
     function restAssembly() {
-        var apiParams = { method: "POST", headers: { 'Content-Type': 'application/json', 'X-Requested-By': 'myVoya' } };
+        var apiParams = { method: "GET", headers: { 'Content-Type': 'application/json', 'X-Requested-By': 'myVoya' } };
         var REQUEST = undefined;
         var RESPONSE = undefined;
         function buildRequest(params) {
@@ -43127,7 +43127,7 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/voya-cha
 						strArr.splice(1, 0, '-');
 						return strArr.join('');
 					}).toLowerCase() : this.constructor.name.toLowerCase();
-					this.bindProperties(this, chartProperties);
+					this.bindProperties(chartProperties);
 					this.legend = this.legend && typeof this.legend === "string" ? JSON.parse(this.legend) : this.legend;
 					this.buildServices();
 					this.assembleData();
@@ -43137,8 +43137,8 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/voya-cha
 					key: 'bindProperties',
 
 					//@privatemember
-					value: function bindProperties(chart, props) {
-						_Object$keys(props).forEach(function (attr) {
+					value: function bindProperties(props) {
+						_Object$keys(props).forEach((function (attr) {
 							if (typeof props[attr] !== 'object') return; //IOS will include "length" read only attribute
 							var value = props[attr].value;
 							var name = props[attr].name.replace(/[-_\s]+(.)?/g, function (match, c) {
@@ -43146,9 +43146,9 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/voya-cha
 							});
 
 							var val = name === "colors" && typeof value === "string" ? value.split(",") : value;
-							if (chart[name] === undefined) return;
-							chart[name] = val;
-						});
+							if (this[name] === undefined) return;
+							this[name] = val;
+						}).bind(this));
 					}
 				}, {
 					key: 'buildServices',
@@ -43191,7 +43191,8 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/voya-cha
 					value: function buildInstanceData() {
 						var typeConfig = {};
 						_Object$keys(this._properties).forEach((function (prop) {
-							if (VoyaChart.prototype[prop] !== undefined) return;
+							//TODO: figure out what is going on here
+							//if(VoyaChart.prototype[prop]!== undefined) return;
 							typeConfig[prop] = this._properties[prop];
 						}).bind(this));
 						this.chartModel[this.instanceName] = typeConfig;
@@ -43267,6 +43268,11 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/voya-cha
 					key: 'destroy',
 					value: function destroy() {
 						_chart.get(this).chart.destroy();
+					}
+				}, {
+					key: 'destroyInstance',
+					value: function destroyInstance() {
+						_chart['delete'](this);
 					}
 				}, {
 					key: 'resize',
@@ -43569,17 +43575,14 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/area-spl
 
                         if (prop === "dataModel") {
                             if (Array.isArray(this.dataModel) && this.dataModel.length > 0) {
+                                if (this.hasChartRendered()) {
+                                    this.destroy();
+                                }
                                 this.normalizeData(this.dataModel);
                                 this.buildChartModel();
                                 this.createChart();
                             } else {
                                 console.log('Area-Spline Chart::propertyChangedCallback() - dataModel Array is empty or not an Array.');
-                            }
-                        }
-
-                        if (prop === 'data') {
-                            if (typeof newValue === 'string' && newValue.length > 0) {
-                                this.dataModel = JSON.parse(newValue);
                             }
                         }
 
@@ -43755,7 +43758,6 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/area-spl
                             }
                         }
                         this.chartModel = chartModel;
-                        console.log(JSON.stringify(this.chartModel));
                     }
 
                     /**
@@ -43765,7 +43767,7 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/area-spl
                 }, {
                     key: 'responsiveChart',
                     value: function responsiveChart(e) {
-                        console.log('area spline ' + e);
+                        // TODO: add any required handling here.
                     }
                 }, {
                     key: 'xAxisType',
@@ -43905,10 +43907,10 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart.js', ['n
                         }
                     }
                 }, {
-                    key: 'attributeCallback',
-                    value: function attributeCallback(prop, oldValue, newValue) {
-                        if (oldValue === newValue) return;
+                    key: 'attributeChangedCallback',
+                    value: function attributeChangedCallback(prop, oldValue, newValue) {
                         if (prop === "type") this.getChart();
+                        if (prop !== "type" && this.api) this.api.bindProperties(this.attributes);
                     }
                 }, {
                     key: 'getChart',
@@ -43920,6 +43922,11 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart.js', ['n
                     key: 'renderChart',
                     value: function renderChart() {
                         this.appendChild(this.api.element);
+                    }
+                }, {
+                    key: 'detachedCallback',
+                    value: function detachedCallback() {
+                        this.api.destroyInstance();
                     }
                 }, {
                     key: 'api',
@@ -43955,6 +43962,8 @@ System.register("voya-github:Voya/deep-ui-voya-charts@master.js", ["voya-github:
 
 System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expand-collapse-template.js', [], function (_export) {
     'use strict';
+
+    var brandThemes;
 
     _export('VoyaExpandCollapseTemplate', VoyaExpandCollapseTemplate);
 
@@ -44024,18 +44033,35 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
             }).bind(this));
         }
 
+        function updateBrandCSS(el) {
+            el.theme.split(' ').forEach(function (theme) {
+                if (brandThemes.includes(theme)) {
+                    if (el.isMobile) {
+                        el.header.classList.add(theme + '-bg');
+                        el.header.classList.remove(theme + '-color');
+                    } else {
+                        el.header.classList.add(theme + '-color');
+                        el.header.classList.remove(theme + '-bg');
+                    }
+                }
+            });
+        }
+
         return {
             render: render,
             renderFullHeader: renderFullHeader,
             renderHTMLHeaderInner: renderHTMLHeaderInner,
             renderHTMLNumberInner: renderHTMLNumberInner,
-            updateCSS: updateCSS
+            updateCSS: updateCSS,
+            updateBrandCSS: updateBrandCSS
         };
     }
 
     return {
         setters: [],
-        execute: function () {}
+        execute: function () {
+            brandThemes = ['primary', 'secondary', 'tertiary'];
+        }
     };
 });
 
@@ -44096,6 +44122,8 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 					_defineDecoratedPropertyDescriptor(this, 'name', _instanceInitializers);
 
 					_defineDecoratedPropertyDescriptor(this, 'headingText', _instanceInitializers);
+
+					_defineDecoratedPropertyDescriptor(this, 'type', _instanceInitializers);
 
 					_defineDecoratedPropertyDescriptor(this, 'theme', _instanceInitializers);
 
@@ -44188,6 +44216,8 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 					value: function toggle(e) {
 						if (!this.getIntention(e)) return;
 						this.expanded ? this.collapse() : this.expand();
+						//add data to event so that it doesn't close parent accordions
+						e.voyaExpandCollapseHandled = true;
 					}
 				}, {
 					key: 'addMouseEvents',
@@ -44195,6 +44225,8 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 						var _this = this;
 
 						delegate(this).on('click', HEADER_SELECTOR, function (e) {
+							//shortcircuit if its a nested header
+							if (e.voyaExpandCollapseHandled) return;
 							_this.dispatchUserIntentEvent(e);
 							if (_this.reactive || _this.disabled) return;
 							_this.toggle(e);
@@ -44206,6 +44238,8 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 						var _this2 = this;
 
 						delegate(this).on('keyup', HEADER_SELECTOR, function (e) {
+							//shortcircuit if its a nested header
+							if (e.voyaExpandCollapseHandled) return;
 							_this2.dispatchUserIntentEvent(e);
 							if (_this2.reactive || _this2.disabled) return;
 							_this2.toggle(e);
@@ -44227,10 +44261,13 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 					key: 'createThemeList',
 					value: function createThemeList() {
 						if (this.theme) {
-							this._themeArray = this.theme.split(' ').map(function (theme) {
+							this._themeArray = this.theme.split(' ').map((function (theme) {
 								return 'voya-expand-collapse-theme-' + theme;
+							}).bind(this)).filter(function (theme) {
+								return theme.trim();
 							});
 							this.template.updateCSS(this);
+							this.template.updateBrandCSS(this);
 						}
 					}
 				}, {
@@ -44283,17 +44320,33 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 				}, {
 					key: 'toMobile',
 					value: function toMobile() {
-						this.classList.remove('voya-expand-collapse--horizontal');
-						this.classList.remove('voya-expand-collapse--arrow');
-						this.horizontal = false;
-						this.style.width = "100%";
+						this.isMobile = true;
+						if (this.initiallyHorizontal) {
+							//handle horizontal
+							this.classList.remove('voya-expand-collapse--horizontal');
+							this.classList.remove('voya-expand-collapse--arrow');
+							this.horizontal = false;
+							this.style.width = "100%";
+						} else {
+							//handle regular
+							this.classList.add('voya-expand-collapse--mobile');
+						}
+						this.template.updateBrandCSS(this);
 					}
 				}, {
 					key: 'fromMobile',
 					value: function fromMobile() {
-						this.classList.add('voya-expand-collapse--horizontal');
-						this.horizontal = true;
-						this.setWidth();
+						this.isMobile = false;
+						if (this.initiallyHorizontal) {
+							//handle horizontal
+							this.classList.add('voya-expand-collapse--horizontal');
+							this.horizontal = true;
+							this.setWidth();
+						} else {
+							//handle regular
+							this.classList.remove('voya-expand-collapse--mobile');
+						}
+						this.template.updateBrandCSS(this);
 					}
 				}, {
 					key: 'windowListener',
@@ -44301,17 +44354,16 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 						window.addEventListener('resize', (function (e) {
 							this.convertToMobile(e);
 						}).bind(this));
+						this.convertToMobile();
 					}
 				}, {
 					key: 'convertToMobile',
 					value: function convertToMobile(e) {
-						if (this.initiallyHorizontal) {
-							var windowWidth = e ? e.target.outerWidth : window.outerWidth;
-							if (windowWidth <= this.mobileWidth) {
-								this.toMobile();
-							} else {
-								this.fromMobile();
-							}
+						var windowWidth = e ? e.target.outerWidth : window.outerWidth;
+						if (windowWidth <= this.mobileWidth) {
+							this.toMobile();
+						} else {
+							this.fromMobile();
 						}
 					}
 				}, {
@@ -44375,6 +44427,8 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 							this.classList.remove('voya-expand-collapse--expand');
 						}
 
+						this.classList.add('voya-expand-collapse-' + this.type);
+
 						this.createThemeList();
 					}
 				}, {
@@ -44417,6 +44471,13 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 					},
 					enumerable: true
 				}, {
+					key: 'type',
+					decorators: [property],
+					initializer: function initializer() {
+						return 'primary';
+					},
+					enumerable: true
+				}, {
 					key: 'theme',
 					decorators: [property],
 					initializer: function initializer() {
@@ -44455,7 +44516,7 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 					key: 'mobileWidth',
 					decorators: [property({ type: 'integer' })],
 					initializer: function initializer() {
-						return null;
+						return 600;
 					},
 					enumerable: true
 				}, {
@@ -45822,8 +45883,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/create-password.js', 
   };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio-template.js', 'voya-github:Voya/deep-ui-stylesheet@2.0.0.js'], function (_export) {
-    var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, property, voyaFieldTemplate, addPlaceholderLabelBehavior, updateChecked, updateInputValue, delegate, inputRadioTemplate, Stylesheet, stylesheet, Radio;
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio-template.js', 'voya-github:Voya/deep-ui-stylesheet@2.0.0.js'], function (_export) {
+    var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Array$from, setMixinForType, voyaComponentUtils, property, voyaFieldTemplate, addPlaceholderLabelBehavior, updateChecked, updateInputValue, delegate, inputRadioTemplate, Stylesheet, stylesheet, Radio;
 
     function render(el) {
         //radios can be voya-field or voya-option elements
@@ -45840,15 +45901,17 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-rad
     //to find other radio elements in the document with that same name and update those
     //too so that only one is checked at a time
     function updateRadioValues(el) {
-        var radios = document.querySelectorAll('voya-field[input-name="' + el.inputName + '"]');
-
-        for (var i = 0; i < radios.length; i++) {
-            var inputEl = radios[i].querySelector('input');
-            if (inputEl.checked !== radios[i].checked) {
-                radios[i].checked = inputEl.checked;
-                voyaComponentUtils.dispatchEvent(radios[i], 'change');
+        _Array$from(document.querySelectorAll('voya-field')).filter(function (voyaFieldEl) {
+            return voyaFieldEl.type === "radio" && voyaFieldEl.inputName === el.inputName;
+        }).forEach(function (radioEl) {
+            var inputEl = radioEl.querySelector('input');
+            if (inputEl.checked !== radioEl.checked) {
+                radioEl.checked = inputEl.checked;
+                if (radioEl.checked) {
+                    voyaComponentUtils.dispatchEvent(radioEl, 'change');
+                }
             }
-        }
+        });
     }
 
     function addEventListeners(el, type) {
@@ -45865,6 +45928,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-rad
             _createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
         }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+        }, function (_npmBabelRuntime5838CoreJsArrayFromJs) {
+            _Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
         }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
@@ -67677,6 +67742,7 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Object$keys, NativeHTMLElement, property, voyaHeaderTemplate, delegate, debounce, TAG_NAME, MOBILE_BREAKPOINT, VoyaHeader;
 
 	function deepClone(obj) {
+		if (typeof obj !== 'object') return;
 		return JSON.parse(JSON.stringify(obj));
 	}
 
@@ -75573,7 +75639,7 @@ System.register("voya-github:Voya/deep-ui-voya-table@master/voya-column/voya-col
             return "<div class=\"voya-col " + data.colLabel + "\"><div class=\"label\">" + data.colLabel + "</div> <div class=\"voya-col-actions\"></div></div>";
         }
         function addButton(el, button) {
-            el.querySelector(".voya-col-actions").appendChild(button);
+            if (el.querySelector(".voya-col-actions")) el.querySelector(".voya-col-actions").appendChild(button);
         }
         function updateTheme(el) {
             if (el.theme) {
@@ -75888,23 +75954,22 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-column/voya-col
                 }, {
                     key: 'propertyChangedCallback',
                     value: function propertyChangedCallback(prop, oldValue, newValue) {
-                        if (oldValue !== newValue) {
-                            if (prop == 'sort') {
-                                this.assembleFeatures();
-                            }
-                            if (prop == "theme" || prop == "borders") {
-                                this.template.updateTheme(this);
-                            }
-                            if (prop === "width") {
-                                this.width = this.setWidth();
-                                if (isNaN(this.width)) return;
-                                this.dispatchEvent(this.event);
-                                this.template.updateColumnWidth(this);
-                            }
-                            if ((prop == "colAmount" || prop == "flexWidth") && (!this.width || isNaN(this.width))) {
-                                this.width = this.setColumnFlexWidth();
-                                this.template.updateColumnWidth(this);
-                            }
+                        if (oldValue === newValue && !newValue) return;
+                        if (prop == 'sort') {
+                            this.assembleFeatures();
+                        }
+                        if (prop == "theme" || prop == "borders") {
+                            this.template.updateTheme(this);
+                        }
+                        if (prop === "width") {
+                            this.width = this.setWidth();
+                            if (isNaN(this.width)) return;
+                            this.dispatchEvent(this.event);
+                            this.template.updateColumnWidth(this);
+                        }
+                        if ((prop == "colAmount" || prop == "flexWidth") && (!this.width || isNaN(this.width))) {
+                            this.width = this.setColumnFlexWidth();
+                            this.template.updateColumnWidth(this);
                         }
                     }
                 }, {
@@ -76795,12 +76860,21 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
 						this.services = VoyaTableServices();
 						this.columns = _Array$from(this.querySelectorAll("voya-column"));
 						this.render();
-						this.addEventListener("columnWidth", this.updateWidths.bind(this));
 						if (this.mobileWidth) {
 							this.updateMobileView();
 						}
 						if (!this.apiUrl) return;
 						this.fetchData();
+					}
+				}, {
+					key: 'propertyChangedCallback',
+					value: function propertyChangedCallback(prop, oldValue, newValue) {
+						if (oldValue === newValue && !newValue) return;
+						if (prop === "apiUrl") this.fetchData();
+						if (prop === "scrollHeight") this.template.updateTemplateView(this);
+						if (prop == "theme" || prop == "borders" || prop == "rowAlternating" || prop == "sort" || prop == "mobileWidth") {
+							this.updateTableView(prop);
+						}
 					}
 				}, {
 					key: 'render',
@@ -76839,17 +76913,6 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
 						});
 					}
 				}, {
-					key: 'propertyChangedCallback',
-					value: function propertyChangedCallback(prop, oldValue, newValue) {
-						if (oldValue === newValue) return;
-
-						if (prop === "apiUrl") this.fetchData();
-						if (prop === "scrollHeight") this.template.updateTemplateView(this);
-						if (prop == "theme" || prop == "borders" || prop == "rowAlternating" || prop == "sort" || prop == "mobileWidth") {
-							this.updateTableView(prop);
-						}
-					}
-				}, {
 					key: 'fetchData',
 					value: function fetchData() {
 						this.services.buildService(this);
@@ -76857,6 +76920,7 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
 							this.originalData = JSON.parse(JSON.stringify(data));
 							this.data = data;
 							this.buildColsAndRows();
+							this.addEventListener("columnWidth", this.updateWidths.bind(this));
 						}).bind(this));
 					}
 				}, {

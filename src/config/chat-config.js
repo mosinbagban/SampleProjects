@@ -7,50 +7,66 @@ var config = {
     baseURL : 'http://localhost:9200',
     loginRedirect: '#/welcome',
 
-    disclaimerText : 'Internet Response Team Members are not able to accept any requests to submit account changes or financial transactions,nor are they able to provide tax, investment or legal advice.All interactions are subject to recordkeeping and monitoring. Securities offered through Voya Financial Advisers, LLC (Member SIPC).',
+    disclaimerText : 'Please be aware that we are unable to execute transactions or provide personal account information through this request form.  You can only execute transactions, or obtain personal account information by following instructions in the appropriate password-protected sections of this site.',
 
     helpOptions : [
-            {
-                value : 'Advisor Services',
-                label : 'Advisor Services'
-            },
-            {
-                value : 'Contributions',
-                label : 'Contributions'
-            },
-            {
-                value : 'Enrollment',
-                label : 'Enrollment'
-            },
-            {
-                value : 'Fund Information/Changes',
-                label : 'Fund Information/Changes'
-            },
-            {
-                value : 'Loans',
-                label : 'Loans'
-            },
-            {
-                value : 'Personal Information',
-                label : 'Personal Information'
-            },
-            {
-                value : 'Statements & Documents',
-                label : 'Statements & Documents'
-            },
-            {
-                value : 'Technical Support',
-                label : 'Technical Support'
-            },
-            {
-                value : 'Withdrawals',
-                label : 'Withdrawals'
-            },
-            {
-                value : 'Others',
-                label : 'Other'
-            }
-        ]
+                {
+                    value : 'Advisory Services',
+                    label : 'Advisory Services'
+                },
+                {
+                    value : 'Contributions',
+                    label : 'Contributions'
+                },
+                {
+                    value : 'Enrollment',
+                    label : 'Enrollment'
+                },
+                {
+                    value : 'Fund Information/Changes',
+                    label : 'Fund Information/Changes'
+                },
+                {
+                    value : 'Loans',
+                    label : 'Loans'
+                },
+                {
+                    value : 'Statements & Documents',
+                    label : 'Statements & Documents'
+                },
+                {
+                    value : 'Personal Information',
+                    label : 'Personal Information'
+                },
+                {
+                    value : 'Web or Mobile App Support',
+                    label : 'Web or Mobile App Support'
+                },
+                {
+                    value : 'Withdrawals',
+                    label : 'Withdrawals'
+                },
+                {
+                    value : 'Other',
+                    label : 'Other'
+                }
+            ] ,
+
+
+        helpOptionsPre : [
+                {
+                    value : 'First Time User',
+                    label : 'First Time User'
+                },
+                {
+                    value : 'Web Assist',
+                    label : 'Web Assist'
+                },
+                {
+                    value : 'General Question',
+                    label : 'General Question'
+                }
+            ]
 }
 
 

@@ -746,7 +746,8 @@ System.config({
     "voya-github:Voya/deep-ui-voya-table@master": {
       "dom-delegate": "npm:dom-delegate@2.0.3",
       "voya-base-styles": "voya-github:Voya/deep-ui-voya-base-styles@2.4.2",
-      "voya-component-utils": "voya-github:Voya/deep-ui-voya-component-utils@3.3.3"
+      "voya-component-utils": "voya-github:Voya/deep-ui-voya-component-utils@3.3.3",
+      "whatwg-fetch": "npm:whatwg-fetch@1.0.0"
     },
     "voya-github:Voya/deep-ui-voya-tabs@2.3.7": {
       "dom-delegate": "npm:dom-delegate@2.0.3",
