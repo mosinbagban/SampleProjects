@@ -1,20 +1,19 @@
 /**
  * Created by n689716 on 9/7/16.
  */
+
 import { inject, BindingEngine } from 'aurelia-framework';
 import {Router} from 'aurelia-router';
-import {EventAggregator} from 'aurelia-event-aggregator';
 import {validation} from 'voya-validation';
 import AppConfig from '../../config/chat-config';
 import {App} from '../../app';
 
-@inject(Router, BindingEngine, AppConfig, App, EventAggregator)
+@inject(Router, BindingEngine, AppConfig, App)
 export class Welcome {
 
-    constructor(router, bindingEngine, appConfig, app, eventAggregator){
+    constructor(router, bindingEngine, appConfig, app){
         this.router = router;
         this.bindingEngine = bindingEngine;
-        this.eventAggregator = eventAggregator;
         this.appConfig = appConfig;
         this.validation = validation;
         this.app = app;
@@ -25,12 +24,12 @@ export class Welcome {
         this.busy = false;
 
         this.data = {
-            firstName: '',
-            lastName: '',
-            email: '',
+            firstName: pwebFormData.first_name,
+            lastName: pwebFormData.last_name,
+            email: pwebFormData.email,
             sendTranscript: false,
             helpMessage: '',
-            question: '',
+            question: ''
         };
 
         this.validationErrors = {};
@@ -85,6 +84,9 @@ export class Welcome {
         let helpMessage = this.data.helpMessage;
         let question = this.data.question;
 
+        pwebContext.SEND_TRANSCRIPT = sendTranscript;
+        pwebContext.INTERACTION_QUESTION = question;
+
         bus.command("cx.plugin.WebChat.open", {form:false})
             .done(function(e){
 
@@ -95,7 +97,8 @@ export class Welcome {
                     firstname: firstName,
                     lastname: lastName,
                     email: email,
-                    subject: question
+                    subject: helpMessage,
+                    text : question
 
                 })
                     .done(function(e){
@@ -108,7 +111,7 @@ export class Welcome {
 
 
         bus.subscribe("cx.plugin.WebChat.ready", function(allData){
-            alert('chat is ready');
+           // alert('chat is ready');
         });
 
         bus.subscribe("cx.plugin.WebChat.closed", function(){
@@ -118,11 +121,11 @@ export class Welcome {
         });
 
         bus.subscribe("cx.plugin.WebChat.minimized", function(){
-            alert('chat is minimized');
+            //alert('chat is minimized');
         });
 
         bus.subscribe("cx.plugin.WebChat.unminimized", function(){
-            alert('chat is unminimized');
+            //alert('chat is unminimized');
         });
     }
 

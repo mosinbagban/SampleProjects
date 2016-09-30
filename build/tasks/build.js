@@ -32,8 +32,8 @@ gulp.task('build:dist', ['clean:dist'], function(){
                 'copy:dist',
                 'index:dist',
                 'js:dist',
-                'html-bustcache:dist',
                 'html-bustcache:dist'
+                //'html-bustcache:dist'
                 // 'test'
                 );
 });
@@ -85,7 +85,6 @@ gulp.task('index:dist', function () {
     //     //.pipe(gulp.dest('./dist/myvoya'));
     //     .pipe(gulp.dest('./dist/chat/public/'));
 });
-
 
 
 gulp.task('build:mga', function () {
