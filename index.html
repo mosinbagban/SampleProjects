@@ -16,7 +16,7 @@
 <!-- @endif -->
 
 
-<link rel="stylesheet" href="src/app.css">
+<link rel="stylesheet" href="static/public/css/app.css">
 <link rel="stylesheet" href="static/public/css/widgets.min.css">
 <link rel="stylesheet" href="static/public/css/style.css">
 
@@ -43,33 +43,60 @@
 
 
 <script>
-    window.pwebContext = {
-/*      AuthenticationLevel: '2',
-        ssoSessionID: 'TestSess1234',
-        SSN: 'ssn-test',
-        ClientID: 'Honeywell-test',
-        vruApp: 'vruApp-test',
-        DNIS: "DNIS",
-        CUST_ID: 'cust-id-test'
-*/
+
+ window.pwebContext = {
+
+ // FOR HTML only - This portion is commented during building jsp so do not change
+ //Comment this for JSP and pass the value as query param
+
         AuthenticationLevel: qs('aj_ing_secur_test'),
-        SsoSessionID : qs('sessionID'),
+        SsoSessionID : qs('sso-session-id'),
         SSN: qs('aw_ing_client_id'),
         ClientID: qs('aw_ing_client_code'),
         vruApp: qs('ing_vru_app'),
         DNIS: qs('dnis'),
         CUST_ID: qs('ing_policy_acct1'),
-        LANGUAGE: 'ENCH',
-        LOB: 'RS'
-    };
+        LANGUAGE: qs('language'),
+        LOB: qs('lob')
 
-<!-- Temp Start -->
-  window.pwebFormData = {
+ // FOR HTML End - - This portion is commented during building jsp so do not change
 
-    first_name: qs('ing_first_name'),
-    last_name: qs('ing_last_name'),
-    email : qs('ing_email_address')
-  };
+ /* // FOR JSP Only - This comment is replaced during building jsp so do not change
+ //Comment this for HTML
+
+        AuthenticationLevel: checkNull('<%=request.getAttribute("aj_ing_secur_test")%>'),
+        SsoSessionID : checkNull('<%=request.getAttribute("sso-session-id")%>'),
+        SSN: checkNull('<%=request.getAttribute("aw_ing_client_id")%>'),
+        ClientID: checkNull('<%=request.getAttribute("aw_ing_client_code")%>'),
+        vruApp: checkNull('<%=request.getAttribute("ing_vru_app")%>'),
+        DNIS: checkNull('<%=request.getAttribute("dnis")%>'),//qs('dnis'),
+        CUST_ID: checkNull('<%=request.getAttribute("ing_policy_acct1")%>'),
+        LANGUAGE: checkNull('<%=request.getAttribute("language")%>'),
+        LOB: checkNull('<%=request.getAttribute("lob")%>')
+
+ */ // FOR JSP End - This comment is replaced during building jsp so do not change
+
+
+ };
+
+ window.pwebFormData = {
+
+ // FOR HTML only 
+ //Comment this for JSP and pass the value as query param
+        first_name: qs('ing_first_name'),
+        last_name: qs('ing_last_name'),
+        email : qs('ing_email_address')
+ // FOR HTML End
+
+ /* // FOR JSP Only 
+ //Comment this for HTML
+        first_name: checkNull('<%=request.getAttribute("ing_first_name")%>'),
+        last_name: checkNull('<%=request.getAttribute("ing_last_name")%>'),
+        email : checkNull('<%=request.getAttribute("ing_email_address")%>')
+ */ // FOR JSP End 
+
+ };
+
 
   function qs(search_for) {
     var query = window.location.search.substring(1);
@@ -82,8 +109,17 @@
     }
     return "";
   }
-</script>
-<!-- Temp End-->
+
+  function checkNull(param) {
+      
+      console.log('**************************** Param :'+param);
+      if(param == null || param == "null" )
+          return '';
+      else
+          return param;
+  }
+
+
 </script>
 
 <noscript>This application requires that javascript be enabled.</noscript>
@@ -107,7 +143,8 @@
         },
         onReady: function(bus){ window._genesys.cxwidget.bus = bus;},
         webchat: {
-            dataURL: window.chatEndPoint.genesysChatServiceAPI ,
+            //dataURL: window.chatEndPoint.genesysChatServiceAPI ,
+            dataURL:checkNull('<%=request.getAttribute("genesys_chat_endpoint")%>'),
             ajaxTimeout:  10000
         }
     };

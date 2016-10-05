@@ -14,6 +14,8 @@ var exec = require('child_process').exec;
 var md5 = require("gulp-md5-assets");
 var runSequence = require('run-sequence');
 var bundles = require('../bundles.js');
+var rename = require("gulp-rename");
+var replace = require('gulp-replace');
 require('colors');
 
 
@@ -32,7 +34,8 @@ gulp.task('build:dist', ['clean:dist'], function(){
                 'copy:dist',
                 'index:dist',
                 'js:dist',
-                'html-bustcache:dist'
+                'html-bustcache:dist',
+                'copy:chatpage'
                 //'html-bustcache:dist'
                 // 'test'
                 );
@@ -86,6 +89,18 @@ gulp.task('index:dist', function () {
     //     .pipe(gulp.dest('./dist/chat/public/'));
 });
 
+
+gulp.task('copy:chatpage', function () {
+
+   gulp.src("./dist/index.html")
+    .pipe(rename("/StartGenesysChat.jsp"))
+    .pipe(replace('// FOR HTML only', '/* // FOR HTML only'))
+    .pipe(replace('// FOR HTML End', '*/ // FOR HTML End'))
+    .pipe(replace('/* // FOR JSP Only', '// FOR JSP Only'))
+    .pipe(replace('*/ // FOR JSP End', '// FOR JSP End'))
+    .pipe(gulp.dest("./dist")); 
+
+});
 
 gulp.task('build:mga', function () {
     gulp.src([
