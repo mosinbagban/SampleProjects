@@ -13,10 +13,9 @@
 <!-- @endif -->
 
 <!-- @if BUILD_TYPE!='dist' -->
+<link rel="stylesheet" href="src/app.css">
 <!-- @endif -->
 
-
-<link rel="stylesheet" href="static/public/css/app.css">
 <link rel="stylesheet" href="static/public/css/widgets.min.css">
 <link rel="stylesheet" href="static/public/css/style.css">
 
@@ -143,8 +142,8 @@
         },
         onReady: function(bus){ window._genesys.cxwidget.bus = bus;},
         webchat: {
-            //dataURL: window.chatEndPoint.genesysChatServiceAPI ,
-            dataURL:checkNull('<%=request.getAttribute("genesys_chat_endpoint")%>'),
+            dataURL: window.chatEndPoint.genesysChatServiceAPI ,
+            //dataURL:checkNull('<%=request.getAttribute("genesys_chat_endpoint")%>'),
             ajaxTimeout:  10000
         }
     };
