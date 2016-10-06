@@ -42,5 +42,5 @@ gulp.task('sass-chat-main',function(){
             ]}).on('error', sass.logError))
         .pipe(autoprefixer())
          //.pipe(rename({dirname: ''}))
-        .pipe(gulp.dest('./dist/static/public/css/'))
+        .pipe(gulp.dest('./dist/static/genesys/css/'))
 });

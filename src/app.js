@@ -28,8 +28,7 @@ export class App {
     // such as which they are accessible at, which module they use, and whether
     // they should be placed in the navigation bar
     config.map([
-      { route: ['','welcome'], name: 'welcome', moduleId: './app/welcome-module/welcome'},
-      { route: 'chat', name: 'chat', moduleId: './app/chat-module/chat'}
+      { route: ['','welcome'], name: 'welcome', moduleId: './app/welcome-module/welcome'}
     ]);
 
     this.router = router;

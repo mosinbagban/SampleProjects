@@ -52,7 +52,7 @@ gulp.task('copy:dist', function () {
         './jspm_packages/system-polyfills.js.map',
         './config.js'
     ])
-    .pipe(gulp.dest('./dist/static/public/js'));
+    .pipe(gulp.dest('./dist/static/genesys/js'));
 });
 
 gulp.task('index:dev', function () {
@@ -123,8 +123,8 @@ gulp.task('js:dev', [], function () {
             lib: bundles.lib
         },
         base: '',
-        bundleDest: 'static/public/js/bundles/',
-        configDest: 'static/public/js/bundles-config.js',
+        bundleDest: 'static/genesys/js/bundles/',
+        configDest: 'static/genesys/js/bundles-config.js',
         watch: true,
         logStyle: 'generic'
     }, jspm);
@@ -138,8 +138,8 @@ gulp.task('js:dist', [], function () {
         },
         autoBundles: ['src/app/pages'],
         base: 'dist/',
-        bundleDest: 'static/public/js/bundles/',
-        configDest: 'static/public/js/bundles-config.js',
+        bundleDest: 'static/genesys/js/bundles/',
+        configDest: 'static/genesys/js/bundles-config.js',
         logStyle: (os.platform() === 'win32') ? 'generic' : null
     }, jspm);
 });
@@ -147,14 +147,14 @@ gulp.task('js:dist', [], function () {
 
 gulp.task('polyfills', function(){
     return gulp.src([
-        './static/public/js/vendor/dom4.js',
-        './static/public/js/vendor/mutation-observer.js',
-        './static/public/js/vendor/custom-elements.js',
-        './static/public/js/vendor/es5-shim.min.js',
-        './static/public/js/vendor/es5-sham.min.js',
-        './static/public/js/vendor/babel-polyfill.js'
+        './static/genesys/js/vendor/dom4.js',
+        './static/genesys/js/vendor/mutation-observer.js',
+        './static/genesys/js/vendor/custom-elements.js',
+        './static/genesys/js/vendor/es5-shim.min.js',
+        './static/genesys/js/vendor/es5-sham.min.js',
+        './static/genesys/js/vendor/babel-polyfill.js'
     ]).pipe(concat('polyfills.js'))
-      .pipe(gulp.dest('./static/public/js/vendor/'))
+      .pipe(gulp.dest('./static/genesys/js/vendor/'))
 })
 
 
@@ -166,6 +166,6 @@ gulp.task('polyfills', function(){
 // });
 
 gulp.task('html-bustcache:dist', function () {
-    return gulp.src('./dist/static/public/**')
+    return gulp.src('./dist/static/genesys/**')
         .pipe(md5(10, './dist/**/*.html'));
 });
