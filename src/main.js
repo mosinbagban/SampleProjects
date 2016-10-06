@@ -39,6 +39,6 @@ export function configure(aurelia) {
     
     
     aurelia.container.registerInstance('pwebContext', window.pwebContext);
-
+    aurelia.container.registerInstance('pwebFormData', window.pwebFormData);
     aurelia.start().then(() => aurelia.setRoot());
 }
