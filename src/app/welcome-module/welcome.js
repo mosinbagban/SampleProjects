@@ -23,13 +23,15 @@ export class Welcome {
 
         this.busy = false;
 
+        console.log('****************************constructor, pwebContext.FIRST_NAME :'+pwebContext.FIRST_NAME);
         this.data = {
-            firstName: pwebFormData.first_name,
-            lastName: pwebFormData.last_name,
-            email: pwebFormData.email,
+            firstName: pwebContext.FIRST_NAME,
+            lastName: pwebContext.LAST_NAME,
+            email: pwebContext.EMAIL,
             sendTranscript: false,
             helpMessage: '',
             question: ''
+
         };
 
         this.validationErrors = {};
@@ -85,20 +87,20 @@ export class Welcome {
         let question = this.data.question;
 
         pwebContext.SEND_TRANSCRIPT = sendTranscript;
+        pwebContext.INTERACTION_REASON = helpMessage;
         pwebContext.INTERACTION_QUESTION = question;
 
         bus.command("cx.plugin.WebChat.open", {form:false})
             .done(function(e){
 
-                console.log('****************************');
+                console.log('****************************open, question :'+question);
                 bus.command("cx.plugin.WebChatService.startChat", {
                     userData: pwebContext,
                     nickname: firstName,
                     firstname: firstName,
                     lastname: lastName,
                     email: email,
-                    subject: helpMessage,
-                    text : question
+                    subject: helpMessage
 
                 })
                     .done(function(e){
@@ -110,7 +112,7 @@ export class Welcome {
 
 
 
-        bus.subscribe("cx.plugin.WebChat.ready", function(allData){
+        bus.subscribe("cx.plugin.WebChat.ready", function(){
            // alert('chat is ready');
         });
 

@@ -47,8 +47,11 @@
  //Comment this for JSP and pass the value as query param
 
         AuthenticationLevel: qs('aj_ing_secur_test'),
-        SsoSessionID : qs('sso-session-id'),
+        SSOSessionID : qs('sso-session-id'),
         SSN: qs('aw_ing_client_id'),
+        FIRST_NAME: qs('ing_first_name'),
+        LAST_NAME: qs('ing_last_name'),
+        EMAIL: qs('ing_email_address'),
         ClientID: qs('aw_ing_client_code'),
         vruApp: qs('ing_vru_app'),
         DNIS: qs('dnis'),
@@ -62,8 +65,11 @@
  //Comment this for HTML
 
         AuthenticationLevel: checkNull('<%=request.getAttribute("aj_ing_secur_test")%>'),
-        SsoSessionID : checkNull('<%=request.getAttribute("sso-session-id")%>'),
+        SSOSessionID : checkNull('<%=request.getAttribute("sso-session-id")%>'),
         SSN: checkNull('<%=request.getAttribute("aw_ing_client_id")%>'),
+        FIRST_NAME: checkNull('<%=request.getAttribute("ing_first_name")%>'),
+        LAST_NAME: checkNull('<%=request.getAttribute("ing_last_name")%>'),
+        EMAIL: checkNull('<%=request.getAttribute("ing_email_address")%>'),
         ClientID: checkNull('<%=request.getAttribute("aw_ing_client_code")%>'),
         vruApp: checkNull('<%=request.getAttribute("ing_vru_app")%>'),
         DNIS: checkNull('<%=request.getAttribute("dnis")%>'),//qs('dnis'),
@@ -73,24 +79,6 @@
 
  */ // FOR JSP End - This comment is replaced during building jsp so do not change
 
-
- };
-
- window.pwebFormData = {
-
- // FOR HTML only 
- //Comment this for JSP and pass the value as query param
-        first_name: qs('ing_first_name'),
-        last_name: qs('ing_last_name'),
-        email : qs('ing_email_address')
- // FOR HTML End
-
- /* // FOR JSP Only 
- //Comment this for HTML
-        first_name: checkNull('<%=request.getAttribute("ing_first_name")%>'),
-        last_name: checkNull('<%=request.getAttribute("ing_last_name")%>'),
-        email : checkNull('<%=request.getAttribute("ing_email_address")%>')
- */ // FOR JSP End 
 
  };
 
@@ -140,8 +128,8 @@
         },
         onReady: function(bus){ window._genesys.cxwidget.bus = bus;},
         webchat: {
-            dataURL: 'http://djaxlvbl9087:9080/genesys/2/chat/service' ,
-            //dataURL:checkNull('<%=request.getAttribute("genesys_chat_endpoint")%>'),
+            //dataURL: 'http://djaxlvbl9087:9080/genesys/2/chat/service' ,
+            dataURL:checkNull('<%=request.getAttribute("genesys_chat_endpoint")%>'),
             ajaxTimeout:  10000
         }
     };
