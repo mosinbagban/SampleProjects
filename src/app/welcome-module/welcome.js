@@ -71,8 +71,8 @@ export class Welcome {
             .isNotEmpty()
             .property('lastName', 'Last Name')
             .isNotEmpty()
-            .property('email', 'Email')
-            .isEmail()
+            //.property('email', 'Email')
+            //.isEmail()
             .getErrors();
     }
 
@@ -89,6 +89,9 @@ export class Welcome {
         pwebContext.SEND_TRANSCRIPT = sendTranscript;
         pwebContext.INTERACTION_REASON = helpMessage;
         pwebContext.INTERACTION_QUESTION = question;
+        pwebContext.FIRST_NAME = firstName;
+        pwebContext.LAST_NAME = lastName;
+        pwebContext.EMAIL = email;
 
         bus.command("cx.plugin.WebChat.open", {form:false})
             .done(function(e){
@@ -100,7 +103,8 @@ export class Welcome {
                     firstname: firstName,
                     lastname: lastName,
                     email: email,
-                    subject: helpMessage
+                    subject: helpMessage,
+                    text: question
 
                 })
                     .done(function(e){
