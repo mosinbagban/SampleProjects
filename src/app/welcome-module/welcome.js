@@ -40,7 +40,7 @@ export class Welcome {
     created(owningView, view) {
         this.disclaimerText = this.appConfig.disclaimerText;
 
-        var options = pwebContext.AuthenticationLevel == 2 ? this.appConfig.helpOptions : this.appConfig.helpOptionsPre;
+        let options = pwebContext.AuthenticationLevel == 2 ? this.appConfig.helpOptions : this.appConfig.helpOptionsPre;
 
         options.forEach(function(option){
             this.helpOptions.push({value:option.value, label:option.label})
@@ -52,7 +52,7 @@ export class Welcome {
         this.busy = true;
 
         // Do Validation
-        this.validate(this.data);
+        this.validate();
 
         //Fail for Errors
         if(this.validationErrors.firstName || this.validationErrors.lastName || this.validationErrors.email) {
@@ -65,7 +65,7 @@ export class Welcome {
         //this.app.navigateToPage("chat", this.data);
     }
 
-    validate(fields) {
+    validate() {
         this.validationErrors =  validation(this.data)
             .property('firstName', 'First Name')
             .isNotEmpty()

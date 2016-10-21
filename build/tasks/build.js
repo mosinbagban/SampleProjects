@@ -36,8 +36,6 @@ gulp.task('build:dist', ['clean:dist'], function(){
                 'js:dist',
                 'html-bustcache:dist',
                 'copy:chatpage'
-                //'html-bustcache:dist'
-                // 'test'
                 );
 });
 
@@ -55,16 +53,6 @@ gulp.task('copy:dist', function () {
     .pipe(gulp.dest('./dist/static/genesys/js'));
 });
 
-gulp.task('index:dev', function () {
-    // gulp.src('./myvoya/index.html')
-    //     .pipe(preprocess({
-    //         context: {
-    //             BUILD_TYPE: 'dev'
-    //         }
-    //     }))
-    //     .pipe(gulp.dest('./myvoya/static/public'));
-});
-
 gulp.task('index:dist', function () {
     gulp.src([
         './index.html'
@@ -74,19 +62,7 @@ gulp.task('index:dist', function () {
                 BUILD_TYPE: 'dist'
             }
         }))
-        //.pipe(gulp.dest('./dist/myvoya'));
         .pipe(gulp.dest('./dist/'));
-    // gulp.src([
-    //     './chat/public/logout.html',
-    //     './chat/public/error.html'
-    //     ])
-    //     .pipe(preprocess({
-    //         context: {
-    //             BUILD_TYPE: 'dist'
-    //         }
-    //     }))
-    //     //.pipe(gulp.dest('./dist/myvoya'));
-    //     .pipe(gulp.dest('./dist/chat/public/'));
 });
 
 
@@ -113,7 +89,6 @@ gulp.task('build:mga', function () {
                 BUILD_TYPE: 'dist'
             }
         }))
-        //.pipe(gulp.dest('./dist/myvoya'));
         .pipe(gulp.dest('./dist/mga-pages/'));
 });
 
@@ -158,12 +133,6 @@ gulp.task('polyfills', function(){
 })
 
 
-// gulp.task('html-bustcache:dev', function () {
-//   return gulp.src(['./index.html'])
-//     .pipe(replace('bar', 'foo'))
-//     .pipe(gulp.dest('build/file.txt'));
-
-// });
 
 gulp.task('html-bustcache:dist', function () {
     return gulp.src('./dist/static/genesys/**')

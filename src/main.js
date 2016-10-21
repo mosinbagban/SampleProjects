@@ -16,12 +16,6 @@ LogManager.addAppender(new ConsoleAppender());
 LogManager.setLevel(LogManager.logLevel.debug);
 
 export function configure(aurelia) {
-    /*aurelia.use
-        .defaultBindingLanguage()
-        .defaultResources()
-        .history()
-        .router()
-        .eventAggregator();*/
 
     aurelia.use
         .standardConfiguration()
