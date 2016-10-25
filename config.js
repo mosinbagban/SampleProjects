@@ -110,11 +110,13 @@ System.config({
       "extend": "npm:extend@2.0.1",
       "fetch": "github:github/fetch@0.11.1",
       "format-date": "voya-github:Voya/deep-ui-format-date@1.1.0",
+      "foundation": "github:zurb/bower-foundation@5.5.1",
       "google-analytics-helper": "voya-github:Voya/deep-ui-google-analytics-helper@2.6.0",
       "markdown-it": "npm:markdown-it@4.2.2",
       "moment": "npm:moment@2.14.1",
       "numeral": "npm:numeral@1.5.3",
       "om-js-calc": "voya-github:Voya/deep-ui-om-js-calc@master",
+      "perfget": "npm:perfget@0.2.1",
       "user-store": "voya-github:Voya/deep-ui-user-store@1.0.2",
       "voya-aurelia": "voya-github:Voya/deep-ui-voya-aurelia@1.6.0",
       "voya-base-styles": "voya-github:Voya/deep-ui-voya-base-styles@2.4.2",
@@ -123,6 +125,7 @@ System.config({
       "voya-dollar-graph": "voya-github:Voya/deep-ui-voya-dollar-graph@2.7.0-beta-branch",
       "voya-expand-collapse": "voya-github:Voya/deep-ui-voya-expand-collapse@develop",
       "voya-field": "voya-github:Voya/deep-ui-voya-field@2.x.x",
+      "voya-modal": "voya-github:Voya/deep-ui-voya-modal@develop",
       "voya-slider": "voya-github:Voya/deep-ui-voya-slider@2.0.0",
       "voya-tooltip": "voya-github:Voya/deep-ui-voya-tooltip@2.6.2",
       "voya-validation": "voya-github:Voya/deep-ui-voya-validation@1.6.0"
@@ -173,6 +176,9 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "github:zurb/bower-foundation@5.5.1": {
+      "jquery": "github:components/jquery@3.1.1"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -706,6 +712,12 @@ System.config({
       "tabbable": "npm:tabbable@1.0.3",
       "voya-base-styles": "voya-github:Voya/deep-ui-voya-base-styles@2.4.2",
       "voya-component-utils": "voya-github:Voya/deep-ui-voya-component-utils@3.3.3"
+    },
+    "voya-github:Voya/deep-ui-voya-modal@develop": {
+      "dom-delegate": "npm:dom-delegate@2.0.3",
+      "tabbable": "npm:tabbable@1.0.3",
+      "voya-base-styles": "voya-github:Voya/deep-ui-voya-base-styles@2.4.2",
+      "voya-component-utils": "voya-github:Voya/deep-ui-voya-component-utils@3.4.1"
     },
     "voya-github:Voya/deep-ui-voya-notification@3.0.0": {
       "dom-delegate": "npm:dom-delegate@2.0.3",

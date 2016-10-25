@@ -97,7 +97,6 @@
 
   function checkNull(param) {
       
-      console.log('**************************** Param :'+param);
       if(param == null || param == "null" )
           return '';
       else
@@ -128,8 +127,19 @@
         },
         onReady: function(bus){ window._genesys.cxwidget.bus = bus;},
         webchat: {
-            //dataURL: 'http://djaxlvbl9087:9080/genesys/2/chat/service' ,
+        // FOR HTML only - This portion is commented during building jsp so do not change
+        //Comment this for JSP and pass actual GMS service URL for local testing
+
+            dataURL: 'http://djaxlvbl9087:9080/genesys/2/chat/service' ,
+        // FOR HTML End - - This portion is commented during building jsp so do not change
+        
+        /* // FOR JSP Only - This comment is replaced during building jsp so do not change
+           //Comment this for HTML
+
             dataURL:checkNull('<%=request.getAttribute("genesys_chat_endpoint")%>'),
+        
+        */ // FOR JSP End - This comment is replaced during building jsp so do not change
+
             ajaxTimeout:  10000
         }
     };

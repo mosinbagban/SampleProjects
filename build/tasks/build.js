@@ -74,6 +74,7 @@ gulp.task('copy:chatpage', function () {
     .pipe(replace('// FOR HTML End', '*/ // FOR HTML End'))
     .pipe(replace('/* // FOR JSP Only', '// FOR JSP Only'))
     .pipe(replace('*/ // FOR JSP End', '// FOR JSP End'))
+    .pipe(replace('<!doctype html>', ''))
     .pipe(gulp.dest("./dist")); 
 
 });

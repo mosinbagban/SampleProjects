@@ -4546,9 +4546,28 @@ voya-button {
 .voya-header__search label {
   display: none; }
 
+.voya-header__search select {
+  padding: 4px 12px;
+  line-height: 1.6;
+  vertical-align: middle;
+  color: #6E6E6E;
+  background-color: #FFF;
+  background-image: none;
+  border: 1px solid #B2B2B2;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  display: inline;
+  width: 142px;
+  height: 32px;
+  font-size: 14px;
+  padding-left: 10px; }
+
 .voya-header__search input {
   padding: 4px 12px;
   line-height: 1.6;
+  vertical-align: middle;
   color: #6E6E6E;
   background-color: #FFF;
   background-image: none;
@@ -4557,8 +4576,8 @@ voya-button {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
-  display: inline;
-  width: 142px;
+  display: inline !important;
+  width: 142px !important;
   height: 32px;
   font-size: 14px;
   padding-left: 10px; }
@@ -4567,7 +4586,7 @@ voya-button {
     transition-property: width;
     -webkit-transition-duration: 0.25s;
     transition-duration: 0.25s;
-    width: 260px; }
+    width: 260px !important; }
 
 .voya-header__search button {
   position: absolute;
@@ -4591,6 +4610,12 @@ voya-button {
   color: #FFF;
   border-radius: 0 5px 5px 0;
   margin-right: 12px; }
+
+.voya-header__search .pwebSearch button {
+  position: relative;
+  top: 2px;
+  right: auto;
+  border-radius: 5px; }
 
 .voya-header__mobile-search {
   position: absolute;
@@ -5169,6 +5194,9 @@ voya-field {
   background-color: #FFDDDD;
   margin-top: 1px; }
 
+.voya-field__error-tooltip-text {
+  color: #ED1C24; }
+
 .voya-field__label-required {
   color: #F58000; }
 
@@ -5230,6 +5258,7 @@ voya-field {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   border-color: transparent;
   border-width: 0;
   border-style: solid; }

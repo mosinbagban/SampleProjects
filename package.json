@@ -1,20 +1,20 @@
 {
-  "name": "deep-ui-ref-app",
+  "name": "chat-ui",
   "version": "2.0.0",
-  "description": "A simple reference app using Aurelia.",
+  "description": "Chat UI (Aurelia) inegrated with Genesys widget.",
   "keywords": [
     "aurelia"
   ],
   "homepage": "http://voya.com",
   "bugs": {
-    "url": "https://github.voya.net/Voya/deep-ui-ref-app/issues"
+    "url": "https://github.voya.net/Voya/chat-ui/issues"
   },
   "license": "Voya",
   "author": "Voya",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.voya.net/Voya/deep-ui-ref-app"
+    "url": "https://github.voya.net/Voya/chat-ui"
   },
   "scripts": {
     "build": "gulp build:dist",
@@ -24,39 +24,27 @@
   "devDependencies": {
     "app-root-path": "^1.0.0",
     "async": "^1.5.2",
-    "aurelia-bundler": "^0.3.2",
-    "aurelia-tools": "^0.1.3",
     "babel-eslint": "6.1.0",
     "browser-sync": "^1.8.1",
     "chai": "^2.2.0",
     "chokidar": "^1.4.3",
     "colors": "^1.1.2",
-    "conventional-changelog": "0.0.11",
     "del": "^2.2.0",
     "fs-extra": "^0.26.7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "3.1.0",
-    "gulp-babel": "^5.3.0",
-    "gulp-bump": "^2.0.1",
-    "gulp-changed": "^1.3.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "2.0.0",
     "gulp-jscs": "4.0.0",
     "gulp-jscs-stylish": "1.4.0",
     "gulp-md5-assets": "^0.1.9",
-    "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-preprocess": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "2.2.0",
-    "gulp-shell": "^0.4.3",
-    "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
-    "gulp-yuidoc": "^0.1.2",
-    "jasmine-core": "^2.1.3",
     "jspm": "0.16.39",
-    "object.assign": "^1.0.3",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
     "selenium-standalone": "^4.7.0",
@@ -64,7 +52,6 @@
     "vinyl-paths": "^1.0.0",
     "voya-builder": "git+ssh://git@github.voya.net:Voya/deep-ui-voya-builder.git#v1.3.7",
     "voya-stub-server": "git+ssh://git@github.voya.net:Voya/voya-stub-server.git#v1.3.0",
-    "webdriverio": "^4.0.5",
     "yargs": "^2.1.1"
   },
   "jspm": {
