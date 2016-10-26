@@ -2260,7 +2260,7 @@ strong {
   font-style: normal; }
 
 /*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
@@ -4082,6 +4082,7 @@ strong {
   content: ""; }
 
 .fa-battery-4:before,
+.fa-battery:before,
 .fa-battery-full:before {
   content: ""; }
 
@@ -4427,6 +4428,143 @@ strong {
 .fa-fa:before,
 .fa-font-awesome:before {
   content: ""; }
+
+.fa-handshake-o:before {
+  content: ""; }
+
+.fa-envelope-open:before {
+  content: ""; }
+
+.fa-envelope-open-o:before {
+  content: ""; }
+
+.fa-linode:before {
+  content: ""; }
+
+.fa-address-book:before {
+  content: ""; }
+
+.fa-address-book-o:before {
+  content: ""; }
+
+.fa-vcard:before,
+.fa-address-card:before {
+  content: ""; }
+
+.fa-vcard-o:before,
+.fa-address-card-o:before {
+  content: ""; }
+
+.fa-user-circle:before {
+  content: ""; }
+
+.fa-user-circle-o:before {
+  content: ""; }
+
+.fa-user-o:before {
+  content: ""; }
+
+.fa-id-badge:before {
+  content: ""; }
+
+.fa-drivers-license:before,
+.fa-id-card:before {
+  content: ""; }
+
+.fa-drivers-license-o:before,
+.fa-id-card-o:before {
+  content: ""; }
+
+.fa-quora:before {
+  content: ""; }
+
+.fa-free-code-camp:before {
+  content: ""; }
+
+.fa-telegram:before {
+  content: ""; }
+
+.fa-thermometer-4:before,
+.fa-thermometer:before,
+.fa-thermometer-full:before {
+  content: ""; }
+
+.fa-thermometer-3:before,
+.fa-thermometer-three-quarters:before {
+  content: ""; }
+
+.fa-thermometer-2:before,
+.fa-thermometer-half:before {
+  content: ""; }
+
+.fa-thermometer-1:before,
+.fa-thermometer-quarter:before {
+  content: ""; }
+
+.fa-thermometer-0:before,
+.fa-thermometer-empty:before {
+  content: ""; }
+
+.fa-shower:before {
+  content: ""; }
+
+.fa-bathtub:before,
+.fa-s15:before,
+.fa-bath:before {
+  content: ""; }
+
+.fa-podcast:before {
+  content: ""; }
+
+.fa-window-maximize:before {
+  content: ""; }
+
+.fa-window-minimize:before {
+  content: ""; }
+
+.fa-window-restore:before {
+  content: ""; }
+
+.fa-times-rectangle:before,
+.fa-window-close:before {
+  content: ""; }
+
+.fa-times-rectangle-o:before,
+.fa-window-close-o:before {
+  content: ""; }
+
+.fa-bandcamp:before {
+  content: ""; }
+
+.fa-grav:before {
+  content: ""; }
+
+.fa-etsy:before {
+  content: ""; }
+
+.fa-imdb:before {
+  content: ""; }
+
+.fa-ravelry:before {
+  content: ""; }
+
+.fa-eercast:before {
+  content: ""; }
+
+.fa-microchip:before {
+  content: ""; }
+
+.fa-snowflake-o:before {
+  content: ""; }
+
+.fa-superpowers:before {
+  content: ""; }
+
+.fa-wpexplorer:before {
+  content: ""; }
+
+.fa-meetup:before {
+  content: ""; }
 
 .sr-only {
   position: absolute;
@@ -6581,9 +6719,6 @@ voya-field .voya-field__input-cell--no-chosen select {
   z-index: 2;
   border: 1px solid #929292;
   padding: 10px;
-  max-width: 500px;
-  min-width: 150px;
-  min-height: 50px;
   border-radius: 12px;
   position: absolute;
   background-color: #FFF;
@@ -6594,6 +6729,10 @@ voya-field .voya-field__input-cell--no-chosen select {
 
 .voya-tooltip--square-corners {
   border-radius: 0 !important; }
+
+.voya-tooltip-theme-error {
+  background-color: #FFDDDD;
+  border-color: #ED1C24; }
 
 .voya-tooltip:before, voya-tooltip:before, .voya-tooltip:after, voya-tooltip:after {
   width: 0;
@@ -6779,6 +6918,87 @@ voya-field .voya-field__input-cell--no-chosen select {
   margin: 0;
   border-width: 10px 0px 0px 10px;
   border-color: transparent transparent transparent #FFFFFF; }
+
+.voya-tooltip-theme-error.top:before {
+  border-color: #ED1C24 transparent transparent transparent; }
+
+.voya-tooltip-theme-error.top:after {
+  border-color: #FFDDDD transparent transparent transparent; }
+
+.voya-tooltip-theme-error.top-justifiedLeft:before {
+  border-color: #ED1C24 transparent transparent transparent; }
+
+.voya-tooltip-theme-error.top-justifiedLeft:after {
+  border-color: #FFDDDD transparent transparent transparent; }
+
+.voya-tooltip-theme-error.top-justifiedRight:before {
+  border-color: transparent #ED1C24 transparent transparent; }
+
+.voya-tooltip-theme-error.top-justifiedRight:after {
+  border-color: transparent #FFDDDD transparent transparent; }
+
+.voya-tooltip-theme-error.bottom:before {
+  border-color: transparent transparent #ED1C24 transparent; }
+
+.voya-tooltip-theme-error.bottom:after {
+  border-color: transparent transparent #FFDDDD transparent; }
+
+.voya-tooltip-theme-error.bottom-justifiedLeft:before {
+  border-color: transparent transparent #ED1C24 transparent; }
+
+.voya-tooltip-theme-error.bottom-justifiedLeft:after {
+  border-color: transparent transparent #FFDDDD transparent; }
+
+.voya-tooltip-theme-error.bottom-justifiedRight:before {
+  border-color: transparent transparent #ED1C24 transparent; }
+
+.voya-tooltip-theme-error.bottom-justifiedRight:after {
+  border-color: transparent transparent #FFDDDD transparent; }
+
+.voya-tooltip-theme-error.left:before {
+  border-color: transparent transparent transparent #ED1C24; }
+
+.voya-tooltip-theme-error.left:after {
+  border-color: transparent transparent transparent #FFDDDD; }
+
+.voya-tooltip-theme-error.right:before {
+  border-color: transparent #ED1C24 transparent transparent; }
+
+.voya-tooltip-theme-error.right:after {
+  border-color: transparent #FFDDDD transparent transparent; }
+
+.voya-tooltip-theme-error.right-justifiedTop:before {
+  border-color: transparent #ED1C24 transparent transparent; }
+
+.voya-tooltip-theme-error.right-justifiedTop:after {
+  border-color: transparent #FFDDDD transparent transparent; }
+
+.voya-tooltip-theme-error.right-justifiedBottom:before {
+  border-color: transparent transparent #ED1C24 transparent; }
+
+.voya-tooltip-theme-error.right-justifiedBottom:after {
+  border-color: transparent transparent #FFDDDD transparent; }
+
+.voya-tooltip-theme-error.left-justifiedTop:before {
+  border-color: #ED1C24 transparent transparent transparent; }
+
+.voya-tooltip-theme-error.left-justifiedTop:after {
+  border-color: #FFDDDD transparent transparent transparent; }
+
+.voya-tooltip-theme-error.left-justifiedBottom:before {
+  border-color: transparent transparent transparent #ED1C24; }
+
+.voya-tooltip-theme-error.left-justifiedBottom:after {
+  border-color: transparent transparent transparent #FFDDDD; }
+
+.voya-tooltip-theme-error .voya-tooltip__variablePositionArrow {
+  border-color: #ED1C24 transparent transparent; }
+  .voya-tooltip-theme-error .voya-tooltip__variablePositionArrow:after {
+    border-color: #FFDDDD transparent transparent; }
+  .voya-tooltip-theme-error .voya-tooltip__variablePositionArrow.voya-tooltip__variablePositionArrow--bottom {
+    border-color: transparent transparent #ED1C24; }
+    .voya-tooltip-theme-error .voya-tooltip__variablePositionArrow.voya-tooltip__variablePositionArrow--bottom:after {
+      border-color: transparent transparent #FFDDDD; }
 
 .voya-tooltip__variablePositionArrow {
   position: absolute;
