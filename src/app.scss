@@ -1,6 +1,5 @@
 @import 'mixins';
 
-//@import 'jspm:voya-base-styles/scss/voya-base';
 @import "../jspm_packages/voya-github/Voya/deep-ui-voya-base-styles@2.4.2/scss/voya-base";
 
 $ProximaPath: "/static/genesys/fonts/proxima";
@@ -13,12 +12,6 @@ $fa-font-path: '/static/genesys/fonts/font-awesome';
 @import '../jspm_packages/voya-github/Voya/deep-ui-voya-header@develop/voya-header';
 @import '../jspm_packages/voya-github/Voya/deep-ui-voya-indicator@2.0.0/voya-indicator';
 
-
-//TODO: THESE THREE LINES SEEM TO BE CAUSING THE SASS COMPILER TO FAIL!
-//TODO: harcoded jspm paths is not ideal but needed until we move to JSPM 17
-//@import "../../jspm_packages/voya-github/Voya/deep-ui-voya-main-nav@develop/voya-main-nav";
-//@import "../../jspm_packages/voya-github/Voya/deep-ui-voya-top-nav@develop/voya-top-nav";
-//@import "../../jspm_packages/voya-github/Voya/deep-ui-voya-mobile-nav@develop/voya-mobile-nav";
 
 @import '../jspm_packages/voya-github/Voya/deep-ui-voya-footer@2.5.1/voya-footer';
 @import '../jspm_packages/voya-github/Voya/deep-ui-voya-field@2.x.x/all';

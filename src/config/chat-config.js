@@ -1,7 +1,3 @@
-/**
- * Created by n689716 on 9/7/16.
- */
-
 var config = {
 
     baseURL : 'http://localhost:9200',

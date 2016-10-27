@@ -1,7 +1,3 @@
-/**
- * Created by n689716 on 9/7/16.
- */
-
 import { inject, BindingEngine } from 'aurelia-framework';
 import {Router} from 'aurelia-router';
 import {validation} from 'voya-validation';
@@ -23,7 +19,6 @@ export class Welcome {
 
         this.busy = false;
 
-        console.log('****************************constructor, pwebContext.FIRST_NAME :'+pwebContext.FIRST_NAME);
         this.data = {
             firstName: pwebContext.FIRST_NAME,
             lastName: pwebContext.LAST_NAME,
@@ -35,6 +30,12 @@ export class Welcome {
         };
 
         this.validationErrors = {};
+    }
+
+    get getClass() {
+        //do your magic here
+        console.log('Welcome => getClass ...called *************************');
+        return 'disabledStyle';
     }
 
     created(owningView, view) {
@@ -54,13 +55,25 @@ export class Welcome {
         // Do Validation
         this.validate();
 
-        //Fail for Errors
-        if(this.validationErrors.firstName || this.validationErrors.lastName || this.validationErrors.email) {
+        //check if required field is not entered, fail for Errors
+        if(this.validationErrors.firstName || this.validationErrors.lastName) {
             this.busy = false;
             return;
         }
+        
+        // validate email if email is filled or if send transcript is selected, fail for Errors
+        if( this.data.email.length > 0 || this.data.sendTranscript == true) {
+            
+            // Do Email Validation
+            this.validateEmail();
 
-        this.newStartChat(window._genesys.cxwidget.bus);
+            if( this.validationErrors.email ){
+                this.busy = false;
+                return;
+            }
+        }
+
+       this.newStartChat(window._genesys.cxwidget.bus);
 
         //this.app.navigateToPage("chat", this.data);
     }
@@ -71,10 +84,17 @@ export class Welcome {
             .isNotEmpty()
             .property('lastName', 'Last Name')
             .isNotEmpty()
-            //.property('email', 'Email')
-            //.isEmail()
             .getErrors();
     }
+
+    validateEmail(){
+        this.validationErrors =  validation(this.data)
+            .property('email', 'Email')
+            .isNotEmpty()
+            .isEmail()
+            .getErrors();
+    }     
+
 
 
     newStartChat(bus) {

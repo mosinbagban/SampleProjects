@@ -1,6 +1,3 @@
-/**
- * Created by n689716 on 9/7/16.
- */
 
 import {inject, BindingEngine} from 'aurelia-framework';
 import {Router} from 'aurelia-router';

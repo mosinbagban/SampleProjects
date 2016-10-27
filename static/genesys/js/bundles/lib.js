@@ -3145,7 +3145,7 @@ define("npm:aurelia-router@1.0.0.js", ["npm:aurelia-router@1.0.0/aurelia-router.
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-binding@1.0.0/aurelia-templating-binding.js", ["exports", "npm:aurelia-logging@1.0.0.js", "npm:aurelia-binding@1.0.4.js", "npm:aurelia-templating@1.0.0.js"], function(exports, _aureliaLogging, _aureliaBinding, _aureliaTemplating) {
+define("npm:aurelia-templating-binding@1.0.0/aurelia-templating-binding.js", ["exports", "npm:aurelia-logging@1.0.0.js", "npm:aurelia-binding@1.0.9.js", "npm:aurelia-templating@1.0.0.js"], function(exports, _aureliaLogging, _aureliaBinding, _aureliaTemplating) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.TemplatingBindingLanguage = exports.SyntaxInterpreter = exports.ChildInterpolationBinding = exports.InterpolationBinding = exports.InterpolationBindingExpression = exports.AttributeMap = undefined;
@@ -3964,7 +3964,7 @@ define("npm:aurelia-templating-resources@1.0.0/if.js", ["exports", "npm:aurelia-
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/with.js", ["exports", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-binding@1.0.4.js"], function(exports, _aureliaDependencyInjection, _aureliaTemplating, _aureliaBinding) {
+define("npm:aurelia-templating-resources@1.0.0/with.js", ["exports", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-binding@1.0.9.js"], function(exports, _aureliaDependencyInjection, _aureliaTemplating, _aureliaBinding) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.With = undefined;
@@ -4005,7 +4005,7 @@ define("npm:aurelia-templating-resources@1.0.0/with.js", ["exports", "npm:aureli
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/repeat.js", ["exports", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-binding@1.0.4.js", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-templating-resources@1.0.0/repeat-strategy-locator.js", "npm:aurelia-templating-resources@1.0.0/repeat-utilities.js", "npm:aurelia-templating-resources@1.0.0/analyze-view-factory.js", "npm:aurelia-templating-resources@1.0.0/abstract-repeater.js"], function(exports, _aureliaDependencyInjection, _aureliaBinding, _aureliaTemplating, _repeatStrategyLocator, _repeatUtilities, _analyzeViewFactory, _abstractRepeater) {
+define("npm:aurelia-templating-resources@1.0.0/repeat.js", ["exports", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-binding@1.0.9.js", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-templating-resources@1.0.0/repeat-strategy-locator.js", "npm:aurelia-templating-resources@1.0.0/repeat-utilities.js", "npm:aurelia-templating-resources@1.0.0/analyze-view-factory.js", "npm:aurelia-templating-resources@1.0.0/abstract-repeater.js"], function(exports, _aureliaDependencyInjection, _aureliaBinding, _aureliaTemplating, _repeatStrategyLocator, _repeatUtilities, _analyzeViewFactory, _abstractRepeater) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.Repeat = undefined;
@@ -4345,7 +4345,7 @@ define("npm:aurelia-templating-resources@1.0.0/hide.js", ["exports", "npm:aureli
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/sanitize-html.js", ["exports", "npm:aurelia-binding@1.0.4.js", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-templating-resources@1.0.0/html-sanitizer.js"], function(exports, _aureliaBinding, _aureliaDependencyInjection, _htmlSanitizer) {
+define("npm:aurelia-templating-resources@1.0.0/sanitize-html.js", ["exports", "npm:aurelia-binding@1.0.9.js", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-templating-resources@1.0.0/html-sanitizer.js"], function(exports, _aureliaBinding, _aureliaDependencyInjection, _htmlSanitizer) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.SanitizeHTMLValueConverter = undefined;
@@ -4399,7 +4399,7 @@ define("npm:aurelia-templating-resources@1.0.0/replaceable.js", ["exports", "npm
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/focus.js", ["exports", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-binding@1.0.4.js", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-task-queue@1.0.0.js", "npm:aurelia-pal@1.0.0.js"], function(exports, _aureliaTemplating, _aureliaBinding, _aureliaDependencyInjection, _aureliaTaskQueue, _aureliaPal) {
+define("npm:aurelia-templating-resources@1.0.0/focus.js", ["exports", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-binding@1.0.9.js", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-task-queue@1.0.0.js", "npm:aurelia-pal@1.0.0.js"], function(exports, _aureliaTemplating, _aureliaBinding, _aureliaDependencyInjection, _aureliaTaskQueue, _aureliaPal) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.Focus = undefined;
@@ -4581,7 +4581,7 @@ define("npm:aurelia-templating-resources@1.0.0/html-sanitizer.js", ["exports"], 
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/binding-mode-behaviors.js", ["exports", "npm:aurelia-binding@1.0.4.js", "npm:aurelia-metadata@1.0.0.js"], function(exports, _aureliaBinding, _aureliaMetadata) {
+define("npm:aurelia-templating-resources@1.0.0/binding-mode-behaviors.js", ["exports", "npm:aurelia-binding@1.0.9.js", "npm:aurelia-metadata@1.0.0.js"], function(exports, _aureliaBinding, _aureliaMetadata) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.TwoWayBindingBehavior = exports.OneWayBindingBehavior = exports.OneTimeBindingBehavior = undefined;
@@ -4615,7 +4615,7 @@ define("npm:aurelia-templating-resources@1.0.0/binding-mode-behaviors.js", ["exp
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/throttle-binding-behavior.js", ["exports", "npm:aurelia-binding@1.0.4.js"], function(exports, _aureliaBinding) {
+define("npm:aurelia-templating-resources@1.0.0/throttle-binding-behavior.js", ["exports", "npm:aurelia-binding@1.0.9.js"], function(exports, _aureliaBinding) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.ThrottleBindingBehavior = undefined;
@@ -4672,7 +4672,7 @@ define("npm:aurelia-templating-resources@1.0.0/throttle-binding-behavior.js", ["
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/debounce-binding-behavior.js", ["exports", "npm:aurelia-binding@1.0.4.js"], function(exports, _aureliaBinding) {
+define("npm:aurelia-templating-resources@1.0.0/debounce-binding-behavior.js", ["exports", "npm:aurelia-binding@1.0.9.js"], function(exports, _aureliaBinding) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.DebounceBindingBehavior = undefined;
@@ -4778,7 +4778,7 @@ define("npm:aurelia-templating-resources@1.0.0/signal-binding-behavior.js", ["ex
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/binding-signaler.js", ["exports", "npm:aurelia-binding@1.0.4.js"], function(exports, _aureliaBinding) {
+define("npm:aurelia-templating-resources@1.0.0/binding-signaler.js", ["exports", "npm:aurelia-binding@1.0.9.js"], function(exports, _aureliaBinding) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.BindingSignaler = undefined;
@@ -4803,7 +4803,7 @@ define("npm:aurelia-templating-resources@1.0.0/binding-signaler.js", ["exports",
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/update-trigger-binding-behavior.js", ["exports", "npm:aurelia-binding@1.0.4.js"], function(exports, _aureliaBinding) {
+define("npm:aurelia-templating-resources@1.0.0/update-trigger-binding-behavior.js", ["exports", "npm:aurelia-binding@1.0.9.js"], function(exports, _aureliaBinding) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.UpdateTriggerBindingBehavior = undefined;
@@ -5017,7 +5017,7 @@ define("npm:aurelia-templating-resources@1.0.0/null-repeat-strategy.js", ["expor
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/array-repeat-strategy.js", ["exports", "npm:aurelia-templating-resources@1.0.0/repeat-utilities.js", "npm:aurelia-binding@1.0.4.js"], function(exports, _repeatUtilities, _aureliaBinding) {
+define("npm:aurelia-templating-resources@1.0.0/array-repeat-strategy.js", ["exports", "npm:aurelia-templating-resources@1.0.0/repeat-utilities.js", "npm:aurelia-binding@1.0.9.js"], function(exports, _repeatUtilities, _aureliaBinding) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.ArrayRepeatStrategy = undefined;
@@ -5452,7 +5452,7 @@ define("npm:aurelia-templating-resources@1.0.0/number-repeat-strategy.js", ["exp
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating-resources@1.0.0/repeat-utilities.js", ["exports", "npm:aurelia-binding@1.0.4.js"], function(exports, _aureliaBinding) {
+define("npm:aurelia-templating-resources@1.0.0/repeat-utilities.js", ["exports", "npm:aurelia-binding@1.0.9.js"], function(exports, _aureliaBinding) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.updateOverrideContexts = updateOverrideContexts;
@@ -11148,7 +11148,7 @@ define("npm:aurelia-dependency-injection@1.0.0.js", ["npm:aurelia-dependency-inj
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-logging@1.0.0.js", "npm:aurelia-pal@1.0.0.js", "npm:aurelia-task-queue@1.0.0.js", "npm:aurelia-metadata@1.0.0.js"], function(exports, _aureliaLogging, _aureliaPal, _aureliaTaskQueue, _aureliaMetadata) {
+define("npm:aurelia-binding@1.0.9/aurelia-binding.js", ["exports", "npm:aurelia-logging@1.0.0.js", "npm:aurelia-pal@1.0.0.js", "npm:aurelia-task-queue@1.0.0.js", "npm:aurelia-metadata@1.0.0.js"], function(exports, _aureliaLogging, _aureliaPal, _aureliaTaskQueue, _aureliaMetadata) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.getSetObserver = exports.BindingEngine = exports.NameExpression = exports.Listener = exports.ListenerExpression = exports.BindingBehaviorResource = exports.ValueConverterResource = exports.Call = exports.CallExpression = exports.Binding = exports.BindingExpression = exports.ObjectObservationAdapter = exports.ObserverLocator = exports.SVGAnalyzer = exports.presentationAttributes = exports.presentationElements = exports.elements = exports.ComputedExpression = exports.ClassObserver = exports.SelectValueObserver = exports.CheckedObserver = exports.ValueAttributeObserver = exports.StyleObserver = exports.DataAttributeObserver = exports.dataAttributeAccessor = exports.XLinkAttributeObserver = exports.SetterObserver = exports.PrimitiveObserver = exports.propertyAccessor = exports.DirtyCheckProperty = exports.DirtyChecker = exports.EventManager = exports.getMapObserver = exports.ParserImplementation = exports.Parser = exports.Scanner = exports.Lexer = exports.Token = exports.bindingMode = exports.ExpressionCloner = exports.Unparser = exports.LiteralObject = exports.LiteralArray = exports.LiteralString = exports.LiteralPrimitive = exports.PrefixNot = exports.Binary = exports.CallFunction = exports.CallMember = exports.CallScope = exports.AccessKeyed = exports.AccessMember = exports.AccessScope = exports.AccessThis = exports.Conditional = exports.Assign = exports.ValueConverter = exports.BindingBehavior = exports.Chain = exports.Expression = exports.getArrayObserver = exports.CollectionLengthObserver = exports.ModifyCollectionObserver = exports.ExpressionObserver = exports.sourceContext = undefined;
@@ -12722,14 +12722,10 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
     };
     return LiteralObject;
   }(Expression);
-  var evalListCache = [[], [0], [0, 0], [0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0, 0]];
   function evalList(scope, list, lookupFunctions) {
     var length = list.length;
-    for (var cacheLength = evalListCache.length; cacheLength <= length; ++cacheLength) {
-      evalListCache.push([]);
-    }
-    var result = evalListCache[length];
-    for (var _i14 = 0; _i14 < length; ++_i14) {
+    var result = [];
+    for (var _i14 = 0; _i14 < length; _i14++) {
       result[_i14] = list[_i14].evaluate(scope, lookupFunctions);
     }
     return result;
@@ -13590,7 +13586,7 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
         if (this.optional('.')) {
           name = this.peek.key;
           this.advance();
-        } else if (this.peek === EOF || this.peek.text === '(' || this.peek.text === '[' || this.peek.text === '}') {
+        } else if (this.peek === EOF || this.peek.text === '(' || this.peek.text === '[' || this.peek.text === '}' || this.peek.text === ',') {
           return new AccessThis(ancestor);
         } else {
           this.error('Unexpected token ' + this.peek.text);
@@ -14104,6 +14100,14 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
     StyleObserver.prototype.getValue = function getValue() {
       return this.element.style.cssText;
     };
+    StyleObserver.prototype._setProperty = function _setProperty(style, value) {
+      var priority = '';
+      if (value !== null && value !== undefined && typeof value.indexOf === 'function' && value.indexOf('!important') !== -1) {
+        priority = 'important';
+        value = value.replace('!important', '');
+      }
+      this.element.style.setProperty(style, value, priority);
+    };
     StyleObserver.prototype.setValue = function setValue(newValue) {
       var styles = this.styles || {};
       var style = void 0;
@@ -14113,7 +14117,7 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
           for (style in newValue) {
             if (newValue.hasOwnProperty(style)) {
               styles[style] = version;
-              this.element.style[style] = newValue[style];
+              this._setProperty(style, newValue[style]);
             }
           }
         } else if (newValue.length) {
@@ -14125,7 +14129,7 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
               continue;
             }
             styles[style] = version;
-            this.element.style[style] = pair[2];
+            this._setProperty(style, pair[2]);
           }
         }
       }
@@ -14139,7 +14143,7 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
         if (!styles.hasOwnProperty(style) || styles[style] !== version) {
           continue;
         }
-        this.element.style[style] = '';
+        this.element.style.removeProperty(style);
       }
     };
     StyleObserver.prototype.subscribe = function subscribe() {
@@ -14880,7 +14884,7 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
         if (xlinkResult) {
           return new XLinkAttributeObserver(obj, propertyName, xlinkResult[1]);
         }
-        if (/^\w+:|^data-|^aria-/.test(propertyName) || obj instanceof _aureliaPal.DOM.SVGElement && this.svgAnalyzer.isStandardSvgAttribute(obj.nodeName, propertyName)) {
+        if (propertyName === 'role' && (obj instanceof _aureliaPal.DOM.Element || obj instanceof _aureliaPal.DOM.SVGElement) || /^\w+:|^data-|^aria-/.test(propertyName) || obj instanceof _aureliaPal.DOM.SVGElement && this.svgAnalyzer.isStandardSvgAttribute(obj.nodeName, propertyName)) {
           return new DataAttributeObserver(obj, propertyName);
         }
       }
@@ -15304,7 +15308,9 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
         return;
       }
       this.isBound = false;
-      this.sourceExpression.assign(this.source, null, this.lookupFunctions);
+      if (this.sourceExpression.evaluate(this.source, this.lookupFunctions) === this.target) {
+        this.sourceExpression.assign(this.source, null, this.lookupFunctions);
+      }
       if (this.sourceExpression.unbind) {
         this.sourceExpression.unbind(this, this.source);
       }
@@ -15444,33 +15450,49 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
   }(ModifyCollectionObserver);
   function observable(targetOrConfig, key, descriptor) {
     function deco(target, key, descriptor, config) {
-      if (key === undefined) {
+      var isClassDecorator = key === undefined;
+      if (isClassDecorator) {
         target = target.prototype;
         key = typeof config === 'string' ? config : config.name;
       }
       var innerPropertyName = '_' + key;
+      var innerPropertyDescriptor = {
+        configurable: true,
+        enumerable: false,
+        writable: true
+      };
       var callbackName = config && config.changeHandler || key + 'Changed';
       if (descriptor) {
         if (typeof descriptor.initializer === 'function') {
-          target[innerPropertyName] = descriptor.initializer();
+          innerPropertyDescriptor.value = descriptor.initializer();
         }
       } else {
         descriptor = {};
       }
+      if (!('enumerable' in descriptor)) {
+        descriptor.enumerable = true;
+      }
+      delete descriptor.value;
       delete descriptor.writable;
       delete descriptor.initializer;
+      Reflect.defineProperty(target, innerPropertyName, innerPropertyDescriptor);
       descriptor.get = function() {
         return this[innerPropertyName];
       };
       descriptor.set = function(newValue) {
         var oldValue = this[innerPropertyName];
         this[innerPropertyName] = newValue;
+        Reflect.defineProperty(this, innerPropertyName, {enumerable: false});
         if (this[callbackName]) {
           this[callbackName](newValue, oldValue, key);
         }
       };
       descriptor.get.dependencies = [innerPropertyName];
-      Reflect.defineProperty(target, key, descriptor);
+      if (isClassDecorator) {
+        Reflect.defineProperty(target, key, descriptor);
+      } else {
+        return descriptor;
+      }
     }
     if (key === undefined) {
       return function(t, k, d) {
@@ -15484,14 +15506,14 @@ define("npm:aurelia-binding@1.0.4/aurelia-binding.js", ["exports", "npm:aurelia-
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-binding@1.0.4.js", ["npm:aurelia-binding@1.0.4/aurelia-binding.js"], function(main) {
+define("npm:aurelia-binding@1.0.9.js", ["npm:aurelia-binding@1.0.9/aurelia-binding.js"], function(main) {
   return main;
 });
 
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-templating@1.0.0/aurelia-templating.js", ["exports", "npm:aurelia-logging@1.0.0.js", "npm:aurelia-metadata@1.0.0.js", "npm:aurelia-pal@1.0.0.js", "npm:aurelia-path@1.0.0.js", "npm:aurelia-loader@1.0.0.js", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-binding@1.0.4.js", "npm:aurelia-task-queue@1.0.0.js"], function(exports, _aureliaLogging, _aureliaMetadata, _aureliaPal, _aureliaPath, _aureliaLoader, _aureliaDependencyInjection, _aureliaBinding, _aureliaTaskQueue) {
+define("npm:aurelia-templating@1.0.0/aurelia-templating.js", ["exports", "npm:aurelia-logging@1.0.0.js", "npm:aurelia-metadata@1.0.0.js", "npm:aurelia-pal@1.0.0.js", "npm:aurelia-path@1.0.0.js", "npm:aurelia-loader@1.0.0.js", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-binding@1.0.9.js", "npm:aurelia-task-queue@1.0.0.js"], function(exports, _aureliaLogging, _aureliaMetadata, _aureliaPal, _aureliaPath, _aureliaLoader, _aureliaDependencyInjection, _aureliaBinding, _aureliaTaskQueue) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.TemplatingEngine = exports.ElementConfigResource = exports.CompositionEngine = exports.HtmlBehaviorResource = exports.BindableProperty = exports.BehaviorPropertyObserver = exports.Controller = exports.ViewEngine = exports.ModuleAnalyzer = exports.ResourceDescription = exports.ResourceModule = exports.ViewCompiler = exports.ViewFactory = exports.BoundViewFactory = exports.ViewSlot = exports.View = exports.ViewResources = exports.ShadowDOM = exports.ShadowSlot = exports.PassThroughSlot = exports.SlotCustomAttribute = exports.BindingLanguage = exports.ViewLocator = exports.InlineViewStrategy = exports.TemplateRegistryViewStrategy = exports.NoViewStrategy = exports.ConventionalViewStrategy = exports.RelativeViewStrategy = exports.viewStrategy = exports.TargetInstruction = exports.BehaviorInstruction = exports.ViewCompileInstruction = exports.ResourceLoadContext = exports.ElementEvents = exports.ViewEngineHooksResource = exports.CompositionTransaction = exports.CompositionTransactionOwnershipToken = exports.CompositionTransactionNotifier = exports.Animator = exports.animationEvent = undefined;
@@ -20205,7 +20227,7 @@ define("npm:aurelia-logging@1.0.0.js", ["npm:aurelia-logging@1.0.0/aurelia-loggi
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:aurelia-framework@1.0.1/aurelia-framework.js", ["exports", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-binding@1.0.4.js", "npm:aurelia-metadata@1.0.0.js", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-loader@1.0.0.js", "npm:aurelia-task-queue@1.0.0.js", "npm:aurelia-path@1.0.0.js", "npm:aurelia-pal@1.0.0.js", "npm:aurelia-logging@1.0.0.js"], function(exports, _aureliaDependencyInjection, _aureliaBinding, _aureliaMetadata, _aureliaTemplating, _aureliaLoader, _aureliaTaskQueue, _aureliaPath, _aureliaPal, _aureliaLogging) {
+define("npm:aurelia-framework@1.0.1/aurelia-framework.js", ["exports", "npm:aurelia-dependency-injection@1.0.0.js", "npm:aurelia-binding@1.0.9.js", "npm:aurelia-metadata@1.0.0.js", "npm:aurelia-templating@1.0.0.js", "npm:aurelia-loader@1.0.0.js", "npm:aurelia-task-queue@1.0.0.js", "npm:aurelia-path@1.0.0.js", "npm:aurelia-pal@1.0.0.js", "npm:aurelia-logging@1.0.0.js"], function(exports, _aureliaDependencyInjection, _aureliaBinding, _aureliaMetadata, _aureliaTemplating, _aureliaLoader, _aureliaTaskQueue, _aureliaPath, _aureliaPal, _aureliaLogging) {
   'use strict';
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.LogManager = exports.FrameworkConfiguration = exports.Aurelia = undefined;
@@ -20837,7 +20859,7 @@ System.register('voya-github:Voya/deep-ui-voya-notification@3.0.0/voya-notificat
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-notification@3.0.0/voya-notification.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-notification@3.0.0/voya-notification-template.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-notification@3.0.0/voya-notification.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-notification@3.0.0/voya-notification-template.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, NativeHTMLElement, property, nullable, voyaNotificationTemplate, TAG_NAME, ENTER_KEY, SPACE_KEY, BRAND_THEMES, VoyaNotification;
 
 	return {
@@ -20851,11 +20873,11 @@ System.register('voya-github:Voya/deep-ui-voya-notification@3.0.0/voya-notificat
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaNotification300VoyaNotificationTemplateJs) {
 			voyaNotificationTemplate = _voyaGithubVoyaDeepUiVoyaNotification300VoyaNotificationTemplateJs.voyaNotificationTemplate;
 		}],
@@ -21179,7 +21201,7 @@ System.registerDynamic("voya-github:Voya/deep-ui-voya-button@5.1.0/closest.js", 
   return _retrieveGlobal();
 });
 
-System.register('voya-github:Voya/deep-ui-voya-button@5.1.0/voya-button.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-button@5.1.0/closest.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-button@5.1.0/voya-button.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-button@5.1.0/closest.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, NativeHTMLElement, voyaComponentUtils, property, ENTER_KEY, SPACE_KEY, BRAND_THEMES, VoyaButton;
 
 	return {
@@ -21193,11 +21215,11 @@ System.register('voya-github:Voya/deep-ui-voya-button@5.1.0/voya-button.js', ['n
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.NativeHTMLElement;
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
 		}, function (_voyaGithubVoyaDeepUiVoyaButton510ClosestJs) {}],
 		execute: function () {
 			'use strict';
@@ -43649,6 +43671,8 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/area-spl
                 }, {
                     key: 'buildChartModel',
                     value: function buildChartModel() {
+                        var _this = this;
+
                         var chartModel = {};
                         var showAllDataSets = undefined;
                         // If the user is on a mobile device, force ShowAllDataSets to FALSE.
@@ -43713,12 +43737,13 @@ System.register('voya-github:Voya/deep-ui-voya-charts@master/voya-chart/area-spl
                         // Chart Tooltip configuration
                         // See:  http://c3js.org/reference.html#tooltip-show
                         chartModel.tooltip = {
-                            // TODO: Define function to return custom ToolTip HTML?
-                            // contents: (data, defaultTitleFormat, defaultValueFormat, color) => {}
                             format: {
-                                value: (function (value) {
-                                    return this.dataFormat ? format.getFormat()[this.dataFormat](value) : value;
-                                }).bind(this)
+                                value: function value(_value) {
+                                    return _this.dataFormat ? format.getFormat()[_this.dataFormat](_value) : _value;
+                                },
+                                name: function name() /*name, ratio, id, index*/{
+                                    return '';
+                                }
                             }
                         };
 
@@ -44060,12 +44085,12 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
     return {
         setters: [],
         execute: function () {
-            brandThemes = ['primary', 'secondary', 'tertiary'];
+            brandThemes = ['primary', 'secondary', 'tertiary', 'teal-primary', 'dark-blue-primary'];
         }
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expand-collapse.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/slice.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expand-collapse-template.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expand-collapse.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/slice.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expand-collapse-template.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Array$slice, _Array$from, voyaComponentutils, NativeHTMLElement, ui, property, VoyaExpandCollapseTemplate, delegate, COLLAPSE, EXPAND, TOGGLE, ENTER_KEY, SPACE_KEY, ELEMENT_NAME, HEADER_SELECTOR, VoyaExpandCollapse;
 
 	return {
@@ -44083,12 +44108,12 @@ System.register('voya-github:Voya/deep-ui-voya-expand-collapse@develop/voya-expa
 			_Array$slice = _npmBabelRuntime5838CoreJsArraySliceJs['default'];
 		}, function (_npmBabelRuntime5838CoreJsArrayFromJs) {
 			_Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-			voyaComponentutils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentutils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-			ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentutils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentutils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
 		}, function (_voyaGithubVoyaDeepUiVoyaExpandCollapseDevelopVoyaExpandCollapseTemplateJs) {
 			VoyaExpandCollapseTemplate = _voyaGithubVoyaDeepUiVoyaExpandCollapseDevelopVoyaExpandCollapseTemplateJs.VoyaExpandCollapseTemplate;
 		}, function (_npmDomDelegate203Js) {
@@ -44639,7 +44664,7 @@ System.registerDynamic("npm:babel-runtime@5.8.38/helpers/bind.js", [], true, fun
   return module.exports;
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/reveal-input-masking.js', ['npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/bind.js', 'npm:babel-runtime@5.8.38/helpers/sliced-to-array.js', 'npm:babel-runtime@5.8.38/core-js/map.js', 'npm:babel-runtime@5.8.38/core-js/get-iterator.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/reveal-input-masking.js', ['npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/bind.js', 'npm:babel-runtime@5.8.38/helpers/sliced-to-array.js', 'npm:babel-runtime@5.8.38/core-js/map.js', 'npm:babel-runtime@5.8.38/core-js/get-iterator.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js'], function (_export) {
     var _createClass, _classCallCheck, _bind, _slicedToArray, _Map, _getIterator, _Array$from, voyaComponentUtils, makeNumericString, getCaretPosition, isChrome, isTextSelected, BACKSPACE, handleOnKeyDown, RevealInputMask;
 
     function revealInputMask() {
@@ -44665,8 +44690,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/reve
             _getIterator = _npmBabelRuntime5838CoreJsGetIteratorJs['default'];
         }, function (_npmBabelRuntime5838CoreJsArrayFromJs) {
             _Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs) {
             makeNumericString = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.makeNumericString;
             getCaretPosition = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.getCaretPosition;
@@ -45058,7 +45083,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/auto
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/affix-superscript.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/reveal-input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/auto-width.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/normalize-date-entry.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/affix-superscript.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/reveal-input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/auto-width.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/normalize-date-entry.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, inputTextTemplate, voyaFieldTemplate, addPlaceholderLabelBehavior, updatePlaceholderOrLabel, addContextualHelpBehavior, addAffixSuperscript, makeNumericStringIfNotEmpty, makeAlphaNumeric, updateInputValue, updateElValue, maskInput, revealInputMask, autoWidth, normalizeDateEntry, delegate, property, ui, Text;
 
     function replaceDOMEventStrategy(el) {
@@ -45068,7 +45093,6 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
 
             //autonumeric squashes input and change events
             el.input.addEventListener('keyup', function (e) {
-                console.log('handle keyup');
                 e.stopPropagation();
                 el.value = internalValue(el, el.input.value);
                 //hijackDOMEvent(el, e);
@@ -45076,7 +45100,6 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
             }, true);
 
             el.input.addEventListener('focusout', function (e) {
-                console.log('handle keyup');
                 el.value = internalValue(el, el.input.value);
                 //hijackDOMEvent(el, e);
                 voyaComponentUtils.dispatchEvent(el, 'change');
@@ -45084,7 +45107,6 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
         }
 
         el.input.addEventListener('input', function (e) {
-            console.log('handle input');
             e.stopPropagation();
             el.value = internalValue(el, el.input.value);
             //hijackDOMEvent(el, e);
@@ -45092,7 +45114,6 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
         }, true);
 
         el.input.addEventListener('change', function (e) {
-            console.log('handle change');
             e.stopPropagation();
             updateElValue(el, internalValue(el, el.input.value));
             //hijackDOMEvent(el, e);
@@ -45114,7 +45135,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
     function maybeUpdateInputValue(el, newValue) {
         //special handling for decimal values
         if (el.precision > 0) {
-            var inputValue = el.input.value;
+            var inputValue = el.input.value.replace(/,/g, '');
             var inputValueFloat = parseFloat(el.input.value);
             var newValueFloat = parseFloat(newValue);
             if (inputValueFloat !== newValueFloat && inputValue !== newValue) {
@@ -45235,8 +45256,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXInputTextInputTextTemplateJs) {
             inputTextTemplate = _voyaGithubVoyaDeepUiVoyaField2XXInputTextInputTextTemplateJs.inputTextTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
@@ -45263,9 +45284,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
             normalizeDateEntry = _voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsNormalizeDateEntryJs.normalizeDateEntry;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
         }],
         execute: function () {
             'use strict';
@@ -45310,7 +45331,6 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-text/input-text
                         this.innerHTML = voyaFieldTemplate(this, inputTextTemplate);
 
                         addRevealMasking(this);
-                        console.log('adding internal listeners');
                         if (!this.revealInputMask) {
                             replaceDOMEventStrategy(this);
                         }
@@ -45443,7 +45463,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-password/input-
             };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-password/input-password.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-password/input-password-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-password/input-password.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-password/input-password-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, inputPasswordTemplate, voyaFieldTemplate, addPlaceholderLabelBehavior, addContextualHelpBehavior, maskInput, updateElValue, updateInputValue, delegate, property, ui, Password;
 
     function updateValue(el, value, eventName) {
@@ -45475,8 +45495,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-password/input-
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXInputPasswordInputPasswordTemplateJs) {
             inputPasswordTemplate = _voyaGithubVoyaDeepUiVoyaField2XXInputPasswordInputPasswordTemplateJs.inputPasswordTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
@@ -45492,9 +45512,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-password/input-
             updateInputValue = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.updateInputValue;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
         }],
         execute: function () {
             'use strict';
@@ -45703,7 +45723,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/creat
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/create-password.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/create-password-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/create-password-validation.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/create-password.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/create-password-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/create-password-validation.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, voyaFieldTemplate, addPlaceholderLabelBehavior, addContextualHelpBehavior, updateContextualHelpContent, maskInput, createPasswordTemplate, contextualHelpTemplate, validation, stripSpaces, updateElValue, updateInputValue, delegate, property, ui, SPACE_KEY, CreatePassword;
 
     function maskInputWithPatch(el) {
@@ -45753,8 +45773,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/creat
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
             voyaFieldTemplate = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs.voyaFieldTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsPlaceholderLabelJs) {
@@ -45775,9 +45795,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/create-password/creat
             updateInputValue = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.updateInputValue;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
         }],
         execute: function () {
             'use strict';
@@ -45883,7 +45903,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/create-password.js', 
   };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio-template.js', 'voya-github:Voya/deep-ui-stylesheet@2.0.0.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-radio-template.js', 'voya-github:Voya/deep-ui-stylesheet@2.0.0.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Array$from, setMixinForType, voyaComponentUtils, property, voyaFieldTemplate, addPlaceholderLabelBehavior, updateChecked, updateInputValue, delegate, inputRadioTemplate, Stylesheet, stylesheet, Radio;
 
     function render(el) {
@@ -45932,10 +45952,10 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio/input-rad
             _Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {
             voyaFieldTemplate = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs.voyaFieldTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsPlaceholderLabelJs) {
@@ -46096,7 +46116,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio-group/inp
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio-group/input-radio-group.js', ['npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio-group/input-radio-group-template.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio-group/input-radio-group.js', ['npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio-group/input-radio-group-template.js'], function (_export) {
     var _createClass, _classCallCheck, setMixinForType, voyaComponentUtils, voyaFieldTemplate, addPlaceholderLabelBehavior, delegate, inputRadioGroupTemplate, RadioGroup;
 
     function render(el) {
@@ -46148,8 +46168,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-radio-group/inp
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
             voyaFieldTemplate = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs.voyaFieldTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsPlaceholderLabelJs) {
@@ -46239,7 +46259,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-checkbox/input-
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-checkbox/input-checkbox.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-checkbox/input-checkbox-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-checkbox/input-checkbox.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-checkbox/input-checkbox-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, inputCheckboxTemplate, voyaFieldTemplate, updateChecked, isIOS, delegate, property, ui, Checkbox;
 
     return {
@@ -46251,8 +46271,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-checkbox/input-
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXInputCheckboxInputCheckboxTemplateJs) {
             inputCheckboxTemplate = _voyaGithubVoyaDeepUiVoyaField2XXInputCheckboxInputCheckboxTemplateJs.inputCheckboxTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
@@ -46262,9 +46282,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-checkbox/input-
             isIOS = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.isIOS;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
         }],
         execute: function () {
             'use strict';
@@ -46396,7 +46416,7 @@ System.register("voya-github:Voya/deep-ui-voya-field@2.x.x/select/country-option
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select-template.js', ['npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/state-options-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/country-options-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/template-utilities.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select-template.js', ['npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/state-options-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/country-options-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/template-utilities.js'], function (_export) {
     var _Array$from, voyaComponentUtils, stateOptionsTemplate, countryOptionsTemplate, tabindex, copyAttribute, inputId;
 
     function options(el) {
@@ -46477,8 +46497,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select-templat
     return {
         setters: [function (_npmBabelRuntime5838CoreJsArrayFromJs) {
             _Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXSelectStateOptionsTemplateJs) {
             stateOptionsTemplate = _voyaGithubVoyaDeepUiVoyaField2XXSelectStateOptionsTemplateJs.stateOptionsTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXSelectCountryOptionsTemplateJs) {
@@ -46498,7 +46518,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select-templat
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/select-placeholder-label.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/select-placeholder-label.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js'], function (_export) {
     'use strict';
 
     var voyaComponentUtils;
@@ -46537,8 +46557,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/sele
         }
     }
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }],
         execute: function () {}
     };
@@ -47856,7 +47876,7 @@ System.registerDynamic("voya-github:Voya/deep-ui-voya-field@2.x.x/select/chosen-
   return _retrieveGlobal();
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-option.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-option.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
   var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, TAG_NAME, VoyaOption;
 
   return {
@@ -47870,12 +47890,12 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-optio
       _createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-      voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
-      NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.NativeHTMLElement;
-    }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-      property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-      nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.nullable;
+    }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+      voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+      NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+    }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+      property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+      nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
     }],
     execute: function () {
       'use strict';
@@ -47922,7 +47942,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-optio
   };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/select-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/select-placeholder-label.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/chosen-jquery.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-option.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/select-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/select-placeholder-label.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/select/chosen-jquery.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-option.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, selectTemplate, renderOptions, voyaFieldTemplate, addSelectPlaceholderLabelBehavior, delegate, property, ui, Select;
 
     function render(el) {
@@ -47991,8 +48011,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select.js', ['
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXSelectSelectTemplateJs) {
             selectTemplate = _voyaGithubVoyaDeepUiVoyaField2XXSelectSelectTemplateJs.selectTemplate;
             renderOptions = _voyaGithubVoyaDeepUiVoyaField2XXSelectSelectTemplateJs.renderOptions;
@@ -48002,9 +48022,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/select/select.js', ['
             addSelectPlaceholderLabelBehavior = _voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsSelectPlaceholderLabelJs.addSelectPlaceholderLabelBehavior;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaField2XXSelectChosenJqueryJs) {}, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaOptionJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXSelectChosenJqueryJs) {}, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaOptionJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
         }],
         execute: function () {
             'use strict';
@@ -51368,7 +51388,7 @@ var define = System.amdDefine;
 "format amd";
 ;
 (function(global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define("npm:moment@2.14.1/moment.js", [], factory) : global.moment = factory();
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define("npm:moment@2.15.2/moment.js", [], factory) : global.moment = factory();
 }(this, function() {
   'use strict';
   var hookCallback;
@@ -51382,7 +51402,7 @@ var define = System.amdDefine;
     return input instanceof Array || Object.prototype.toString.call(input) === '[object Array]';
   }
   function isObject(input) {
-    return Object.prototype.toString.call(input) === '[object Object]';
+    return input != null && Object.prototype.toString.call(input) === '[object Object]';
   }
   function isObjectEmpty(obj) {
     var k;
@@ -51465,9 +51485,14 @@ var define = System.amdDefine;
       var parsedParts = some.call(flags.parsedDateParts, function(i) {
         return i != null;
       });
-      m._isValid = !isNaN(m._d.getTime()) && flags.overflow < 0 && !flags.empty && !flags.invalidMonth && !flags.invalidWeekday && !flags.nullInput && !flags.invalidFormat && !flags.userInvalidated && (!flags.meridiem || (flags.meridiem && parsedParts));
+      var isNowValid = !isNaN(m._d.getTime()) && flags.overflow < 0 && !flags.empty && !flags.invalidMonth && !flags.invalidWeekday && !flags.nullInput && !flags.invalidFormat && !flags.userInvalidated && (!flags.meridiem || (flags.meridiem && parsedParts));
       if (m._strict) {
-        m._isValid = m._isValid && flags.charsLeftOver === 0 && flags.unusedTokens.length === 0 && flags.bigHour === undefined;
+        isNowValid = isNowValid && flags.charsLeftOver === 0 && flags.unusedTokens.length === 0 && flags.bigHour === undefined;
+      }
+      if (Object.isFrozen == null || !Object.isFrozen(m)) {
+        m._isValid = isNowValid;
+      } else {
+        return isNowValid;
       }
     }
     return m._isValid;
@@ -51582,7 +51607,22 @@ var define = System.amdDefine;
         utils_hooks__hooks.deprecationHandler(null, msg);
       }
       if (firstTime) {
-        warn(msg + '\nArguments: ' + Array.prototype.slice.call(arguments).join(', ') + '\n' + (new Error()).stack);
+        var args = [];
+        var arg;
+        for (var i = 0; i < arguments.length; i++) {
+          arg = '';
+          if (typeof arguments[i] === 'object') {
+            arg += '\n[' + i + '] ';
+            for (var key in arguments[0]) {
+              arg += key + ': ' + arguments[0][key] + ', ';
+            }
+            arg = arg.slice(0, -2);
+          } else {
+            arg = arguments[i];
+          }
+          args.push(arg);
+        }
+        warn(msg + '\nArguments: ' + Array.prototype.slice.call(args).join('') + '\n' + (new Error()).stack);
         firstTime = false;
       }
       return fn.apply(this, arguments);
@@ -52001,13 +52041,19 @@ var define = System.amdDefine;
       getParsingFlags(config).invalidMonth = input;
     }
   });
-  var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s+)+MMMM?/;
+  var MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/;
   var defaultLocaleMonths = 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_');
   function localeMonths(m, format) {
+    if (!m) {
+      return this._months;
+    }
     return isArray(this._months) ? this._months[m.month()] : this._months[(this._months.isFormat || MONTHS_IN_FORMAT).test(format) ? 'format' : 'standalone'][m.month()];
   }
   var defaultLocaleMonthsShort = 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_');
   function localeMonthsShort(m, format) {
+    if (!m) {
+      return this._monthsShort;
+    }
     return isArray(this._monthsShort) ? this._monthsShort[m.month()] : this._monthsShort[MONTHS_IN_FORMAT.test(format) ? 'format' : 'standalone'][m.month()];
   }
   function units_month__handleStrictParse(monthName, format, strict) {
@@ -52381,15 +52427,18 @@ var define = System.amdDefine;
   }
   var defaultLocaleWeekdays = 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_');
   function localeWeekdays(m, format) {
+    if (!m) {
+      return this._weekdays;
+    }
     return isArray(this._weekdays) ? this._weekdays[m.day()] : this._weekdays[this._weekdays.isFormat.test(format) ? 'format' : 'standalone'][m.day()];
   }
   var defaultLocaleWeekdaysShort = 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_');
   function localeWeekdaysShort(m) {
-    return this._weekdaysShort[m.day()];
+    return (m) ? this._weekdaysShort[m.day()] : this._weekdaysShort;
   }
   var defaultLocaleWeekdaysMin = 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_');
   function localeWeekdaysMin(m) {
-    return this._weekdaysMin[m.day()];
+    return (m) ? this._weekdaysMin[m.day()] : this._weekdaysMin;
   }
   function day_of_week__handleStrictParse(weekdayName, format, strict) {
     var i,
@@ -52928,7 +52977,7 @@ var define = System.amdDefine;
       utils_hooks__hooks.createFromInputFallback(config);
     }
   }
-  utils_hooks__hooks.createFromInputFallback = deprecate('moment construction falls back to js Date. This is ' + 'discouraged and will be removed in upcoming major ' + 'release. Please refer to ' + 'http://momentjs.com/guides/#/warnings/js-date/ for more info.', function(config) {
+  utils_hooks__hooks.createFromInputFallback = deprecate('value provided is not in a recognized ISO format. moment construction falls back to js Date(), ' + 'which is not reliable across all browsers and versions. Non ISO date formats are ' + 'discouraged and will be removed in an upcoming major release. Please refer to ' + 'http://momentjs.com/guides/#/warnings/js-date/ for more info.', function(config) {
     config._d = new Date(config._i + (config._useUTC ? ' UTC' : ''));
   });
   function defaults(a, b, c) {
@@ -53289,6 +53338,13 @@ var define = System.amdDefine;
   function isDuration(obj) {
     return obj instanceof Duration;
   }
+  function absRound(number) {
+    if (number < 0) {
+      return Math.round(-1 * number) * -1;
+    } else {
+      return Math.round(number);
+    }
+  }
   function offset(token, separator) {
     addFormatToken(token, 0, 0, function() {
       var offset = this.utcOffset();
@@ -53395,7 +53451,12 @@ var define = System.amdDefine;
     if (this._tzm) {
       this.utcOffset(this._tzm);
     } else if (typeof this._i === 'string') {
-      this.utcOffset(offsetFromString(matchOffset, this._i));
+      var tZone = offsetFromString(matchOffset, this._i);
+      if (tZone === 0) {
+        this.utcOffset(0, true);
+      } else {
+        this.utcOffset(offsetFromString(matchOffset, this._i));
+      }
     }
     return this;
   }
@@ -53433,7 +53494,7 @@ var define = System.amdDefine;
   function isUtc() {
     return this.isValid() ? this._isUTC && this._offset === 0 : false;
   }
-  var aspNetRegex = /^(\-)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)\.?(\d{3})?\d*)?$/;
+  var aspNetRegex = /^(\-)?(?:(\d*)[. ])?(\d+)\:(\d+)(?:\:(\d+)(\.\d*)?)?$/;
   var isoRegex = /^(-)?P(?:(-?[0-9,.]*)Y)?(?:(-?[0-9,.]*)M)?(?:(-?[0-9,.]*)W)?(?:(-?[0-9,.]*)D)?(?:T(?:(-?[0-9,.]*)H)?(?:(-?[0-9,.]*)M)?(?:(-?[0-9,.]*)S)?)?$/;
   function create__createDuration(input, key) {
     var duration = input,
@@ -53462,7 +53523,7 @@ var define = System.amdDefine;
         h: toInt(match[HOUR]) * sign,
         m: toInt(match[MINUTE]) * sign,
         s: toInt(match[SECOND]) * sign,
-        ms: toInt(match[MILLISECOND]) * sign
+        ms: toInt(absRound(match[MILLISECOND] * 1000)) * sign
       };
     } else if (!!(match = isoRegex.exec(input))) {
       sign = (match[1] === '-') ? -1 : 1;
@@ -53523,13 +53584,6 @@ var define = System.amdDefine;
       res.months = -res.months;
     }
     return res;
-  }
-  function absRound(number) {
-    if (number < 0) {
-      return Math.round(-1 * number) * -1;
-    } else {
-      return Math.round(number);
-    }
   }
   function createAdder(direction, name) {
     return function(val, period) {
@@ -54439,7 +54493,7 @@ var define = System.amdDefine;
   addParseToken('x', function(input, array, config) {
     config._d = new Date(toInt(input));
   });
-  utils_hooks__hooks.version = '2.14.1';
+  utils_hooks__hooks.version = '2.15.2';
   setHookCallback(local__createLocal);
   utils_hooks__hooks.fn = momentPrototype;
   utils_hooks__hooks.min = min;
@@ -54475,7 +54529,7 @@ var define = System.amdDefine;
 })();
 (function() {
 var define = System.amdDefine;
-define("npm:moment@2.14.1.js", ["npm:moment@2.14.1/moment.js"], function(main) {
+define("npm:moment@2.15.2.js", ["npm:moment@2.15.2/moment.js"], function(main) {
   return main;
 });
 
@@ -55280,7 +55334,7 @@ System.registerDynamic("github:dbushell/Pikaday@1.4.0.js", ["github:dbushell/Pik
   return module.exports;
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/datepicker/datepicker.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/datepicker/datepicker-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/error-display.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/normalize-date-entry.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', 'npm:moment@2.14.1.js', 'github:dbushell/Pikaday@1.4.0.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/datepicker/datepicker.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/datepicker/datepicker-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/error-display.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/input-masking.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/normalize-date-entry.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'npm:moment@2.15.2.js', 'github:dbushell/Pikaday@1.4.0.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, datepickerTemplate, voyaFieldTemplate, addPlaceholderLabelBehavior, addContextualHelpBehavior, updateError, updateInputValue, updateElValue, maskInput, normalizeDateEntry, delegate, property, ui, moment, Pikaday, Datepicker;
 
     return {
@@ -55292,8 +55346,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/datepicker/datepicker
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXDatepickerDatepickerTemplateJs) {
             datepickerTemplate = _voyaGithubVoyaDeepUiVoyaField2XXDatepickerDatepickerTemplateJs.datepickerTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
@@ -55313,11 +55367,11 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/datepicker/datepicker
             normalizeDateEntry = _voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsNormalizeDateEntryJs.normalizeDateEntry;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
-        }, function (_npmMoment2141Js) {
-            moment = _npmMoment2141Js['default'];
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_npmMoment2152Js) {
+            moment = _npmMoment2152Js['default'];
         }, function (_githubDbushellPikaday140Js) {
             Pikaday = _githubDbushellPikaday140Js['default'];
         }],
@@ -55431,16 +55485,24 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/affi
             $suffix.text(options.suffix);
             // compensate for the added width with padding
             var paddingRight = $prefix.outerWidth() + parseInt($mirror.css('paddingRight').slice(0, -2));
+
+            if (el.alignment === 'right') {
+                paddingRight += 8;
+            }
+
             $input.css({ paddingRight: paddingRight });
             $mirror.css({ paddingRight: paddingRight });
         }
 
         if (options.prefix) {
             $prefix.text(options.prefix);
-            // compensate for the added width with padding
-            var paddingLeft = $prefix.outerWidth() + parseInt($mirror.css('paddingLeft').slice(0, -2));
-            $input.css({ paddingLeft: paddingLeft });
-            $mirror.css({ paddingLeft: paddingLeft });
+
+            if (el.alignment !== 'right') {
+                // compensate for the added width with padding
+                var paddingLeft = $prefix.outerWidth() + parseInt($mirror.css('paddingLeft').slice(0, -2));
+                $input.css({ paddingLeft: paddingLeft });
+                $mirror.css({ paddingLeft: paddingLeft });
+            }
         }
 
         $input.on('keydown', update);
@@ -55472,7 +55534,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/affi
     return {
         setters: [],
         execute: function () {
-            STYLE_TO_COPY = ['textAlign', 'width', 'height', 'lineHeight', 'fontSize', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft', 'color', 'fontFamily', 'fontWeight', 'borderSize', 'borderRadius', 'color', 'background'];
+            STYLE_TO_COPY = ['textAlign',
+            //'width',
+            'height', 'lineHeight', 'fontSize', 'paddingTop', 'paddingRight', 'paddingBottom', 'paddingLeft', 'color', 'fontFamily', 'fontWeight', 'borderSize', 'borderRadius', 'color', 'background'];
             INPUT_MIRROR = '\n<div class="voya-field__input-mirror">\n    <span class="voya-field__input-mirror__content">\n        <sup class="voya-field__input-mirror__prefix"></sup>\n        <span></span>\n        <sup class="voya-field__input-mirror__suffix"></sup>\n    </span>\n</div>\n';
         }
     };
@@ -62662,7 +62726,7 @@ define("github:BobKnothe/autoNumeric@1.9.43.js", ["github:BobKnothe/autoNumeric@
 });
 
 })();
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-incrementor/input-incrementor.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/affix-superscript.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-incrementor/input-incrementor-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'npm:dom-delegate@2.0.3.js', 'github:BobKnothe/autoNumeric@1.9.43.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-incrementor/input-incrementor.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/affix-superscript.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/input-incrementor/input-incrementor-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'npm:dom-delegate@2.0.3.js', 'github:BobKnothe/autoNumeric@1.9.43.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, precision, addAffixSuperscript, voyaComponentUtils, NativeHTMLElement, inputIncrementorTemplate, voyaFieldTemplate, delegate, property, ui, UP, DOWN, PLUS_SELECTOR, MINUS_SELECTOR, Incrementor;
 
     return {
@@ -62682,18 +62746,18 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/input-incrementor/inp
             precision = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.precision;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsAffixSuperscriptJs) {
             addAffixSuperscript = _voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsAffixSuperscriptJs.addAffixSuperscript;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
-            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.NativeHTMLElement;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXInputIncrementorInputIncrementorTemplateJs) {
             inputIncrementorTemplate = _voyaGithubVoyaDeepUiVoyaField2XXInputIncrementorInputIncrementorTemplateJs.inputIncrementorTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
             voyaFieldTemplate = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs.voyaFieldTemplate;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_githubBobKnotheAutoNumeric1943Js) {}, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_githubBobKnotheAutoNumeric1943Js) {}, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
         }],
         execute: function () {
 
@@ -62980,7 +63044,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/textarea/textarea-tem
             };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js'], function (_export) {
     'use strict';
 
     var voyaComponentUtils, isIELessThanEdge;
@@ -63047,7 +63111,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/plac
             if (!isIELessThanEdge) {
                 inputEl.setAttribute('placeholder', placeholder);
             }
-            voyaComponentUtils.addClass(labelTextEl, 'transparent');
+            if (!el.fixedLabel) {
+                voyaComponentUtils.addClass(labelTextEl, 'transparent');
+            }
         }
         //this is a workaround for quirky behavior in IE11 that would
         //leave a ( hanging around in the type="phone" field
@@ -63070,8 +63136,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/plac
         }, 100);
     }
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs) {
             isIELessThanEdge = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.isIELessThanEdge;
         }],
@@ -63079,7 +63145,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/plac
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js'], function (_export) {
     'use strict';
 
     var voyaComponentUtils, HELP_CLASS, HELP_SELECTOR, ACTIVE_CLASS;
@@ -63134,8 +63200,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/cont
         voyaComponentUtils.removeClass(el.querySelector(HELP_SELECTOR), ACTIVE_CLASS);
     }
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }],
         execute: function () {
             HELP_CLASS = 'voya-contextual-help';
@@ -63547,7 +63613,7 @@ System.registerDynamic("npm:bowser@1.4.1.js", ["npm:bowser@1.4.1/src/bowser.js"]
   return module.exports;
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'npm:bowser@1.4.1.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'npm:bowser@1.4.1.js'], function (_export) {
     'use strict';
 
     var voyaComponentUtils, bowser, isIELessThanEdge;
@@ -63747,8 +63813,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js',
     }
 
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_npmBowser141Js) {
             bowser = _npmBowser141Js['default'];
         }],
@@ -63857,10 +63923,10 @@ System.register("voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/error-display.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-render-utils.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/error-display.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-render-utils.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/template-utilities.js'], function (_export) {
     'use strict';
 
-    var voyaComponentUtils, getErrorRow, removeErrorRow;
+    var voyaComponentUtils, getErrorRow, removeErrorRow, inputId;
 
     _export('errorTemplate', errorTemplate);
 
@@ -63869,7 +63935,14 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/erro
     _export('updateError', updateError);
 
     function errorTemplate(el) {
-        return el.error ? '<span class="voya-field__error">' + el.error + '</span>' : '';
+        if (!el.error) {
+            return '';
+        } else if (el.tooltipErrors) {
+            var elInputId = inputId(el);
+            return elInputId ? '<voya-tooltip\n                    active\n                    class="voya-field__error-tooltip"\n                    theme="error"\n                    target-selector="#' + elInputId + '"\n                    close-on="closeIcon"\n                    open-on="api"\n                    position="right">\n                    <span class="voya-field__error-tooltip-text">' + el.error + '</span>\n                </voya-tooltip>' : '';
+        } else {
+            return '<span class="voya-field__error">' + el.error + '</span>';
+        }
     }
 
     function updateError(el) {
@@ -63896,11 +63969,13 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/erro
     }
 
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldRenderUtilsJs) {
             getErrorRow = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldRenderUtilsJs.getErrorRow;
             removeErrorRow = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldRenderUtilsJs.removeErrorRow;
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTemplateUtilitiesJs) {
+            inputId = _voyaGithubVoyaDeepUiVoyaField2XXCommonTemplateUtilitiesJs.inputId;
         }],
         execute: function () {}
     };
@@ -64044,7 +64119,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-render-utils.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-render-utils.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js'], function (_export) {
 
   //will create and return the icon cell as long as there is an input row
   'use strict';
@@ -64113,14 +64188,17 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
   }
 
   function createElementFromTemplate(html) {
+    if (!html) {
+      return document.createElement('div');
+    }
     var tempEl = document.createElement('div');
     //document.body.appendChild(tempEl); //for older browsers
     tempEl.innerHTML = html.trim();
     return tempEl.firstChild;
   }
   return {
-    setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-      voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+    setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+      voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
     }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
       iconCell = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs.iconCell;
       emptyCell = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs.emptyCell;
@@ -64130,7 +64208,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
   };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/busy.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-render-utils.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/busy.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-render-utils.js'], function (_export) {
     'use strict';
 
     var voyaComponentUtils, getIconCell, removeIconCellIfNotNeeded;
@@ -64163,8 +64241,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/busy
     }
 
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldRenderUtilsJs) {
             getIconCell = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldRenderUtilsJs.getIconCell;
             removeIconCellIfNotNeeded = _voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldRenderUtilsJs.removeIconCellIfNotNeeded;
@@ -64220,7 +64298,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/disa
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/object/get-own-property-names.js', 'npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js', 'npm:babel-runtime@5.8.38/core-js/object/define-property.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/error-display.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/busy.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/disabled.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-tooltip@2.6.2.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/object/get-own-property-names.js', 'npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js', 'npm:babel-runtime@5.8.38/core-js/object/define-property.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/error-display.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/busy.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/disabled.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-tooltip@2.8.2.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
     var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Object$assign, _Object$getOwnPropertyNames, _Object$getOwnPropertyDescriptor, _Object$defineProperty, _Object$keys, getMixinForType, updateError, updateBusy, updateDisabled, voyaComponentUtils, NativeHTMLElement, property, nullable, delegate, ENTER_KEY, SPACE_KEY, BRANDING_THEMES, VoyaField;
 
     /**
@@ -64291,13 +64369,13 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
             updateBusy = _voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsBusyJs.updateBusy;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsDisabledJs) {
             updateDisabled = _voyaGithubVoyaDeepUiVoyaField2XXCommonBehaviorsDisabledJs.updateDisabled;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
-            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.NativeHTMLElement;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.nullable;
-        }, function (_voyaGithubVoyaDeepUiVoyaTooltip262Js) {}, function (_npmDomDelegate203Js) {
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
+        }, function (_voyaGithubVoyaDeepUiVoyaTooltip282Js) {}, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
         }],
         execute: function () {
@@ -64339,9 +64417,13 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
 
                     _defineDecoratedPropertyDescriptor(this, 'maxlength', _instanceInitializers);
 
+                    _defineDecoratedPropertyDescriptor(this, 'tooltipErrors', _instanceInitializers);
+
                     _defineDecoratedPropertyDescriptor(this, 'contextualHelp', _instanceInitializers);
 
                     _defineDecoratedPropertyDescriptor(this, 'hideLabel', _instanceInitializers);
+
+                    _defineDecoratedPropertyDescriptor(this, 'fixedLabel', _instanceInitializers);
 
                     _defineDecoratedPropertyDescriptor(this, 'autoWidth', _instanceInitializers);
                 }
@@ -64399,11 +64481,6 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                     value: function attachedCallback() {
                         var args = arguments;
                         this.delegateEvents();
-
-                        var tabindex = this.getAttribute('tabindex');
-                        if (tabindex !== null) {
-                            this.tabindex = tabindex;
-                        }
 
                         if (this._delayAttachedCallback) {
                             //TODO: cleanup this delayed execution code
@@ -64464,22 +64541,19 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                         Object.defineProperty(this, 'tabindex', {
                             enumerable: true,
                             get: function get() {
-                                //TODO: clean up this logic
-                                //not sure why .tabIndex is getting set, may be browser specific?
                                 if (typeof el._tabindex !== 'undefined') {
-                                    //always try to return ._tabindex first if defined
                                     return el._tabindex;
-                                } else if (typeof el.tabIndex !== 'undefined') {
-                                    return el.tabIndex;
+                                } else {
+                                    return 0;
                                 }
-                                return el._tabindex;
                             },
                             set: function set(value) {
                                 if (value === null) {
                                     return;
                                 }
+                                value = parseInt(value);
                                 var oldValue = el._tabindex;
-                                el._tabindex = value;
+                                el._tabindex = el.tabIndex = value ? value : 0;
                                 el.removeAttribute('tabindex');
                                 if (typeof el.propertyChangedCallback === 'function') {
                                     el.propertyChangedCallback('tabindex', oldValue, value);
@@ -64487,6 +64561,11 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                                 return value;
                             }
                         });
+
+                        var tabindex = this.getAttribute('tabindex');
+                        if (tabindex !== null) {
+                            this.tabindex = tabindex;
+                        }
                     }
                 }, {
                     key: 'delegateEvents',
@@ -64514,6 +64593,14 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                         var tooltipEl = this.querySelector('voya-tooltip');
                         if (tooltipEl) {
                             tooltipEl.api('toggle');
+                        }
+                    }
+                }, {
+                    key: 'focus',
+                    value: function focus() {
+                        var inputEl = this.querySelector('input');
+                        if (inputEl) {
+                            inputEl.focus();
                         }
                     }
                 }, {
@@ -64588,6 +64675,11 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                     initializer: null,
                     enumerable: true
                 }, {
+                    key: 'tooltipErrors',
+                    decorators: [property({ type: 'boolean' })],
+                    initializer: null,
+                    enumerable: true
+                }, {
                     key: 'contextualHelp',
                     decorators: [property],
                     initializer: function initializer() {
@@ -64597,7 +64689,16 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
                 }, {
                     key: 'hideLabel',
                     decorators: [property({ type: 'boolean' })],
-                    initializer: null,
+                    initializer: function initializer() {
+                        return false;
+                    },
+                    enumerable: true
+                }, {
+                    key: 'fixedLabel',
+                    decorators: [property({ type: 'boolean' })],
+                    initializer: function initializer() {
+                        return false;
+                    },
                     enumerable: true
                 }, {
                     key: 'autoWidth',
@@ -64651,7 +64752,7 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/textarea/textarea.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/textarea/textarea-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/textarea/textarea.js', ['npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/type-registry.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/textarea/textarea-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field-template.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/placeholder-label.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/behaviors/contextual-help.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/common/utilities.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-field@2.x.x/voya-field/voya-field.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, setMixinForType, voyaComponentUtils, textareaTemplate, voyaFieldTemplate, addPlaceholderLabelBehavior, addContextualHelpBehavior, updateElValue, delegate, property, ui, Textarea;
 
     return {
@@ -64663,8 +64764,8 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/textarea/textarea.js'
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs) {
             setMixinForType = _voyaGithubVoyaDeepUiVoyaField2XXCommonTypeRegistryJs.setMixinForType;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXTextareaTextareaTemplateJs) {
             textareaTemplate = _voyaGithubVoyaDeepUiVoyaField2XXTextareaTextareaTemplateJs.textareaTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldTemplateJs) {
@@ -64677,9 +64778,9 @@ System.register('voya-github:Voya/deep-ui-voya-field@2.x.x/textarea/textarea.js'
             updateElValue = _voyaGithubVoyaDeepUiVoyaField2XXCommonUtilitiesJs.updateElValue;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
-            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.ui;
+        }, function (_voyaGithubVoyaDeepUiVoyaField2XXVoyaFieldVoyaFieldJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            ui = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.ui;
         }],
         execute: function () {
             'use strict';
@@ -64936,7 +65037,7 @@ System.register('voya-github:Voya/deep-ui-voya-footer@2.5.1/voya-footer-template
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-footer@2.5.1/voya-footer.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'npm:extend@2.0.1.js', 'voya-github:Voya/deep-ui-voya-footer@2.5.1/voya-footer-template.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-footer@2.5.1/voya-footer.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'npm:extend@2.0.1.js', 'voya-github:Voya/deep-ui-voya-footer@2.5.1/voya-footer-template.js'], function (_export) {
     // var voyaComponentUtils = require('voya-component-utils');
     // var extend = require('extend');
 
@@ -65008,8 +65109,8 @@ System.register('voya-github:Voya/deep-ui-voya-footer@2.5.1/voya-footer.js', ['v
      *       so do all processing in local functions
      */
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
         }, function (_npmExtend201Js) {
             extend = _npmExtend201Js['default'];
         }, function (_voyaGithubVoyaDeepUiVoyaFooter251VoyaFooterTemplateJs) {
@@ -65072,11 +65173,21 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header-templa
         var data = el.data;
         //return  mobileTemplate;
         //return  basicTemplate;
-        return '\n    \t\t<div class="voya-header-outer-container">\n                  <div class="voya-header-inner">\n                    <div class="voya-header__logo-container">\n                        <h1 title="Voya Financial">\n                          <a class="voya-header-brand" ' + applyAttributes(data.logoLinkAttributes) + '>\n                            <img ' + applyAttributes(data.logoImageAttributes) + '\n                                 width="132" height="40">\n                          </a>\n                        </h1>\n                    </div>\n                    <div class="voya-header__main-nav-wrapper"></div>\n                    <div class="voya-header__search-container">\n                        ' + search(data) + '\n                    </div>\n                    <div class="voya-header__mobile-search">\n                        <div class="voya-header__mobile-search-icon"><span class="fa fa-search"></span></div>\n                    </div>\n                  </div>\n                </div>\n                <div class="voya-header__mobile-search-sidebar-container">\n                    ' + mobileSearchSidebar() + '\n                </div>\n            ';
+        return '\n    \t\t<div class="voya-header-outer-container">\n                  <div class="voya-header-inner">\n                    <div class="voya-header__logo-container">\n                        <h1 title="Voya Financial">\n                          <a class="voya-header-brand" ' + applyAttributes(data.logoLinkAttributes) + '>\n                            <img ' + applyAttributes(data.logoImageAttributes) + '\n                                 width="132" height="40">\n                          </a>\n                        </h1>\n                    </div>\n                    <div class="voya-header__main-nav-wrapper"></div>\n                    <div class="voya-header__search-container">\n                        ' + search(data) + '\n                    </div>\n                    <div class="voya-header__mobile-search">\n                        <div class="voya-header__mobile-search-icon"><span class="fa fa-search secondary-primary-color"></span></div>\n                    </div>\n                  </div>\n                </div>\n                <div class="voya-header__mobile-search-sidebar-container">\n                    ' + mobileSearchSidebar() + '\n                </div>\n            ';
+    }
+
+    function assembleSearchFeatures(search) {
+        return {
+            searchClass: search.pweb ? 'pwebSearch' : '',
+            methodType: search.pweb ? 'POST' : 'GET',
+            pwebSelect: !search.pweb ? '' : '<select id="searchType" name="searchType">\n\t\t\t\t<option value="keyword">Keyword</option>\n\t\t\t\t<option value="title">Title</option>\n\t\t\t</select>',
+            inputName: search.pweb ? 'searchTerm' : 'search_api_views_fulltext'
+        };
     }
 
     function search(data) {
-        return '<div class="voya-header__search voya-header__search--active">\n                <div class="search-box">\n                  <form ' + applyAttributes(data.searchFormAttributes) + ' id="voya-header__search-form" accept-charset="UTF-8">\n                      <label class="element-invisible" for="edit-keys-1">Enter your keywords </label>\n                      <input placeholder="SEARCH" id="search" name="search_api_views_fulltext" value="" size="15" maxlength="128" class="form-text form-control width-auto" type="text">\n                    <button class="search-icon fa fa-search fa-2x" type="submit"></button>\n                  </form>\n                </div>\n            </div>';
+        var dynamicElement = assembleSearchFeatures(data.searchFormAttributes);
+        return '<div class="voya-header__search voya-header__search--active">\n                <div class="search-box ' + dynamicElement.searchClass + '">\n                  <form ' + applyAttributes(data.searchFormAttributes) + ' id="voya-header__search-form" accept-charset="UTF-8" method="' + dynamicElement.methodType + '">\n                      <label class="element-invisible" for="edit-keys-1">Enter your keywords </label>\n                      <input placeholder="SEARCH" id="search" name="' + dynamicElement.inputName + '" value="" size="15" maxlength="128" class="form-text form-control width-auto" type="text">\n                      ' + dynamicElement.pwebSelect + '\n                      <button class="search-icon fa fa-search fa-2x primary-gradient-bg" type="submit"></button>\n                  </form>\n                </div>\n            </div>';
         // return `<div class="voya-header__search voya-header__search--active">
         //             <voya-search-typeahead></voya-search-typeahead>
         //         </div>`;
@@ -65180,7 +65291,7 @@ System.register("voya-github:Voya/deep-ui-voya-top-nav@develop/voya-top-nav-view
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-top-nav@develop/voya-top-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-top-nav@develop/voya-top-nav-view.js', 'npm:debounce@1.0.0.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-top-nav@develop/voya-top-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-top-nav@develop/voya-top-nav-view.js', 'npm:debounce@1.0.0.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, NativeHTMLElement, property, voyaTopNavView, debounce, VoyaTopNav;
 
 	return {
@@ -65194,10 +65305,10 @@ System.register('voya-github:Voya/deep-ui-voya-top-nav@develop/voya-top-nav.js',
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
 		}, function (_voyaGithubVoyaDeepUiVoyaTopNavDevelopVoyaTopNavViewJs) {
 			voyaTopNavView = _voyaGithubVoyaDeepUiVoyaTopNavDevelopVoyaTopNavViewJs.voyaTopNavView;
 		}, function (_npmDebounce100Js) {
@@ -65936,7 +66047,7 @@ System.register('voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav-se
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/weak-map.js', 'npm:babel-runtime@5.8.38/core-js/array/slice.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav-template.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/utilities/voya-menu-aim.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/utilities/keyboard.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav-services.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/weak-map.js', 'npm:babel-runtime@5.8.38/core-js/array/slice.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav-template.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/utilities/voya-menu-aim.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/utilities/keyboard.js', 'npm:dom-delegate@2.0.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav-services.js'], function (_export) {
     var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _WeakMap, _Array$slice, voyaComponentUtils, NativeHTMLElement, voyaMainNavTemplate, voyaMenuAim, Keyboard, delegate, property, nullable, VoyaMainNavServices, _privateProperties, DATA_EVENT, VoyaMainNav;
 
     return {
@@ -65954,9 +66065,9 @@ System.register('voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav.js
             _WeakMap = _npmBabelRuntime5838CoreJsWeakMapJs['default'];
         }, function (_npmBabelRuntime5838CoreJsArraySliceJs) {
             _Array$slice = _npmBabelRuntime5838CoreJsArraySliceJs['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
         }, function (_voyaGithubVoyaDeepUiVoyaMainNavDevelopVoyaMainNavTemplateJs) {
             voyaMainNavTemplate = _voyaGithubVoyaDeepUiVoyaMainNavDevelopVoyaMainNavTemplateJs.voyaMainNavTemplate;
         }, function (_voyaGithubVoyaDeepUiVoyaMainNavDevelopUtilitiesVoyaMenuAimJs) {
@@ -65965,9 +66076,9 @@ System.register('voya-github:Voya/deep-ui-voya-main-nav@develop/voya-main-nav.js
             Keyboard = _voyaGithubVoyaDeepUiVoyaMainNavDevelopUtilitiesKeyboardJs.Keyboard;
         }, function (_npmDomDelegate203Js) {
             delegate = _npmDomDelegate203Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-            nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+            nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
         }, function (_voyaGithubVoyaDeepUiVoyaMainNavDevelopVoyaMainNavServicesJs) {
             VoyaMainNavServices = _voyaGithubVoyaDeepUiVoyaMainNavDevelopVoyaMainNavServicesJs.VoyaMainNavServices;
         }],
@@ -66694,8 +66805,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 
 	_export('voyaMobileNavTemplate', voyaMobileNavTemplate);
 
-	function voyaMobileNavTemplate(el) {
-		function render(el) {
+	function voyaMobileNavTemplate() {
+		function render() {
 			return '<div class="voya-mobile-nav__backdrop"></div>\n\t\t\t\t<a class="voya-mobile-menu-button fa fa-bars fa-2x"></a>\n\t\t\t\t<div class="mobile-nav-header-wrapper"></div>\n\t\t\t\t<div class="mobile-nav-main-wrapper"></div>';
 		}
 		function injectMobileHeaderNav(el) {
@@ -66711,11 +66822,19 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 			el.classList.remove(removeClass);
 			el.classList.add(addClass);
 		}
+		function removeHeader(el) {
+			el.querySelector('.mobile-nav-header-wrapper').removeChild(el.headerNav);
+		}
+		function removeMainNav(el) {
+			el.querySelector('.mobile-nav-main-wrapper').removeChild(el.mainNav);
+		}
 		return {
 			render: render,
 			injectMobileHeaderNav: injectMobileHeaderNav,
 			injectMobileMainNav: injectMobileMainNav,
-			openCloseMenu: openCloseMenu
+			openCloseMenu: openCloseMenu,
+			removeHeader: removeHeader,
+			removeMainNav: removeMainNav
 		};
 	}
 
@@ -66732,7 +66851,7 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 
 	function headerMenuTemplate() {
 		function render(data) {
-			return "<a href=\"" + data.href + "\" class=\"mobile-nav-header-menu-item " + data["class"] + "\"><div>" + data.text + "</div></a>";
+			return "<a href=\"" + data.href + "\" class=\"mobile-nav-header-menu-item " + data["class"] + "\">" + data.text + "</a>";
 		}
 		function updateViewStyle(type, el) {
 			el.style[type] = el.width + "%";
@@ -66749,8 +66868,8 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-menu/header-menu.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-menu/header-menu-template.js'], function (_export) {
-	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, headerMenuTemplate, HeaderMenu;
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-menu/header-menu.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-menu/header-menu-template.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
+	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, headerMenuTemplate, delegate, HeaderMenu;
 
 	return {
 		setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -66763,14 +66882,16 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2HeaderNavHeaderMenuHeaderMenuTemplateJs) {
 			headerMenuTemplate = _voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2HeaderNavHeaderMenuHeaderMenuTemplateJs.headerMenuTemplate;
+		}, function (_npmDomDelegate203Js) {
+			delegate = _npmDomDelegate203Js['default'];
 		}],
 		execute: function () {
 			'use strict';
@@ -66790,12 +66911,15 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 					_defineDecoratedPropertyDescriptor(this, 'width', _instanceInitializers);
 
 					_defineDecoratedPropertyDescriptor(this, 'data', _instanceInitializers);
+
+					_defineDecoratedPropertyDescriptor(this, 'closeEvent', _instanceInitializers);
 				}
 
 				_createDecoratedClass(HeaderMenu, [{
 					key: 'createdCallback',
 					value: function createdCallback() {
 						this.template = headerMenuTemplate();
+						this.closeEvent = new CustomEvent("voyaMobileHeaderMenuItem:close", { bubbles: true });
 						this.createHeaderMenu();
 					}
 				}, {
@@ -66810,6 +66934,16 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 					value: function createHeaderMenu() {
 						if (!this.data) return;
 						this.innerHTML = this.template.render(this.data);
+						this.setEventListener();
+					}
+				}, {
+					key: 'setEventListener',
+					value: function setEventListener() {
+						delegate(this).on('click', 'a', (function (e) {
+							e.preventDefault();
+							this.dispatchEvent(this.closeEvent);
+							window.location.href = e.target.href;
+						}).bind(this));
 					}
 				}, {
 					key: 'template',
@@ -66823,6 +66957,11 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 					enumerable: true
 				}, {
 					key: 'data',
+					decorators: [nullable, property],
+					initializer: null,
+					enumerable: true
+				}, {
+					key: 'closeEvent',
 					decorators: [nullable, property],
 					initializer: null,
 					enumerable: true
@@ -66863,7 +67002,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-menu/header-menu.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-nav-template.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-menu/header-menu.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-nav-template.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, HeaderMenu, headerNavTemplate, HeaderNav;
 
 	return {
@@ -66877,12 +67016,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-na
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2HeaderNavHeaderMenuHeaderMenuJs) {
 			HeaderMenu = _voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2HeaderNavHeaderMenuHeaderMenuJs.HeaderMenu;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2HeaderNavHeaderNavTemplateJs) {
@@ -67024,7 +67163,10 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	function mobileMenuItemTemplate() {
 
 		function render(data) {
-			return '<a href="' + data.href + '" class="mobile-nav-item ' + (data.items ? "mobile-nav-parent-item" : '') + ' ' + (data['class'] ? data['class'] : '') + '"><span class="' + (data.items ? "hasArrow" : '') + '">' + data.text + '</span><i class="fa fa-chevron-right ' + (data.items ? "show" : 'hide') + '"></i></a>';
+			return '<a href="' + data.href + '" class="mobile-nav-item ' + (data.items ? "mobile-nav-parent-item" : '') + ' ' + (data['class'] ? data['class'] : '') + '">' + createText(data) + '<i class="fa fa-chevron-right ' + (data.items ? "show" : 'hide') + '"></i></a>';
+		}
+		function createText(data) {
+			return data.items ? '<span class="hasArrow">' + data.text + '</span>' : data.text;
 		}
 		return {
 			render: render
@@ -67037,7 +67179,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item-template.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item-template.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, mobileMenuItemTemplate, delegate, MobileMenuItem;
 
 	return {
@@ -67051,12 +67193,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuMobileMenuItemMobileMenuItemTemplateJs) {
 			mobileMenuItemTemplate = _voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuMobileMenuItemMobileMenuItemTemplateJs.mobileMenuItemTemplate;
 		}, function (_npmDomDelegate203Js) {
@@ -67079,7 +67221,9 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 
 					_defineDecoratedPropertyDescriptor(this, 'data', _instanceInitializers);
 
-					_defineDecoratedPropertyDescriptor(this, 'event', _instanceInitializers);
+					_defineDecoratedPropertyDescriptor(this, 'clickEvent', _instanceInitializers);
+
+					_defineDecoratedPropertyDescriptor(this, 'closeEvent', _instanceInitializers);
 
 					_defineDecoratedPropertyDescriptor(this, 'cssClass', _instanceInitializers);
 				}
@@ -67088,7 +67232,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 					key: 'createdCallback',
 					value: function createdCallback() {
 						this.template = mobileMenuItemTemplate();
-						this.event = new CustomEvent("menuitemclick", { bubbles: true });
+						this.clickEvent = new CustomEvent("voyaMobileNavMenuItem:click", { bubbles: true });
+						this.closeEvent = new CustomEvent("voyaMobileNavMenuItem:close", { bubbles: true });
 						this.createMenuItem();
 					}
 				}, {
@@ -67109,12 +67254,18 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 				}, {
 					key: 'setEventListener',
 					value: function setEventListener() {
-						delegate(this).on('click', "a", (function (e) {
-							if (!this.href && !this.data.childMenu) return;
-							if (this.data.childMenu) e.preventDefault();
-							this.event.menuId = this.data.childMenu;
-							this.dispatchEvent(this.event);
-						}).bind(this));
+						var menuItem = this;
+						delegate(this).on('click', 'a', function (e) {
+							e.preventDefault();
+							if (!e.target.href && !menuItem.data.childMenu) return;
+							if (menuItem.data.childMenu) {
+								menuItem.clickEvent.menuId = menuItem.data.childMenu;
+								menuItem.dispatchEvent(menuItem.clickEvent);
+							} else {
+								menuItem.dispatchEvent(menuItem.closeEvent);
+								window.location.href = this.href;
+							}
+						});
 					}
 				}, {
 					key: 'template',
@@ -67129,7 +67280,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 					initializer: null,
 					enumerable: true
 				}, {
-					key: 'event',
+					key: 'clickEvent',
+					decorators: [nullable, property],
+					initializer: null,
+					enumerable: true
+				}, {
+					key: 'closeEvent',
 					decorators: [nullable, property],
 					initializer: null,
 					enumerable: true
@@ -67171,7 +67327,7 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/back-button/back-button.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/back-button/back-button-template.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/back-button/back-button.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/back-button/back-button-template.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, backButtonTemplate, delegate, BackButton;
 
 	return {
@@ -67185,12 +67341,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuBackButtonBackButtonTemplateJs) {
 			backButtonTemplate = _voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuBackButtonBackButtonTemplateJs.backButtonTemplate;
 		}, function (_npmDomDelegate203Js) {
@@ -67221,7 +67377,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 					value: function createdCallback() {
 						this.template = backButtonTemplate();
 						this.createBackButton();
-						this.event = new CustomEvent("backbuttonclick", { bubbles: true });
+						this.event = new CustomEvent("voyaMobileNavBackButton:click", { bubbles: true });
 					}
 				}, {
 					key: 'propertyChangedCallback',
@@ -67274,7 +67430,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-nav-menu.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-nav-menu-template.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/back-button/back-button.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-nav-menu.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-nav-menu-template.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-menu-item/mobile-menu-item.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/back-button/back-button.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, mobileNavMenuTemplate, MobileMenuItem, BackButton, MobileNavMenu;
 
 	return {
@@ -67288,12 +67444,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuMobileNavMenuTemplateJs) {
 			mobileNavMenuTemplate = _voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuMobileNavMenuTemplateJs.mobileNavMenuTemplate;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuMobileMenuItemMobileMenuItemJs) {
@@ -67339,6 +67495,9 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 						this.data.forEach((function (item) {
 							var menuItem = document.createElement('mobile-menu-item');
 							menuItem.data = item;
+							if (typeof item.parentItem !== 'undefined') {
+								menuItem.classList.add('nav-parent-item');
+							}
 							this.addBackButton(item);
 							this.template.injectMenuItem(menuItem, this);
 						}).bind(this));
@@ -67385,7 +67544,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/main-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/main-nav-template.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-nav-menu.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/main-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/main-nav-template.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/mobile-nav-menu/mobile-nav-menu.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, voyaComponentUtils, NativeHTMLElement, property, nullable, mainNavTemplate, MobileNavMenu, MainNav;
 
 	return {
@@ -67399,12 +67558,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 			_createDecoratedClass = _npmBabelRuntime5838HelpersCreateDecoratedClassJs['default'];
 		}, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMainNavTemplateJs) {
 			mainNavTemplate = _voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMainNavTemplateJs.mainNavTemplate;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2MainNavMobileNavMenuMobileNavMenuJs) {
@@ -67438,10 +67597,13 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 						this.template = mainNavTemplate();
 						this.innerHTML = this.template.render();
 						this.setCurrentMenu('baseMenu');
-						this.addEventListener('menuitemclick', (function (e) {
+						this.addEventListener('voyaMobileNavMenuItem:click', (function (e) {
 							this.setNextMenu(e);
 						}).bind(this), false);
-						this.addEventListener('backbuttonclick', (function (e) {
+						this.addEventListener('voyaMobileNavMenuItem:close', (function (e) {
+							this.setCurrentMenu('baseMenu');
+						}).bind(this), false);
+						this.addEventListener('voyaMobileNavBackButton:click', (function (e) {
 							this.setNextMenu(e);
 						}).bind(this), false);
 					}
@@ -67449,7 +67611,9 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 					key: 'propertyChangedCallback',
 					value: function propertyChangedCallback(prop, oldVal, newVal) {
 						if (newVal === oldVal) return;
-						if (prop === "data") this.setCurrentMenu('baseMenu');
+						if (prop === "data") {
+							this.setCurrentMenu('baseMenu');
+						}
 					}
 				}, {
 					key: 'setCurrentMenu',
@@ -67469,7 +67633,7 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 						this.nextMenu = document.createElement('mobile-nav-menu');
 						this.nextMenu.data = this.getMenuMap(e.menuId);
 						this.injectMenuItem(this.nextMenu, this);
-						var type = e.type === "menuitemclick" ? "next" : "prev";
+						var type = e.type === "voyaMobileNavMenuItem:click" ? "next" : "prev";
 						this.nextMenu.updateClass(type);
 						setTimeout((function () {
 							this.animateMenu(type);
@@ -67527,8 +67691,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/
 	};
 });
 
-System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobile-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/map.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobile-nav-service.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobile-nav-template.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-nav.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/main-nav.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
-	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Map, voyaComponentUtils, NativeHTMLElement, property, nullable, VoyaMobileNavServices, voyaMobileNavTemplate, HeaderNav, MobileNavMenu, delegate, TAG_NAME, SPACE_KEY, ENTER_KEY, LEAVE_CLASS, ACTIVE_CLASS, BODY_CLASS, CONTAINER_CLASS, VoyaMobileNav;
+System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobile-nav.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/map.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobile-nav-service.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobile-nav-template.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/header-nav/header-nav.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/main-nav/main-nav.js', 'npm:dom-delegate@2.0.3.js'], function (_export) {
+	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Map, voyaComponentUtils, NativeHTMLElement, property, nullable, VoyaMobileNavServices, voyaMobileNavTemplate, HeaderNav, MobileNavMenu, delegate, LEAVE_CLASS, ACTIVE_CLASS, VoyaMobileNav;
 
 	return {
 		setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -67543,12 +67707,12 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
 		}, function (_npmBabelRuntime5838CoreJsMapJs) {
 			_Map = _npmBabelRuntime5838CoreJsMapJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.voyaComponentUtils;
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
-			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.nullable;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
+			nullable = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.nullable;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2VoyaMobileNavServiceJs) {
 			VoyaMobileNavServices = _voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2VoyaMobileNavServiceJs.VoyaMobileNavServices;
 		}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2VoyaMobileNavTemplateJs) {
@@ -67563,13 +67727,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 		execute: function () {
 			'use strict';
 
-			TAG_NAME = 'voya-mobile-nav';
-			SPACE_KEY = 13;
-			ENTER_KEY = 32;
 			LEAVE_CLASS = 'voya-mobile-nav--leave';
 			ACTIVE_CLASS = 'voya-mobile-nav--active';
-			BODY_CLASS = 'voya-mobile-nav-active--body';
-			CONTAINER_CLASS = 'voya-mobile-nav__container';
 
 			VoyaMobileNav = (function (_NativeHTMLElement) {
 				var _instanceInitializers = {};
@@ -67602,6 +67761,8 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 						this.service = VoyaMobileNavServices();
 						this.template = voyaMobileNavTemplate();
 						this.isExpanded = false;
+						this.innerHTML = this.template.render(this);
+						this.setMobileMenuListener();
 						if (this.apiUrl) {
 							this.fetchData();
 							return;
@@ -67628,31 +67789,32 @@ System.register('voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2/voya-mobi
 					key: 'render',
 					value: function render() {
 						if (this.data == null) return;
-						this.innerHTML = this.template.render(this);
 						this.buildHeaderNav();
 						this.buildMainNav();
-						this.setMobileMenuListener();
 						this.style.zIndex = this.baseZIndex;
 					}
 				}, {
 					key: 'buildHeaderNav',
 					value: function buildHeaderNav() {
+						if (this.headerNav) this.template.removeHeader(this);
 						this.headerNav = document.createElement('mobile-header-nav');
 						this.headerNav.data = this.service.fetchHeaderNavData(this.data);
 						this.template.injectMobileHeaderNav(this);
+						this.addEventListener('voyaMobileHeaderMenuItem:close', this.close.bind(this), false);
 					}
 				}, {
 					key: 'buildMainNav',
 					value: function buildMainNav() {
+						if (this.mainNav) this.template.removeMainNav(this);
 						this.mainNav = document.createElement('mobile-main-nav');
 						this.mainNav.data = this.service.parseMenuData(new _Map(), this.data.items);
 						this.template.injectMobileMainNav(this);
+						this.addEventListener('voyaMobileNavMenuItem:close', this.close.bind(this), false);
 					}
 				}, {
 					key: 'setMobileMenuListener',
 					value: function setMobileMenuListener() {
-						delegate(this).on('click', "a.voya-mobile-menu-button, .voya-mobile-nav__backdrop", (function (e) {
-							e.preventDefault();
+						delegate(this).on('click', 'a.voya-mobile-menu-button, .voya-mobile-nav__backdrop', (function (e) {
 							if (!this.isExpanded) {
 								this.open();
 							} else {
@@ -67738,16 +67900,46 @@ System.register("voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2.js", ["vo
   };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-header@develop/voya-header-template.js', 'npm:dom-delegate@2.0.3.js', 'npm:debounce@1.0.0.js', 'voya-github:Voya/deep-ui-voya-top-nav@develop.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2.js'], function (_export) {
-	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Object$keys, NativeHTMLElement, property, voyaHeaderTemplate, delegate, debounce, TAG_NAME, MOBILE_BREAKPOINT, VoyaHeader;
+System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-header@develop/voya-header-template.js', 'npm:dom-delegate@2.0.3.js', 'npm:debounce@1.0.0.js', 'voya-github:Voya/deep-ui-voya-top-nav@develop.js', 'voya-github:Voya/deep-ui-voya-main-nav@develop.js', 'voya-github:Voya/deep-ui-voya-mobile-nav@mobile-nav-2.js'], function (_export) {
+	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Object$keys, NativeHTMLElement, jsonClone, property, voyaHeaderTemplate, delegate, debounce, TAG_NAME, MOBILE_BREAKPOINT, VoyaHeader;
 
-	function deepClone(obj) {
-		if (typeof obj !== 'object') return;
-		return JSON.parse(JSON.stringify(obj));
+	//TODO: breakout
+	// Returns a function, that, when invoked, will only be triggered at most once
+	// during a given window of time. Normally, the throttled function will run
+	// as much as it can, without ever going more than once per `wait` duration;
+	// but if you'd like to disable the execution on the leading edge, pass
+	// `{leading: false}`. To disable execution on the trailing edge, ditto.
+	function throttle(func, wait, options) {
+		var context, args, result;
+		var timeout = null;
+		var previous = 0;
+		if (!options) options = {};
+		var later = function later() {
+			previous = options.leading === false ? 0 : Date.now();
+			timeout = null;
+			result = func.apply(context, args);
+			if (!timeout) context = args = null;
+		};
+		return function () {
+			var now = Date.now();
+			if (!previous && options.leading === false) previous = now;
+			var remaining = wait - (now - previous);
+			context = this;
+			args = arguments;
+			if (remaining <= 0 || remaining > wait) {
+				if (timeout) {
+					clearTimeout(timeout);
+					timeout = null;
+				}
+				previous = now;
+				result = func.apply(context, args);
+				if (!timeout) context = args = null;
+			} else if (!timeout && options.trailing !== false) {
+				timeout = setTimeout(later, remaining);
+			}
+			return result;
+		};
 	}
-
-	//import 'voya-search/voya-search-typeahead/voya-search-typeahead.js';
-	//import 'voya-search/voya-search-typeahead/voya-search-typeahead-mobile/voya-search-typeahead-mobile.js';
 
 	function checkSizing(el) {
 		if ($(window).width() > MOBILE_BREAKPOINT) {
@@ -67758,6 +67950,10 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 			el._mobileNavEl.classList.remove('hide');
 		}
 
+		adjustTopSpacing(el);
+	}
+
+	function adjustTopSpacing(el) {
 		//adjust height of spacer element
 		var $spacerEl = $('#voya-header-spacing-element');
 		var elHeight = $(el).css('height');
@@ -67782,6 +67978,9 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 				el.querySelector('voya-top-nav').classList.add(collapseClass);
 			} else if (scrollTop < toggleOffset && isCollapsed) {
 				el.querySelector('voya-top-nav').classList.remove(collapseClass);
+				setTimeout(function () {
+					adjustTopSpacing(el); //TODO, handle animation more gracefully
+				}, 500);
 			}
 		}
 	}
@@ -67823,10 +68022,11 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
 		}, function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
 			_Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+			jsonClone = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.jsonClone;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
 		}, function (_voyaGithubVoyaDeepUiVoyaHeaderDevelopVoyaHeaderTemplateJs) {
 			voyaHeaderTemplate = _voyaGithubVoyaDeepUiVoyaHeaderDevelopVoyaHeaderTemplateJs.voyaHeaderTemplate;
 		}, function (_npmDomDelegate203Js) {
@@ -67836,6 +68036,11 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 		}, function (_voyaGithubVoyaDeepUiVoyaTopNavDevelopJs) {}, function (_voyaGithubVoyaDeepUiVoyaMainNavDevelopJs) {}, function (_voyaGithubVoyaDeepUiVoyaMobileNavMobileNav2Js) {}],
 		execute: function () {
 			'use strict';
+
+			;
+
+			//import 'voya-search/voya-search-typeahead/voya-search-typeahead.js';
+			//import 'voya-search/voya-search-typeahead/voya-search-typeahead-mobile/voya-search-typeahead-mobile.js';
 
 			TAG_NAME = 'voya-header';
 			MOBILE_BREAKPOINT = 768;
@@ -67882,16 +68087,16 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 
 						var topNavEl = document.createElement('voya-top-nav');
 						var mainNavEl = document.createElement('voya-main-nav');
-
-						this._mobileNavEl = document.createElement('voya-mobile-nav');
-						this._mobileNavEl.dockTag = this.dockTag;
+						if (!document.body.querySelector('voya-mobile-nav')) {
+							this._mobileNavEl = document.createElement('voya-mobile-nav');
+							this._mobileNavEl.dockTag = this.dockTag;
+							document.body.appendChild(this._mobileNavEl);
+						}
 						this.insertBefore(topNavEl, this.firstChild);
 						this.querySelector('.voya-header__main-nav-wrapper').appendChild(mainNavEl);
 
-						document.body.appendChild(this._mobileNavEl);
-
 						if (topNavEl) {
-							topNavEl.links = deepClone(this.data.childConfigs.topNav.links);
+							topNavEl.links = jsonClone(this.data.childConfigs.topNav.links);
 						}
 
 						if (mainNavEl && window.voya && window.voya.baseUrls && window.voya.baseUrls.voya && typeof this.data.childConfigs.mainNav.apiUrl === 'undefined') {
@@ -67902,7 +68107,7 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 							}
 
 						if (this._mobileNavEl) {
-							this._mobileNavEl.data = deepClone(this.data.childConfigs.mobileNav);
+							this._mobileNavEl.data = jsonClone(this.data.childConfigs.mobileNav);
 						}
 
 						if (!document.querySelector('#voya-header-spacing-element')) {
@@ -67936,7 +68141,7 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 					value: function processData() {
 						//if mobileNav items is not set, use the items from mainNav
 						if (this.data.childConfigs.mobileNav != null && typeof this.data.childConfigs.mobileNav.items === 'undefined') {
-							this.data.childConfigs.mobileNav.items = deepClone(this.data.childConfigs.mainNav.items);
+							this.data.childConfigs.mobileNav.items = jsonClone(this.data.childConfigs.mainNav.items);
 						}
 
 						this.data.logoImageAttributes = this.data.logoImageAttributes || {};
@@ -67947,9 +68152,6 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 					key: 'addEventListeners',
 					value: function addEventListeners() {
 						var el = this;
-						window.addEventListener('scroll', function () {
-							checkScroll(el);
-						});
 
 						//TODO: don't have url be hardcoded, consider removing altogether
 						delegate(el).on('click', 'voya-button', function (e) {
@@ -67972,7 +68174,13 @@ System.register('voya-github:Voya/deep-ui-voya-header@develop/voya-header.js', [
 						el._windowEventListener = debounce(function () {
 							checkSizing(el);
 						}, 200);
+
+						el._scrollListener = throttle(function () {
+							checkScroll(el);
+						}, 200);
+
 						window.addEventListener('resize', el._windowEventListener);
+						window.addEventListener('scroll', el._scrollListener);
 					}
 				}, {
 					key: 'data',
@@ -68041,7 +68249,7 @@ System.register('voya-github:Voya/deep-ui-voya-indicator@2.0.0/voya-indicator-te
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-indicator@2.0.0/voya-indicator.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/define-property.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-indicator@2.0.0/voya-indicator-template.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-indicator@2.0.0/voya-indicator.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/define-property.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'voya-github:Voya/deep-ui-voya-indicator@2.0.0/voya-indicator-template.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Object$defineProperty, NativeHTMLElement, camelize, decamelize, property, voyaIndicatorTemplate, intervalsArray, VoyaIndicator;
 
 	return {
@@ -68057,12 +68265,12 @@ System.register('voya-github:Voya/deep-ui-voya-indicator@2.0.0/voya-indicator.js
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
 		}, function (_npmBabelRuntime5838CoreJsObjectDefinePropertyJs) {
 			_Object$defineProperty = _npmBabelRuntime5838CoreJsObjectDefinePropertyJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-			camelize = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.camelize;
-			decamelize = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.decamelize;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+			camelize = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.camelize;
+			decamelize = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.decamelize;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
 		}, function (_voyaGithubVoyaDeepUiVoyaIndicator200VoyaIndicatorTemplateJs) {
 			voyaIndicatorTemplate = _voyaGithubVoyaDeepUiVoyaIndicator200VoyaIndicatorTemplateJs.voyaIndicatorTemplate;
 		}],
@@ -68363,7 +68571,7 @@ System.register('voya-github:Voya/deep-ui-voya-modal@1.0.0-beta5/voya-modal-temp
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-modal@1.0.0-beta5/voya-modal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.3.3/decorators/property-decorators.js', 'npm:dom-delegate@2.0.3.js', 'npm:tabbable@1.0.3.js', 'voya-github:Voya/deep-ui-voya-modal@1.0.0-beta5/voya-modal-template.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-modal@1.0.0-beta5/voya-modal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', 'npm:dom-delegate@2.0.3.js', 'npm:tabbable@1.0.3.js', 'voya-github:Voya/deep-ui-voya-modal@1.0.0-beta5/voya-modal-template.js'], function (_export) {
 	var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, _Array$from, NativeHTMLElement, property, delegate, tabbable, voyaModalTemplate, SPACE_KEY, ENTER_KEY, VoyaModal;
 
 	return {
@@ -68379,10 +68587,10 @@ System.register('voya-github:Voya/deep-ui-voya-modal@1.0.0-beta5/voya-modal.js',
 			_classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
 		}, function (_npmBabelRuntime5838CoreJsArrayFromJs) {
 			_Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333Js) {
-			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils333Js.NativeHTMLElement;
-		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs) {
-			property = _voyaGithubVoyaDeepUiVoyaComponentUtils333DecoratorsPropertyDecoratorsJs.property;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+			NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+		}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+			property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
 		}, function (_npmDomDelegate203Js) {
 			delegate = _npmDomDelegate203Js['default'];
 		}, function (_npmTabbable103Js) {
@@ -70002,7 +70210,7 @@ System.registerDynamic("npm:virtual-dom@1.3.0/vnode/vpatch.js", ["npm:virtual-do
   return module.exports;
 });
 
-System.registerDynamic("npm:global@4.3.0/document.js", ["@empty"], true, function($__require, exports, module) {
+System.registerDynamic("npm:global@4.3.1/document.js", ["@empty"], true, function($__require, exports, module) {
   ;
   var define,
       global = this,
@@ -70166,12 +70374,12 @@ System.registerDynamic("npm:virtual-dom@1.3.0/vnode/handle-thunk.js", ["npm:virt
   return module.exports;
 });
 
-System.registerDynamic("npm:virtual-dom@1.3.0/vdom/create-element.js", ["npm:global@4.3.0/document.js", "npm:virtual-dom@1.3.0/vdom/apply-properties.js", "npm:virtual-dom@1.3.0/vnode/is-vnode.js", "npm:virtual-dom@1.3.0/vnode/is-vtext.js", "npm:virtual-dom@1.3.0/vnode/is-widget.js", "npm:virtual-dom@1.3.0/vnode/handle-thunk.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:virtual-dom@1.3.0/vdom/create-element.js", ["npm:global@4.3.1/document.js", "npm:virtual-dom@1.3.0/vdom/apply-properties.js", "npm:virtual-dom@1.3.0/vnode/is-vnode.js", "npm:virtual-dom@1.3.0/vnode/is-vtext.js", "npm:virtual-dom@1.3.0/vnode/is-widget.js", "npm:virtual-dom@1.3.0/vnode/handle-thunk.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this,
       GLOBAL = this;
-  var document = $__require('npm:global@4.3.0/document.js');
+  var document = $__require('npm:global@4.3.1/document.js');
   var applyProperties = $__require('npm:virtual-dom@1.3.0/vdom/apply-properties.js');
   var isVNode = $__require('npm:virtual-dom@1.3.0/vnode/is-vnode.js');
   var isVText = $__require('npm:virtual-dom@1.3.0/vnode/is-vtext.js');
@@ -70377,12 +70585,12 @@ System.registerDynamic("npm:virtual-dom@1.3.0/vdom/patch-op.js", ["npm:virtual-d
   return module.exports;
 });
 
-System.registerDynamic("npm:virtual-dom@1.3.0/vdom/patch.js", ["npm:global@4.3.0/document.js", "npm:x-is-array@0.1.0.js", "npm:virtual-dom@1.3.0/vdom/dom-index.js", "npm:virtual-dom@1.3.0/vdom/patch-op.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:virtual-dom@1.3.0/vdom/patch.js", ["npm:global@4.3.1/document.js", "npm:x-is-array@0.1.0.js", "npm:virtual-dom@1.3.0/vdom/dom-index.js", "npm:virtual-dom@1.3.0/vdom/patch-op.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this,
       GLOBAL = this;
-  var document = $__require('npm:global@4.3.0/document.js');
+  var document = $__require('npm:global@4.3.1/document.js');
   var isArray = $__require('npm:x-is-array@0.1.0.js');
   var domIndex = $__require('npm:virtual-dom@1.3.0/vdom/dom-index.js');
   var patchOp = $__require('npm:virtual-dom@1.3.0/vdom/patch-op.js');
@@ -74946,7 +75154,7 @@ System.registerDynamic("npm:dom-delegate@2.0.3.js", ["npm:dom-delegate@2.0.3/lib
   return module.exports;
 });
 
-System.registerDynamic("npm:custom-event@1.0.0/index.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:custom-event@1.0.1/index.js", [], true, function($__require, exports, module) {
   ;
   var define,
       global = this,
@@ -74959,7 +75167,7 @@ System.registerDynamic("npm:custom-event@1.0.0/index.js", [], true, function($__
     } catch (e) {}
     return false;
   }
-  module.exports = useNative() ? NativeCustomEvent : 'function' === typeof document.createEvent ? function CustomEvent(type, params) {
+  module.exports = useNative() ? NativeCustomEvent : 'undefined' !== typeof document && 'function' === typeof document.createEvent ? function CustomEvent(type, params) {
     var e = document.createEvent('CustomEvent');
     if (params) {
       e.initCustomEvent(type, params.bubbles, params.cancelable, params.detail);
@@ -74984,16 +75192,16 @@ System.registerDynamic("npm:custom-event@1.0.0/index.js", [], true, function($__
   return module.exports;
 });
 
-System.registerDynamic("npm:custom-event@1.0.0.js", ["npm:custom-event@1.0.0/index.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:custom-event@1.0.1.js", ["npm:custom-event@1.0.1/index.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this,
       GLOBAL = this;
-  module.exports = $__require('npm:custom-event@1.0.0/index.js');
+  module.exports = $__require('npm:custom-event@1.0.1/index.js');
   return module.exports;
 });
 
-System.register('voya-github:Voya/deep-ui-voya-slider@1.5.0/utilities.js', ['npm:custom-event@1.0.0.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-slider@1.5.0/utilities.js', ['npm:custom-event@1.0.1.js'], function (_export) {
     'use strict';
 
     var CustomEvent;
@@ -75015,8 +75223,8 @@ System.register('voya-github:Voya/deep-ui-voya-slider@1.5.0/utilities.js', ['npm
     }
 
     return {
-        setters: [function (_npmCustomEvent100Js) {
-            CustomEvent = _npmCustomEvent100Js['default'];
+        setters: [function (_npmCustomEvent101Js) {
+            CustomEvent = _npmCustomEvent101Js['default'];
         }],
         execute: function () {}
     };
@@ -76354,6 +76562,12 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/utilities/data-forma
                             currency: function currency(item) {
                                 return isNaN(item) || item === '' ? item : '$ ' + parseFloat(item).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
                             },
+                            pwebCurrency: function pwebCurrency(item) {
+                                return isNaN(item) || item === '' ? item : '$ ' + parseFloat(item).toString().replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                            },
+                            number: function number(item) {
+                                return isNaN(item) || item === '' ? item : parseFloat(item).toString().replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                            },
                             percent: function percent(item) {
                                 return isNaN(item) || item === '' ? item : parseFloat(item) + "%";
                             }
@@ -76728,7 +76942,6 @@ System.register('voya-github:Voya/deep-ui-voya-table@master/voya-table/voya-tabl
             });
         }
         function loadData(cmp) {
-            console.debug("cmp: ", cmp);
             return callService().then(function (response) {
                 return cmp.bindingProperty.indexOf(".") != -1 ? parseData(cmp.bindingProperty, response, 0) : response[cmp.bindingProperty];
             });
@@ -78006,7 +78219,7 @@ System.registerDynamic("npm:debounce@1.0.0.js", ["npm:debounce@1.0.0/index.js"],
   return module.exports;
 });
 
-System.registerDynamic("voya-github:Voya/deep-ui-voya-tooltip@2.6.2/widget.js", [], false, function($__require, $__exports, $__module) {
+System.registerDynamic("voya-github:Voya/deep-ui-voya-tooltip@2.8.2/widget.js", [], false, function($__require, $__exports, $__module) {
   var _retrieveGlobal = System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
   (function() {
     ((function($) {
@@ -78407,7 +78620,7 @@ System.registerDynamic("voya-github:Voya/deep-ui-voya-tooltip@2.6.2/widget.js", 
   return _retrieveGlobal();
 });
 
-System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-tooltip@2.6.2/widget.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-tooltip@2.8.2/jquery-voya-tooltip.js', ['voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-tooltip@2.8.2/widget.js'], function (_export) {
     'use strict';
 
     var voyaComponentUtils;
@@ -78416,9 +78629,9 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
         return jQuery(window).width() <= 617;
     }
     return {
-        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.voyaComponentUtils;
-        }, function (_voyaGithubVoyaDeepUiVoyaTooltip262WidgetJs) {}],
+        setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            voyaComponentUtils = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.voyaComponentUtils;
+        }, function (_voyaGithubVoyaDeepUiVoyaTooltip282WidgetJs) {}],
         execute: function () {
             /*! Voya ToolTip Widget - Version 2.0 - 11/17/2014 */
             (function ($) {
@@ -78482,13 +78695,13 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                 function addBackdropClickListener() {
                     $('.voya-tooltip-backdrop').on('click', function () {
                         //aggressively closing all tooltips on body click
-                        closeAllToolTips();
+                        closeToolTips();
                     });
                 }
-                function closeAllToolTips() {
+                function closeToolTips() {
                     var tips = document.querySelectorAll('voya-tooltip');
                     for (var i = 0; i < tips.length; i++) {
-                        if (tips[i] && typeof tips[i].api === 'function') {
+                        if (tips[i] && typeof tips[i].api === 'function' && tips[i].closeOn === 'outsideClick' && tips[i]._widget) {
                             tips[i].api('close');
                         }
                     }
@@ -78511,9 +78724,9 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                         openOn: "hover", //hover, click, or api  (touch events detected and handled for hover and click)
                         positioning: ["top"],
                         positionFixed: false, //won't try to find a position that fits if this is true
-                        minWidth: "200px",
-                        maxWidth: "600px",
-                        minHeight: "50px",
+                        minWidth: "",
+                        maxWidth: "",
+                        minHeight: "",
                         maxHeight: "none",
                         mobileGutters: 10,
                         boundingContainer: null, //tooltip will display within the boundaries of the given boundingContainer
@@ -78537,6 +78750,27 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                         widget.$el = $(widget.element);
                         widget.$tooltip = $(widget.options.tooltip);
                         widget.attachListeners();
+                        widget.options.tooltip._widget = widget;
+
+                        //if dimension limits are detected in CSS, use those
+                        ['minWidth', 'maxWidth', 'minHeight'].forEach(function (style) {
+                            var value = widget.$tooltip.css(style);
+                            if (value !== 'none' && value !== '0px') {
+                                widget.options[style] = value;
+                            }
+                        });
+
+                        //for backwards compatibility, support deprecated option defaults by applying them here
+                        //so that they "win" over the newer CSS method above
+                        if (!widget.options.minWidth) {
+                            widget.options.minWidth = "200px";
+                        }
+                        if (!widget.options.maxWidth) {
+                            widget.options.maxWidth = "600px";
+                        }
+                        if (!widget.options.minHeight) {
+                            widget.options.minHeight = "50px";
+                        }
                     }, //end _create()
 
                     attachListeners: function attachListeners() {
@@ -78603,7 +78837,7 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
 
                     addTooltipToDom: function addTooltipToDom(eventType) {
                         var widget = this;
-                        closeAllToolTips();
+                        closeToolTips();
 
                         //widget.$tooltip = $('<div class="voya-tooltip" style="z-index:' + (widget.options.zIndex+1) + ';"></div>');
 
@@ -78671,6 +78905,7 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                         }
 
                         voyaTooltipData.activeWidget = widget;
+                        widget.options.tooltip._properties.active = true;
                         voyaComponentUtils.dispatchEvent(widget.$tooltip[0], 'open');
                     },
 
@@ -78752,6 +78987,7 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                              */
                             // first, get the relative offset needed to fill the width of the body
                             var maxWidth = $(window).width() - widget.options.mobileGutters * 2; // 10px of padding on both sides
+                            //var maxWidth = relativeParentPosData.width - (widget.options.mobileGutters*2);
 
                             // add arrow
                             widget.$arrow = widget.$arrow || $('<div>').addClass('voya-tooltip__variablePositionArrow');
@@ -78764,19 +79000,20 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                             // hardset left align
                             widget.$tooltip.css({
                                 left: widget.options.mobileGutters - rpOffset.left
+                                //left: 0 + widget.options.mobileGutters
                             });
 
                             // set width
                             widget.$tooltip.css({
-                                maxWidth: maxWidth,
-                                minWidth: maxWidth
+                                minWidth: maxWidth, //in mobile, minWidth equals maxWidth
+                                maxWidth: maxWidth
                             });
 
                             // top/bottom
-                            if (elPosData.top < tipPosData.height) {
+                            if (elPosData.top < tipPosData.height || widget.options.positioning[0].includes('bottom')) {
                                 // bottom
                                 widget.$tooltip.css({
-                                    top: elPosData.relativeTop + elPosData.height + 10
+                                    top: elPosData.relativeTop + $($rpContainer).scrollTop() + elPosData.height + 10
                                 });
                                 widget.$arrow.addClass('voya-tooltip__variablePositionArrow--bottom');
                             } else {
@@ -78979,9 +79216,8 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                                 relativeMaxWidth = widget.getRelativeMaxWidth('right', elPosData, boundingContainerPosData);
                                 widget.setTooltipWidth(relativeMaxWidth);
                                 tipPosData = widget.getTipPosData();
-                                coords.left = elPosData.relativeLeft + (elPosData.width + arrowPixelHeight) - CORNER_OFFSET;
+                                coords.left = elPosData.relativeLeft + (elPosData.width + arrowPixelHeight);
                                 coords.top = elPosData.relativeTop;
-                                fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
                                 break;
                             case "right-justifiedBottom":
                                 relativeMaxWidth = widget.getRelativeMaxWidth('right', elPosData, boundingContainerPosData);
@@ -78989,16 +79225,14 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                                 tipPosData = widget.getTipPosData();
                                 coords.left = elPosData.relativeLeft + elPosData.width + arrowPixelHeight;
                                 //            coords.top  = elPosData.relativeTop + elPosData.height - tipPosData.height;
-                                coords.top = elPosData.relativeTop + (elPosData.height - tipPosData.height) + CORNER_OFFSET;
-                                fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
+                                coords.top = elPosData.relativeTop + (elPosData.height - tipPosData.height);
                                 break;
                             case "bottom-justifiedLeft":
                                 relativeMaxWidth = widget.getRelativeMaxWidth('bottom', elPosData, boundingContainerPosData);
                                 widget.setTooltipWidth(relativeMaxWidth);
                                 tipPosData = widget.getTipPosData();
-                                coords.left = elPosData.relativeLeft - CORNER_OFFSET;
+                                coords.left = elPosData.relativeLeft;
                                 coords.top = elPosData.relativeTop + elPosData.height + arrowPixelHeight;
-                                fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
                                 break;
                             case "bottom-justifiedRight":
                                 relativeMaxWidth = widget.getRelativeMaxWidth('bottom', elPosData, boundingContainerPosData);
@@ -79006,34 +79240,30 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                                 tipPosData = widget.getTipPosData();
                                 coords.left = elPosData.relativeLeft + elPosData.width - tipPosData.width;
                                 //coords.right = $(widget.options.boundingContainer).width() - (elPosData.relativeLeft + elPosData.width);
-                                coords.right = relativeParentPosData.width - elPosData.relativeLeft - CORNER_OFFSET;
+                                coords.right = relativeParentPosData.width - (elPosData.relativeLeft + elPosData.width);
                                 coords.top = elPosData.relativeTop + elPosData.height + arrowPixelHeight;
-                                fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
                                 break;
                             case "left-justifiedTop":
                                 relativeMaxWidth = widget.getRelativeMaxWidth('left', elPosData, boundingContainerPosData);
                                 widget.setTooltipWidth(relativeMaxWidth);
                                 tipPosData = widget.getTipPosData();
                                 coords.left = elPosData.relativeLeft - tipPosData.width - arrowPixelHeight;
-                                coords.top = elPosData.relativeTop - CORNER_OFFSET;
-                                fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
+                                coords.top = elPosData.relativeTop;
                                 break;
                             case "left-justifiedBottom":
                                 relativeMaxWidth = widget.getRelativeMaxWidth('left', elPosData, boundingContainerPosData);
                                 widget.setTooltipWidth(relativeMaxWidth);
                                 tipPosData = widget.getTipPosData();
                                 coords.left = elPosData.relativeLeft - tipPosData.width - arrowPixelHeight;
-                                coords.top = elPosData.relativeTop + (elPosData.height - tipPosData.height) + CORNER_OFFSET;
-                                fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
+                                coords.top = elPosData.relativeTop + (elPosData.height - tipPosData.height);
                                 break;
                             case "top-justifiedLeft":
                                 relativeMaxWidth = widget.getRelativeMaxWidth('top', elPosData, boundingContainerPosData);
                                 widget.setTooltipWidth(relativeMaxWidth);
                                 tipPosData = widget.getTipPosData();
-                                coords.left = elPosData.relativeLeft - CORNER_OFFSET;
+                                coords.left = elPosData.relativeLeft;
                                 coords.top = elPosData.relativeTop - tipPosData.height - arrowPixelHeight;
                                 coords.bottom = relativeParentPosData.height - (elPosData.relativeTop - arrowPixelHeight);
-                                fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
                                 break;
                             // case "top-justifiedRight":
                             //     //has flaws, needs more thought
@@ -79052,6 +79282,8 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                             //                                           relativeMaxWidth);
                             //     break;
                         } //end switch()
+
+                        fitConflicts = widget.getFitConflicts(coords, tipPosData, relativeParentPosData, boundingContainerPosData, relativeMaxWidth);
 
                         return { position: position, coords: coords, fitConflicts: fitConflicts };
                     }, //end tryToolTipPosition()
@@ -79109,11 +79341,14 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip
                         if (typeof widget.options.onClose == "function") {
                             $.proxy(widget.options.onClose, window)();
                         }
+
+                        widget.options.tooltip._properties.active = false;
                         voyaComponentUtils.dispatchEvent(widget.$tooltip[0], 'close');
                     },
 
                     _destroy: function _destroy() {
                         var widget = this;
+                        widget.options.tooltip._widget = null;
                     } //end _destroy()
 
                 });
@@ -79206,7 +79441,7 @@ System.registerDynamic("npm:custom-event-polyfill@0.2.2.js", ["npm:custom-event-
   return module.exports;
 });
 
-System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-component-utils-common.js', ['npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:camelcase@2.1.1.js', 'npm:decamelize@1.2.0.js', 'npm:focusin@2.0.0.js', 'npm:custom-event-polyfill@0.2.2.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-component-utils@3.5.0/voya-component-utils-common.js', ['npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:camelcase@2.1.1.js', 'npm:decamelize@1.2.0.js', 'npm:focusin@2.0.0.js', 'npm:custom-event-polyfill@0.2.2.js'], function (_export) {
     var _Object$keys, camelcase, decamelize, focusIn;
 
     //dom4's classList polyfill was blowing up firefox, expose this method to use instead of classList.add
@@ -79284,6 +79519,19 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-compon
         return cssEvents.filter(Boolean);
     }
 
+    function warnIfBeingExtended(instance, aConstructor) {
+        if (instance.constructor !== aConstructor) {
+            console.warn(aConstructor.name + ' is not intended to be extended.  Future changes will break ' + instance.constructor.name + '\'s implemention.  Don\'t do it.');
+        }
+    }
+
+    //very fast way to clone as object that doesn't contain methods, only data
+
+    function jsonClone(obj) {
+        if (typeof obj !== 'object') return obj;
+        return JSON.parse(JSON.stringify(obj));
+    }
+
     return {
         setters: [function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
             _Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
@@ -79311,6 +79559,10 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-compon
 
             _export('getCSSTransitionEvent', getCSSTransitionEvent);
 
+            _export('warnIfBeingExtended', warnIfBeingExtended);
+
+            _export('jsonClone', jsonClone);
+
             focusIn.polyfill();
 
             _export('camelcase', camelcase);
@@ -79320,8 +79572,8 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-compon
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-component-utils.js', ['npm:babel-runtime@5.8.38/core-js/object/create.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-component-utils-common.js'], function (_export) {
-  var _Object$create, addClass, removeClass, setAttributes, getConfig, setConfig, dispatchEvent, getCSSTransitionEvent, camelcase, decamelize, voyaComponentUtils, NativeHTMLElement;
+System.register('voya-github:Voya/deep-ui-voya-component-utils@3.5.0/voya-component-utils.js', ['npm:babel-runtime@5.8.38/core-js/object/create.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/voya-component-utils-common.js'], function (_export) {
+  var _Object$create, addClass, removeClass, setAttributes, getConfig, setConfig, dispatchEvent, getCSSTransitionEvent, camelcase, decamelize, jsonClone, warnIfBeingExtended, voyaComponentUtils, NativeHTMLElement;
 
   function innerHTML(el, html) {
     // 'document-register-element/innerHTML' mutates document.registerElement
@@ -79354,16 +79606,18 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-compon
   return {
     setters: [function (_npmBabelRuntime5838CoreJsObjectCreateJs) {
       _Object$create = _npmBabelRuntime5838CoreJsObjectCreateJs['default'];
-    }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs) {
-      addClass = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.addClass;
-      removeClass = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.removeClass;
-      setAttributes = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.setAttributes;
-      getConfig = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.getConfig;
-      setConfig = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.setConfig;
-      dispatchEvent = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.dispatchEvent;
-      getCSSTransitionEvent = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.getCSSTransitionEvent;
-      camelcase = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.camelcase;
-      decamelize = _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsCommonJs.decamelize;
+    }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs) {
+      addClass = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.addClass;
+      removeClass = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.removeClass;
+      setAttributes = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.setAttributes;
+      getConfig = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.getConfig;
+      setConfig = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.setConfig;
+      dispatchEvent = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.dispatchEvent;
+      getCSSTransitionEvent = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.getCSSTransitionEvent;
+      camelcase = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.camelcase;
+      decamelize = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.decamelize;
+      jsonClone = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.jsonClone;
+      warnIfBeingExtended = _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsCommonJs.warnIfBeingExtended;
     }],
     execute: function () {
       'use strict';
@@ -79380,7 +79634,9 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-compon
         dispatchEvent: dispatchEvent,
         getCSSTransitionEvent: getCSSTransitionEvent,
         camelcase: camelcase,
-        decamelize: decamelize
+        decamelize: decamelize,
+        jsonClone: jsonClone,
+        warnIfBeingExtended: warnIfBeingExtended
       };
 
       //a standardized element to extend for custom elements
@@ -79409,20 +79665,24 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-compon
       _export('camelcase', camelcase);
 
       _export('decamelize', decamelize);
+
+      _export('jsonClone', jsonClone);
+
+      _export('warnIfBeingExtended', warnIfBeingExtended);
     }
   };
 });
 
-System.register("voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js", ["voya-github:Voya/deep-ui-voya-component-utils@3.4.1/voya-component-utils.js"], function (_export) {
+System.register("voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js", ["voya-github:Voya/deep-ui-voya-component-utils@3.5.0/voya-component-utils.js"], function (_export) {
   "use strict";
 
   return {
-    setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsJs) {
-      for (var _key in _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsJs) {
-        if (_key !== "default") _export(_key, _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsJs[_key]);
+    setters: [function (_voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsJs) {
+      for (var _key in _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsJs) {
+        if (_key !== "default") _export(_key, _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsJs[_key]);
       }
 
-      _export("default", _voyaGithubVoyaDeepUiVoyaComponentUtils341VoyaComponentUtilsJs["default"]);
+      _export("default", _voyaGithubVoyaDeepUiVoyaComponentUtils350VoyaComponentUtilsJs["default"]);
     }],
     execute: function () {}
   };
@@ -79780,7 +80040,7 @@ System.registerDynamic("npm:decamelize@1.2.0.js", ["npm:decamelize@1.2.0/index.j
   return module.exports;
 });
 
-System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/utilities.js', ['npm:babel-runtime@5.8.38/core-js/object/assign.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/utilities.js', ['npm:babel-runtime@5.8.38/core-js/object/assign.js'], function (_export) {
     var _Object$assign;
 
     function decorator(fn) {
@@ -79823,24 +80083,43 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/
 
     function coerce(value, type) {
         switch (type) {
+            case 'truthyBoolean':
+                // if the value is "false", will be false, otherwise the truthy value
+                if (typeof value === 'string') {
+                    return value.toLowerCase() === 'false' ? false : !!value;
+                }
+                break;
             case 'boolean':
                 // if the attribute is present, with no value, it will evaluate to true
                 // the attribute will only be false if it's value is "false" (case-insensitive)
                 if (typeof value === 'string') {
                     return !/false/i.test(value);
                 }
+                break;
             case 'object':
                 if (typeof value === 'string' && value !== '') {
                     value = JSON.parse(value);
                 }
+                break;
             case 'integer':
                 if (typeof value === 'string') {
                     value = parseInt(value);
                 }
+                break;
             case 'float':
                 if (typeof value === 'string') {
                     value = parseFloat(value);
                 }
+                break;
+            case 'string':
+                if (typeof value === 'undefined') {
+                    value = '';
+                } else if (typeof value !== 'string') {
+                    value = value.toString();
+                }
+                break;
+            default:
+            //do nothing
         }
 
         return value;
@@ -79879,7 +80158,7 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js', ['npm:babel-runtime@5.8.38/helpers/sliced-to-array.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/get-iterator.js', 'npm:babel-runtime@5.8.38/core-js/object/entries.js', 'npm:camelcase@2.1.1.js', 'npm:decamelize@1.2.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/utilities.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js', ['npm:babel-runtime@5.8.38/helpers/sliced-to-array.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/get-iterator.js', 'npm:babel-runtime@5.8.38/core-js/object/entries.js', 'npm:camelcase@2.1.1.js', 'npm:decamelize@1.2.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/utilities.js'], function (_export) {
     var _slicedToArray, _Object$assign, _getIterator, _Object$entries, camelcase, decamelize, decorator, coerce, property, nullable, ui;
 
     /** Helper Methods **/
@@ -80002,9 +80281,9 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/
             camelcase = _npmCamelcase211Js['default'];
         }, function (_npmDecamelize120Js) {
             decamelize = _npmDecamelize120Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsUtilitiesJs) {
-            decorator = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsUtilitiesJs.decorator;
-            coerce = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsUtilitiesJs.coerce;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsUtilitiesJs) {
+            decorator = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsUtilitiesJs.decorator;
+            coerce = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsUtilitiesJs.coerce;
         }],
         execute: function () {
             'use strict';
@@ -80049,7 +80328,8 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/
                 descriptor.set = descriptor.set || function (value) {
                     var properties = ensureInstanceProperties(this);
                     var oldValue = properties[key];
-                    properties[key] = value;
+
+                    properties[key] = value = descriptor.type ? coerce(value, descriptor.type === 'boolean' ? 'truthyBoolean' : descriptor.type) : value;
 
                     if (typeof this.propertyChangedCallback === 'function' && oldValue !== value) {
                         this.propertyChangedCallback(key, oldValue, value);
@@ -80096,7 +80376,7 @@ System.register('voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/
     };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:debounce@1.0.0.js', 'voya-github:Voya/deep-ui-voya-tooltip@2.6.2/jquery-voya-tooltip.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.4.1/decorators/property-decorators.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-tooltip@2.8.2/voya-tooltip.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/define-decorated-property-descriptor.js', 'npm:babel-runtime@5.8.38/helpers/create-decorated-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:debounce@1.0.0.js', 'voya-github:Voya/deep-ui-voya-tooltip@2.8.2/jquery-voya-tooltip.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0.js', 'voya-github:Voya/deep-ui-voya-component-utils@3.5.0/decorators/property-decorators.js'], function (_export) {
     var _get, _inherits, _defineDecoratedPropertyDescriptor, _createDecoratedClass, _classCallCheck, debounce, NativeHTMLElement, property, VoyaTooltip;
 
     function destroyJqueryTooltips(el, targetSelector) {
@@ -80134,13 +80414,20 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
                 positionFixed: el.positionFixed,
                 scrollTopOffset: Number(el.scrollTopOffset),
                 boundingContainer: document.querySelector(el.boundingSelector),
-                openOn: el.openOn
+                openOn: el.openOn,
+                clickCloseMethod: el.closeOn
             });
         }
 
-        if (el.theme === 'square') {
-            el.classList.add('voya-tooltip--square-corners');
-        }
+        el.theme.split(' ').forEach(function (theme) {
+            if (theme === 'square') {
+                el.classList.add('voya-tooltip--square-corners');
+            }
+
+            if (theme === 'error') {
+                el.classList.add('voya-tooltip-theme-error');
+            }
+        });
     }
 
     return {
@@ -80156,10 +80443,10 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
             _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
         }, function (_npmDebounce100Js) {
             debounce = _npmDebounce100Js['default'];
-        }, function (_voyaGithubVoyaDeepUiVoyaTooltip262JqueryVoyaTooltipJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341Js) {
-            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils341Js.NativeHTMLElement;
-        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs) {
-            property = _voyaGithubVoyaDeepUiVoyaComponentUtils341DecoratorsPropertyDecoratorsJs.property;
+        }, function (_voyaGithubVoyaDeepUiVoyaTooltip282JqueryVoyaTooltipJs) {}, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350Js) {
+            NativeHTMLElement = _voyaGithubVoyaDeepUiVoyaComponentUtils350Js.NativeHTMLElement;
+        }, function (_voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs) {
+            property = _voyaGithubVoyaDeepUiVoyaComponentUtils350DecoratorsPropertyDecoratorsJs.property;
         }],
         execute: function () {
             'use strict';
@@ -80174,6 +80461,8 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
 
                     _get(Object.getPrototypeOf(VoyaTooltip.prototype), 'constructor', this).apply(this, arguments);
 
+                    _defineDecoratedPropertyDescriptor(this, 'active', _instanceInitializers);
+
                     _defineDecoratedPropertyDescriptor(this, 'targetSelector', _instanceInitializers);
 
                     _defineDecoratedPropertyDescriptor(this, 'boundingSelector', _instanceInitializers);
@@ -80185,6 +80474,8 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
                     _defineDecoratedPropertyDescriptor(this, 'positionFixed', _instanceInitializers);
 
                     _defineDecoratedPropertyDescriptor(this, 'openOn', _instanceInitializers);
+
+                    _defineDecoratedPropertyDescriptor(this, 'closeOn', _instanceInitializers);
 
                     _defineDecoratedPropertyDescriptor(this, 'theme', _instanceInitializers);
 
@@ -80212,6 +80503,9 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
                     key: 'attachedCallback',
                     value: function attachedCallback() {
                         this.render();
+                        if (this.active) {
+                            this.open();
+                        }
                     }
                 }, {
                     key: 'detachedCallback',
@@ -80240,7 +80534,7 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
                     key: 'close',
                     value: function close() {
                         var $target = $(this.targetSelector);
-                        if ($target.length > 0) {
+                        if ($target.length > 0 && this._widget) {
                             $target.tooltip('closeTooltip');
                         }
                     }
@@ -80263,10 +80557,23 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
                 }, {
                     key: 'propertyChangedCallback',
                     value: function propertyChangedCallback(prop, oldValue, newValue) {
-                        if (this._hasRendered) {
+                        if (prop === 'active') {
+                            if (newValue) {
+                                this.open();
+                            } else {
+                                this.close();
+                            }
+                        } else if (this._hasRendered) {
                             this._refreshTooltip(this);
                         }
                     }
+                }, {
+                    key: 'active',
+                    decorators: [property({ type: 'boolean' })],
+                    initializer: function initializer() {
+                        return false;
+                    },
+                    enumerable: true
                 }, {
                     key: 'targetSelector',
                     decorators: [property],
@@ -80310,12 +80617,21 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
                     },
                     enumerable: true
                 }, {
+                    key: 'closeOn',
+                    decorators: [property],
+                    initializer: function initializer() {
+                        return 'outsideClick';
+                    },
+                    //'closeIcon'       
+
+                    enumerable: true
+                }, {
                     key: 'theme',
                     decorators: [property],
                     initializer: function initializer() {
                         return 'round';
                     },
-                    //square
+                    //square, error
 
                     enumerable: true
                 }, {
@@ -80356,22 +80672,22 @@ System.register('voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js', [
     };
 });
 
-System.register("voya-github:Voya/deep-ui-voya-tooltip@2.6.2.js", ["voya-github:Voya/deep-ui-voya-tooltip@2.6.2/voya-tooltip.js"], function (_export) {
+System.register("voya-github:Voya/deep-ui-voya-tooltip@2.8.2.js", ["voya-github:Voya/deep-ui-voya-tooltip@2.8.2/voya-tooltip.js"], function (_export) {
   "use strict";
 
   return {
-    setters: [function (_voyaGithubVoyaDeepUiVoyaTooltip262VoyaTooltipJs) {
-      for (var _key in _voyaGithubVoyaDeepUiVoyaTooltip262VoyaTooltipJs) {
-        if (_key !== "default") _export(_key, _voyaGithubVoyaDeepUiVoyaTooltip262VoyaTooltipJs[_key]);
+    setters: [function (_voyaGithubVoyaDeepUiVoyaTooltip282VoyaTooltipJs) {
+      for (var _key in _voyaGithubVoyaDeepUiVoyaTooltip282VoyaTooltipJs) {
+        if (_key !== "default") _export(_key, _voyaGithubVoyaDeepUiVoyaTooltip282VoyaTooltipJs[_key]);
       }
 
-      _export("default", _voyaGithubVoyaDeepUiVoyaTooltip262VoyaTooltipJs["default"]);
+      _export("default", _voyaGithubVoyaDeepUiVoyaTooltip282VoyaTooltipJs["default"]);
     }],
     execute: function () {}
   };
 });
 
-System.register('voya-github:Voya/deep-ui-voya-tabs@2.3.7/voya-tabs-template.js', ['voya-github:Voya/deep-ui-voya-tooltip@2.6.2.js'], function (_export) {
+System.register('voya-github:Voya/deep-ui-voya-tabs@2.3.7/voya-tabs-template.js', ['voya-github:Voya/deep-ui-voya-tooltip@2.8.2.js'], function (_export) {
 	// NOTES:
 	//  * voya-tooltip has a dependency on jQuery.
 	//    Currently it is assumed that jQuery will be present in the larger application and is thus not imported/required as part of voya-tabs.
@@ -80458,7 +80774,7 @@ System.register('voya-github:Voya/deep-ui-voya-tabs@2.3.7/voya-tabs-template.js'
 	}
 
 	return {
-		setters: [function (_voyaGithubVoyaDeepUiVoyaTooltip262Js) {}],
+		setters: [function (_voyaGithubVoyaDeepUiVoyaTooltip282Js) {}],
 		execute: function () {}
 	};
 });
