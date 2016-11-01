@@ -33,8 +33,6 @@ export class Welcome {
     }
 
     get getClass() {
-        //do your magic here
-        console.log('Welcome => getClass ...called *************************');
         return 'disabledStyle';
     }
 
@@ -73,8 +71,11 @@ export class Welcome {
             }
         }
 
+        
        this.newStartChat(window._genesys.cxwidget.bus);
+       this.busy = false; 
 
+    
         //this.app.navigateToPage("chat", this.data);
     }
 
@@ -116,7 +117,6 @@ export class Welcome {
         bus.command("cx.plugin.WebChat.open", {form:false})
             .done(function(e){
 
-                console.log('****************************open, question :'+question);
                 bus.command("cx.plugin.WebChatService.startChat", {
                     userData: pwebContext,
                     nickname: firstName,
@@ -128,7 +128,16 @@ export class Welcome {
 
                 })
                     .done(function(e){
+                        $("#start_chat").prop( "disabled", true );
                         $('.cx-widget.cx-webchat').find("textarea.input").removeClass("disabled").attr("disabled", false);
+
+                        console.log('****************************before sendMessage, detailed question: '+question);    
+                        bus.command("cx.plugin.WebChatService.sendMessage", {
+                            message: question,
+                            messageType: "text"
+                        }).done(function(e) {
+                        }).fail(function(e) {})
+
                     })
                     .fail(function(e){});
             })

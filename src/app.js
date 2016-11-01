@@ -9,11 +9,11 @@ export class App {
   constructor(router, bindingEngine){
     this.bindingEngine = bindingEngine;
     this.router = router;
-  };
+  }
 
   activate() {
     //this.appRouterConfig.configure();
-  };
+  }
 
   configureRouter(config, router) {
 
