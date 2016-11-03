@@ -10,6 +10,7 @@
                         input-name="fName"
                         label="First Name"
                         type="text"
+                        tabindex="1"
                         required=true
                         error.bind="validationErrors.firstName.message"
                         value.two-way="data.firstName">
@@ -20,7 +21,7 @@
                         input-name="lName"
                         label="Last Name"
                         type="text"
-                        tabindex="1"
+                        tabindex="2"
                         error.bind="validationErrors.lastName.message"
                         required=true
                         value.two-way="data.lastName">
@@ -33,7 +34,7 @@
                             input-name="email"
                             label="Email"
                             type="text"
-                            tabindex="2"
+                            tabindex="3"
                             error.bind="validationErrors.email.message"
                             value.two-way="data.email">
                     </voya-field>
@@ -43,7 +44,7 @@
                             input-name="sendTranscript"
                             label="Send me a transcript"
                             size="x-small"
-                            tabindex="3"
+                            tabindex="4"
                             type="checkbox"
                             checked.two-way="data.sendTranscript">
                     </voya-field>
@@ -54,7 +55,7 @@
                         input-name="helpOptions"
                         label="What can we help you with?"
                         type="select"
-                        tabindex="4"
+                        tabindex="5"
                         options.bind="helpOptions"
                         value.two-way="data.helpMessage">
                 </voya-field>
@@ -64,7 +65,7 @@
                         input-name="question"
                         label="Enter a detailed question"
                         type="textarea"
-                        tabindex="5"
+                        tabindex="6"
                         value.two-way="data.question">
                 </voya-field>
             </div>
@@ -72,6 +73,7 @@
                 <voya-button
                         type="submit"
                         id="start_chat"
+                        tabindex="7"
                         text="START CHAT"
                         busy.bind = "busy"
                         h-size="large">

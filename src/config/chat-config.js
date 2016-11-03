@@ -4,7 +4,11 @@ var config = {
     loginRedirect: '#/welcome',
 
     disclaimerText : 'Please be aware that we are unable to execute transactions or provide personal account information through this request form.  You can only execute transactions, or obtain personal account information by following instructions in the appropriate password-protected sections of this site.',
+    
+    preLoginAuthenticationLevel:'X',
 
+    postLoginAuthenticationLevel:'2',
+    
     helpOptions : [
                 {
                     value : 'Advisory Services',

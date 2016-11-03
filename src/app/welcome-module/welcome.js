@@ -2,6 +2,7 @@ import { inject, BindingEngine } from 'aurelia-framework';
 import {Router} from 'aurelia-router';
 import {validation} from 'voya-validation';
 import AppConfig from '../../config/chat-config';
+import { gaConfig, sendPageView , preSubjectDetails, postSubjectDetails, pushEvent, pageView } from '../../config/chat-ga-config';
 import {App} from '../../app';
 
 @inject(Router, BindingEngine, AppConfig, App)
@@ -30,16 +31,23 @@ export class Welcome {
         };
 
         this.validationErrors = {};
-    }
+        
+        /* For GA start */
+        
+        if( pwebContext.AuthenticationLevel == this.appConfig.postLoginAuthenticationLevel ){
+            sendPageView({ pageRoute: pageView.postLogin , title: pageView.postTitle });
+        } else {
+            sendPageView({ pageRoute: pageView.preLogin , title: pageView.preTitle });
+        } 
+           
+        /* For GA end */
 
-    get getClass() {
-        return 'disabledStyle';
     }
 
     created(owningView, view) {
         this.disclaimerText = this.appConfig.disclaimerText;
 
-        let options = pwebContext.AuthenticationLevel == 2 ? this.appConfig.helpOptions : this.appConfig.helpOptionsPre;
+        let options = pwebContext.AuthenticationLevel == this.appConfig.postLoginAuthenticationLevel ? this.appConfig.helpOptions : this.appConfig.helpOptionsPre;
 
         options.forEach(function(option){
             this.helpOptions.push({value:option.value, label:option.label})
@@ -71,12 +79,24 @@ export class Welcome {
             }
         }
 
-        
+
        this.newStartChat(window._genesys.cxwidget.bus);
+       
+       /* For GA start */
+       if( pwebContext.AuthenticationLevel == this.appConfig.postLoginAuthenticationLevel ){
+            postSubjectDetails.eventLabel = 'ChatWindow_Post_Login_ChatSubject_'+this.data.helpMessage;
+            pushEvent(postSubjectDetails);
+            pushEvent(gaConfig.events.ChatWindow_Post_Login_Start_Chat);
+       } else {
+            preSubjectDetails.eventLabel = 'ChatWindow_Pre_Login_ChatSubject_'+this.data.helpMessage;
+            pushEvent(preSubjectDetails);
+            pushEvent(gaConfig.events.ChatWindow_Pre_Login_Start_Chat);
+       }
+       /* For GA end */
+
        this.busy = false; 
 
-    
-        //this.app.navigateToPage("chat", this.data);
+       //this.app.navigateToPage("chat", this.data);
     }
 
     validate() {
@@ -95,7 +115,6 @@ export class Welcome {
             .isEmail()
             .getErrors();
     }     
-
 
 
     newStartChat(bus) {
@@ -131,12 +150,13 @@ export class Welcome {
                         $("#start_chat").prop( "disabled", true );
                         $('.cx-widget.cx-webchat').find("textarea.input").removeClass("disabled").attr("disabled", false);
 
-                        console.log('****************************before sendMessage, detailed question: '+question);    
-                        bus.command("cx.plugin.WebChatService.sendMessage", {
-                            message: question,
-                            messageType: "text"
-                        }).done(function(e) {
-                        }).fail(function(e) {})
+                        if( question.length > 0 ){
+                            bus.command("cx.plugin.WebChatService.sendMessage", {
+                                message: question,
+                                messageType: "text"
+                            }).done(function(e) {
+                            }).fail(function(e) {})
+                        }
 
                     })
                     .fail(function(e){});
