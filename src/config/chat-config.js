@@ -3,7 +3,7 @@ var config = {
     baseURL : 'http://localhost:9200',
     loginRedirect: '#/welcome',
 
-    disclaimerText : 'Please be aware that we are unable to execute transactions or provide personal account information through this request form.  You can only execute transactions, or obtain personal account information by following instructions in the appropriate password-protected sections of this site.',
+    disclaimerText : 'Internet Response Team Members are not able to accept any account change requests or financial transaction instructions nor are they able to provide tax, investment or legal advice.   All interactions are subject to recordkeeping and monitoring.  Securities offered through Voya Financial Advisers, Inc. (Member SIPC).',
     
     preLoginAuthenticationLevel:'X',
 

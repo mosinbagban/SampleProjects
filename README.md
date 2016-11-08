@@ -1,6 +1,5 @@
 # Chat UI
-
-Voya Chat UI leveraging Genesys Widget.
+Repository for Voya Chat UI leveraging Genesys Widget.
 
 ##Getting Started
 
@@ -9,8 +8,6 @@ Voya Chat UI leveraging Genesys Widget.
  * Next, open a terminal to the project root folder and run the following commands
    * `npm install`
    * `jspm install`
-
- * Next, manually create the 'my-voya/static/myvoya/js' folder
 
  * Next, you can run the following gulp commands
    - `gulp` (opens the app in 'dev' mode and watches for updates to the source code)
@@ -21,6 +18,3 @@ Voya Chat UI leveraging Genesys Widget.
    - http://localhost:9200/index.html to view 
 
  * During Development DEBUG mode is on by default.  After a build, DEBUG mode can be turned on by adding DEBUG=1 to the query string in the URL.
-
-
-
